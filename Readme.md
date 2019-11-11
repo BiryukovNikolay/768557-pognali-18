@@ -1,7 +1,7 @@
 # Личный проект «Погнали» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Николай Бирюков](https://up.htmlacademy.ru/adaptive/18/user/768557).
-* Наставник: `Неизвестно`.
+* Наставник: Андрей Слесаренко
 
 ---
 
