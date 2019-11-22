@@ -5,14 +5,14 @@
     <title>HTML Academy: Погнали</title>
   </head>
   <body>
-    <header class="catalog-header">
+    <header class="page-header">
       <a class="catalog-header__logo title-small">Погнали?</a>  
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item">
-              <a class="vivisually-hidden">Главная</a>
+            <li class="site-list__item">
+              <a class="visually-hidden">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="about.html">О сервисе</a>
@@ -141,7 +141,7 @@
             <div class="companions-filter__hidden-menu">
             </div>
           </div>
-          <input class="companions-filter__button button" type="submit">          
+          <button class="companions-filter__button button" type="submit"></button>    
         </form>
       </section>
       <section class="catalog-result">
@@ -157,15 +157,12 @@
               <h4 class="catalog-companion-card__title--small">хочет посетить:</h4>
               <ul class="catalog-companion-card__wishes">
                 <li>
-                  <img class="companion-card__flag" width="35" height="24" src="#" alt="Флаг страны">
                   <b class="catalog-companion-card__country-title">Шри-Ланка</b>
                 </li>
                 <li>
-                  <img class="companion-card__flag" width="35" height="24" src="#" alt="Флаг страны">
                   <b class="catalog-companion-card__country-title">Тайланд</b>
                 </li>
                 <li>
-                  <img class="companion-card__flag" width="35" height="24" src="#" alt="Флаг страны">
                   <b class="catalog-companion-card__country-title">Сейшелы</b>
                 </li>
               </ul>
@@ -180,7 +177,7 @@
                 <h4 class="catalog-companion-card__title--small">левел:</h4>
                 <span class="catalog-companion-card__level-value">99</span>
               </div>
-              <button class="catalog-companion-card__button button">Позвать</button>
+              <button class="catalog-companion-card__button button" type="button">Позвать</button>
             </div>
           </li>
           <li>
@@ -205,15 +202,15 @@
               <div class="catalog-companion-card__transport-level">
                 <h4 class="catalog-companion-card__title--small">транспорт:</h4>
                 <ul class="companion-card__transport transport-list">
-                  <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--plane transport-list__icon--active"></li>
-                  <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--train transport-list__icon--active"></li>
-                  <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--cycle"></li>
-                  <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--running transport-list__icon--active"></li>
+                  <li class="transport-list__catalog-icon transport-list__icon--plane transport-list__icon--active"></li>
+                  <li class="transport-list__catalog-icon transport-list__icon--train transport-list__icon--active"></li>
+                  <li class="transport-list__catalog-icon transport-list__icon--cycle"></li>
+                  <li class="transport-list__catalog-icon transport-list__icon--running transport-list__icon--active"></li>
                 </ul>
                 <h4 class="catalog-companion-card__title--small">левел:</h4>
                 <span class="catalog-companion-card__level-value">80</span>
               </div>
-              <button class="catalog-companion-card__button button">Позвать</button>
+              <button class="catalog-companion-card__button button" type="button">Позвать</button>
             </div>
           </li>
           <li>
@@ -227,30 +224,27 @@
               <h4 class="catalog-companion-card__title--small">хочет посетить:</h4>
               <ul class="catalog-companion-card__wishes">
                 <li>
-                  <img class="companion-card__flag" width="35" height="24" src="#" alt="Флаг страны">
                   <b class="catalog-companion-card__country-title">США</b>
                 </li>
                 <li>
-                  <img class="companion-card__flag" width="35" height="24" src="#" alt="Флаг страны">
                   <b class="catalog-companion-card__country-title">Австралия</b>
                 </li>
                 <li>
-                  <img class="companion-card__flag" width="35" height="24" src="#" alt="Флаг страны">
                   <b class="catalog-companion-card__country-title">Доминикана</b>
                 </li>
               </ul>
               <div class="catalog-companion-card__transport-level">
                 <h4 class="catalog-companion-card__title--small">транспорт:</h4>
                 <ul class="companion-card__transport transport-list">
-                  <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--plane transport-list__icon--active"></li>
-                  <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--train"></li>
-                  <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--cycle transport-list__icon--active"></li>
-                  <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--running"></li>
+                  <li class="transport-list__catalog-icon transport-list__icon--plane transport-list__icon--active"></li>
+                  <li class="transport-list__catalog-icon transport-list__icon--train"></li>
+                  <li class="transport-list__catalog-icon transport-list__icon--cycle transport-list__icon--active"></li>
+                  <li class="transport-list__catalog-icon transport-list__icon--running"></li>
                 </ul>
                 <h4 class="catalog-companion-card__title--small">левел:</h4>
                 <span class="catalog-companion-card__level-value">25</span>
               </div>
-              <button class="catalog-companion-card__button button">Позвать</button>
+              <button class="catalog-companion-card__button button" type="button">Позвать</button>
             </div>
           </li>
           <li>
@@ -264,21 +258,19 @@
               <h4 class="catalog-companion-card__title--small">хочет посетить:</h4>
               <ul class="catalog-companion-card__wishes">
                 <li>
-                  <img class="companion-card__flag" width="35" height="24" src="#" alt="Флаг страны">
                   <b class="catalog-companion-card__country-title">Великобритания</b>
                 </li>
                 <li>
-                  <img class="companion-card__flag" width="35" height="24" src="#" alt="Флаг страны">
                   <b class="catalog-companion-card__country-title">Германия</b>
                 </li>
               </ul>
               <div class="catalog-companion-card__transport-level">
                 <h4 class="catalog-companion-card__title--small">транспорт:</h4>
                 <ul class="companion-card__transport transport-list">
-                  <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--plane transport-list__icon--active"></li>
-                  <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--train transport-list__icon--active"></li>
-                  <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--cycle"></li>
-                  <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--running"></li>
+                  <li class="transport-list__catalog-icon transport-list__icon--plane transport-list__icon--active"></li>
+                  <li class="transport-list__catalog-icon transport-list__icon--train transport-list__icon--active"></li>
+                  <li class="transport-list__catalog-icon transport-list__icon--cycle"></li>
+                  <li class="transport-list__catalog-icon transport-list__icon--running"></li>
                 </ul>
                 <h4 class="catalog-companion-card__title--small">левел:</h4>
                 <span class="catalog-companion-card__level-value">50</span>
