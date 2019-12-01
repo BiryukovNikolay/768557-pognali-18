@@ -1,0 +1,9 @@
+.region-list {
+  @include list-style-off;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.region-list__item {
+  color: rgba(25, 33, 68, 0.3);
+}

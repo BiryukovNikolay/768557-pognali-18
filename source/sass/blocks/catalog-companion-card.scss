@@ -1,0 +1,47 @@
+.catalog-companion-card {
+  background-color: #ffffff;
+}
+
+.catalog-companion-card__title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1d2e5b;
+}
+
+.catalog-companion-card__tags {
+  color: #444444;
+  font-size: 15px;
+}
+
+.catalog-companion-card__title--small {
+  color: #444444;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.catalog-companion-card__country-title {
+  color: #1d2e5b;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.catalog-companion-card__wishes {
+  @include list-style-off;
+}
+
+.companion-card__transport {
+  @include list-style-off;
+}
+
+.catalog-companion-card__level-value {
+  color: #1d2e5b;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.catalog-companion-card__button {
+  color: #161c35;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: #ffd74b;
+}

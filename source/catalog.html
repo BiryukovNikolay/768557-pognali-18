@@ -3,10 +3,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="page-header">
-    <a class="catalog-header__logo title-small">Погнали?</a>
+    <a class="page-header__logo" href="index.html">
+      <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" width="226" height="30" alt="Проект 'Погнали'">
+    </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
       <div class="main-nav__wrapper">
@@ -46,48 +49,48 @@
         <button class="country-filter__toggle" aria-label="открыть фильтр по странам"></button>
         <button class="country-filter__close close-button" aria-label="закрыть фильтр по странам"></button>
         <ul class="country-filter__region-list region-list">
-          <li><input class="region-list__item--checked" type="radio" name="region" value="europe" checked>Европа</li>
-          <li><input class="region-list__item" type="radio" name="region" value="asia">Азия</li>
-          <li><input class="region-list__item" type="radio" name="region" value="america">Америка</li>
-          <li><input class="region-list__item" type="radio" name="region" value="islands">Острова</li>
+          <li><label class="region-list__item--checked"><input type="radio" name="region" value="europe" checked>Европа</label></li>
+          <li><label class="region-list__item"><input type="radio" name="region" value="asia">Азия</label></li>
+          <li><label class="region-list__item"><input type="radio" name="region" value="america">Америка</label></li>
+          <li><label class="region-list__item"><input type="radio" name="region" value="islands">Острова</label></li>
         </ul>
         <ul class="country-filter__letter letters">
-          <li><label><input class="letters__item--checked" type="radio" name="letter" value="а" checked>А</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="б">Б</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="в">В</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="г">Г</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="д">Д</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="е">Е</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="з">З</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="и">И</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="к">К</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="л">Л</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="м">М</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="н">Н</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="о">О</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="п">П</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="р">Р</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="с">С</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="т">Т</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="у">У</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="ф">Ф</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="х">Х</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="ч">Ч</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="ш">Ш</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="э">Э</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="ю">Ю</label></li>
-          <li><label><input class="letters__item" type="radio" name="letter" value="я">Я</label></li>
+          <li><label class="letters__item--checked"><input type="radio" name="letter" value="а" checked>А</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="б">Б</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="в">В</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="г">Г</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="д">Д</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="е">Е</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="з">З</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="и">И</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="к">К</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="л">Л</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="м">М</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="н">Н</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="о">О</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="п">П</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="р">Р</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="с">С</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="т">Т</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="у">У</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="ф">Ф</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="х">Х</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="ч">Ч</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="ш">Ш</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="э">Э</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="ю">Ю</label></li>
+          <li><label class="letters__item"><input type="radio" name="letter" value="я">Я</label></li>
         </ul>
         <ul class="country-filter__country country-list">
-          <li><label><input class="country-list__item" type="checkbox" name="afganistan">Афганистан</label></li>
-          <li><label><input class="country-list__item" type="checkbox" name="albany">Албания</label></li>
-          <li><label><input class="country-list__item" type="checkbox" name="algerian">Алжир</label></li>
-          <li><label><input class="country-list__item" type="checkbox" name="andora">Андорра</label></li>
-          <li><label><input class="country-list__item" type="checkbox" name="arentina">Аргентина</label></li>
-          <li><label><input class="country-list__item" type="checkbox" name="armenia">Армения</label></li>
-          <li><label><input class="country-list__item" type="checkbox" name="australia">Австралия</label></li>
-          <li><label><input class="country-list__item" type="checkbox" name="astria">Австрия</label></li>
-          <li><label><input class="country-list__item" type="checkbox" name="azerbaigan">Азерйбаджан</label></li>
+          <li><label class="country-list__item"><input type="checkbox" name="afganistan">Афганистан</label></li>
+          <li><label class="country-list__item"><input type="checkbox" name="albany">Албания</label></li>
+          <li><label class="country-list__item"><input type="checkbox" name="algerian">Алжир</label></li>
+          <li><label class="country-list__item"><input type="checkbox" name="andora">Андорра</label></li>
+          <li><label class="country-list__item"><input type="checkbox" name="arentina">Аргентина</label></li>
+          <li><label class="country-list__item"><input type="checkbox" name="armenia">Армения</label></li>
+          <li><label class="country-list__item"><input type="checkbox" name="australia">Австралия</label></li>
+          <li><label class="country-list__item"><input type="checkbox" name="astria">Австрия</label></li>
+          <li><label class="country-list__item"><input type="checkbox" name="azerbaigan">Азерйбаджан</label></li>
         </ul>
         <button class="country-filter__button">Свернуть</button>
       </form>
@@ -141,7 +144,7 @@
           <div class="companions-filter__hidden-menu">
           </div>
         </div>
-        <button class="companions-filter__button button" type="submit"></button>
+        <button class="companions-filter__button button" type="submit">Показать</button>
       </form>
     </section>
     <section class="catalog-result">
@@ -149,7 +152,7 @@
         <li>
           <div class="companion-card-list__item catalog-companion-card">
             <header class="catalog-companion-card__header ">
-              <img class="catalog-companion-card__image" src="#" alt="Таня Фирсова">
+              <img class="catalog-companion-card__image" src="img/firsova-mobile@1x.jpg" alt="Таня Фирсова">
               <h3 class="catalog-companion-card__title companion-card-title">Таня Фирсова</h3>
               <span>1,5M</span>
               <p class="catalog-companion-card__tags companion-card__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
@@ -183,7 +186,7 @@
         <li>
           <div class="companion-card-list__item catalog-companion-card">
             <header class="catalog-companion-card__header ">
-              <img class="catalog-companion-card__image" src="#" alt="Петя Демин">
+              <img class="catalog-companion-card__image" src="img/demin-mobile@1x.jpg" alt="Петя Демин">
               <h3 class="catalog-companion-card__title companion-card-title">Петя Демин</h3>
               <span>1,5M</span>
               <p class="catalog-companion-card__tags companion-card__tags">#бургер #бар #футбол #концерт #краф</p>
@@ -216,7 +219,7 @@
         <li>
           <div class="companion-card-list__item catalog-companion-card">
             <header class="catalog-companion-card__header ">
-              <img class="catalog-companion-card__image" src="#" alt="Марк Смолов">
+              <img class="catalog-companion-card__image" src="img/smolov-mobile@1x.jpg" alt="Марк Смолов">
               <h3 class="catalog-companion-card__title companion-card-title">Марк Смолов</h3>
               <span>1,5M</span>
               <p class="catalog-companion-card__tags companion-card__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
@@ -250,7 +253,7 @@
         <li>
           <div class="companion-card-list__item catalog-companion-card">
             <header class="catalog-companion-card__header ">
-              <img class="catalog-companion-card__image" src="#" alt="Лариса Роговая">
+              <img class="catalog-companion-card__image" src="img/rogovaya-mobile@1x.jpg" alt="Лариса Роговая">
               <h3 class="catalog-companion-card__title companion-card-title">Лариса Роговая</h3>
               <span>1,5M</span>
               <p class="catalog-companion-card__tags companion-card__tags">#образование #карьера #учеба #линкедин</p>
@@ -286,7 +289,7 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__social social">
-      <b class="page-footer__slogan title-small">Погнали</b>
+      <img src="img/logo-mobile-blue@1x.png" alt="Логотип 'Погнали'">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>

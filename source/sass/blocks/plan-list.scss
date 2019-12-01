@@ -1,0 +1,21 @@
+.plan-list {
+  @include list-style-off;
+  color: #161c35;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.plan-list__item {
+  &:first-child {
+    background-color: #ff8d30;
+  }
+  &:nth-child(2) {
+    background-color: #ffa530;
+  }
+  &:nth-child(3) {
+    background-color: #ffbd30;
+  }
+  &:nth-child(4) {
+    background-color: #ffd74b;
+  }
+}

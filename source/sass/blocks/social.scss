@@ -1,0 +1,18 @@
+.page-footer {
+  font-weight: lighter;
+}
+
+.social__list {
+  @include list-style-off;
+}
+
+.page-footer__slogan {
+  font-size: 24px;
+  color: #192144;
+  font-weight: bold;
+}
+
+.copyright__text {
+  color: #444444;
+  font-size: 16px;
+}

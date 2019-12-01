@@ -1,0 +1,11 @@
+@mixin list-style-off {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin title-small {
+  font-family: 'BloggerSans', ‘Lucida Console’, Monaco, sans-serif;
+  color: #ff8d30;
+  font-weight: bold;
+}

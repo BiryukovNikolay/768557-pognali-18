@@ -1,0 +1,12 @@
+.country-list {
+  @include list-style-off;
+  color: #444444;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.country-filter__button {
+  color: #161c35;
+  font-weight: bold;
+  font-size: 16.5px;
+}
