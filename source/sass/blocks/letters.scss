@@ -1,0 +1,14 @@
+.letters {
+  @include list-style-off;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.letters__item {
+  background-color: #ffffff;
+}
+
+.letters__item--checked {
+  color: #ffffff;
+  background-color: #1d2e5b;
+}
