@@ -1,0 +1,16 @@
+.page-header {
+  min-height: 570px;
+  background-color: #ffffff;
+  padding: 20px 20px 40px 20px;
+}
+
+.page-header__toggle {
+  display: block;
+  margin-left: auto;
+  border: 0;
+  background-color: inherit;
+}
+
+.page-header__wrapper {
+  display: flex;
+}

@@ -1,3 +1,34 @@
-div {
-  display: block;
-}
+@import "variables.scss";
+@import "blocks/page-header.scss";
+@import "blocks/main-slogan.scss";
+@import "fonts.scss";
+@import "blocks/reviews.scss";
+@import "blocks/action-plan.scss";
+@import "mixins.scss";
+@import "blocks/plan-list.scss";
+@import "blocks/about.scss";
+@import "blocks/directions.scss";
+@import "blocks/companions.scss";
+@import "blocks/companion-card.scss";
+@import "blocks/add-profile.scss";
+@import "blocks/registration.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
+@import "common.scss";
+@import "blocks/title-small.scss";
+@import "blocks/catalog-page.scss";
+@import "blocks/country-filter.scss";
+@import "blocks/region-list.scss";
+@import "blocks/letters.scss";
+@import "blocks/country-list.scss";
+@import "blocks/companions-filter.scss";
+@import "blocks/companion-card-list.scss";
+@import "blocks/catalog-companion-card.scss";
+@import "blocks/catalog-result.scss";
+@import "blocks/site-list.scss";
+@import "blocks/user-list.scss";
+@import "blocks/button-radius.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/copyright.scss";
+@import "blocks/main-nav.scss";
+>>>>>>> selfmade

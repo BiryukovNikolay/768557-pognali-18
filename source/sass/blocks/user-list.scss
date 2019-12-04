@@ -1,0 +1,11 @@
+.user-list {
+  display: flex;
+  flex-direction: column;
+  @include list-style-off;
+  text-align: center;
+}
+
+.user-list a {
+  text-decoration: none;
+  font-size: 17px;
+}

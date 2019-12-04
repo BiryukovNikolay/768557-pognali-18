@@ -1,0 +1,10 @@
+@mixin list-style-off {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin title-small {
+  color: #ff8d30;
+  font-weight: bold;
+}

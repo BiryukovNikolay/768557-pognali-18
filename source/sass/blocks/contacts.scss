@@ -1,0 +1,33 @@
+.contacts {
+  font-weight: lighter;
+  background: #192144;
+}
+
+.contacts__description {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.contacts__phone {
+  color: #ffd74b;
+  text-decoration: none;
+}
+
+.contacts__mail {
+  color: #ffd74b;
+  text-decoration: none;
+}
+
+.contacts__address {
+  background: #ffd74b;
+  font-weight: bold;
+  color: #192144;
+  font-size: 16px;
+}
+
+.contacts__button {
+  color: #1d2e5b;
+  text-decoration: none;
+  font-size: 18px;
+}

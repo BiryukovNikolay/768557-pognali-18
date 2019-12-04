@@ -1,0 +1,39 @@
+.directions {
+  background: #edeff6;
+}
+
+.directions__title {
+  @include title-small;
+}
+
+.directions__description {
+  color: #444444;
+}
+
+.directions__list {
+  @include list-style-off;
+}
+
+.directions__title a {
+  color: #161c35;
+  text-decoration: none;
+}
+
+.directions__item-wrapper {
+  background-color: #ffffff;
+}
+
+.directions__slogan {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.directions__views {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.directions__button {
+  font-size: 18px;
+  color: $dark-title;
+  text-decoration: none;
+  background-color: #ffd74b;
+}

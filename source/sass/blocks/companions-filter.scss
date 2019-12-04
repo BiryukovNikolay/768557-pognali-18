@@ -1,0 +1,26 @@
+.companions-filter {
+  background-color: #ffd74b;
+}
+
+.companions-filter__title {
+  font-size: 22.5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.companions-filter__title--small {
+  font-size: 16px;
+}
+
+.companions-filter__list {
+  @include list-style-off;
+  font-size: 15px;
+  font-weight: normal;
+  color: #444444;
+}
+
+.companions-filter__button {
+  color: #161c35;
+  font-size: 17px;
+  font-weight: bold;
+}

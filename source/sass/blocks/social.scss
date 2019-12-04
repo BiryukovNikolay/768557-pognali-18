@@ -1,0 +1,27 @@
+.social__list {
+  display: flex;
+  justify-content: center;
+  @include list-style-off;
+  margin-top: 25px;
+}
+
+.social__link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 25px;
+}
+
+.social__link--facebook-header {
+  background: url("../../img/facebook.svg") no-repeat;
+  background-position: center;
+}
+
+.social__link--vkontakte-header {
+  background: url("../../img/vk.svg") no-repeat;
+  background-position-y: center;
+}
+
+.social__link--instagram-header {
+  background: url("../../img/instagram.svg") no-repeat; 
+}
