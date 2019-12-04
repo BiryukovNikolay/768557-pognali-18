@@ -1,0 +1,10 @@
+.site-list {
+  @include list-style-off;
+  text-align: center; 
+}
+
+.site-list__item a {
+  font-size: 30px;
+  color: #192144;
+  text-decoration: none;
+}

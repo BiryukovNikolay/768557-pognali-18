@@ -7,11 +7,13 @@
 </head>
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" width="226" height="30" alt="Проект 'Погнали'">
-    </a>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logo-mobile-blue@1x.png" width="98" height="20" alt="Проект 'Погнали'">
+      </a>
+      <button class="page-header__toggle" type="button" aria-label="Открыть меню">X</button>
+    </div>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -29,13 +31,24 @@
         </ul>
         <ul class="main-nav__list user-list">
           <li class="user-list__phone">
-            <a href="#"></a>
+            <a href="tel:88005558628">8 800 555-86-28</a>
           </li>
           <li class="user-list__mail">
-            <a href="#"></a>
+            <a href="mailto:">mail@htmlacademy.ru</a>
           </li>
           <li class="user-list__authentication">
-            <a href="#"></a>
+            <a class="button-radius" href="#">Авторизация</a>
+          </li>
+        </ul>
+        <ul class="social__list">
+          <li class="social__item">
+          <a class="social__link social__link--facebook-header" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte-header" href="https://vk.com" aria-label="Мы в Вконтакте"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram-header" href="https://www.instagram.com" aria-label="Мы в Инстаграме"></a>
           </li>
         </ul>
       </div>
@@ -185,13 +198,13 @@
       <img src="img/logo-mobile-blue@1x.png" alt="Логотип 'Погнали'">
       <ul class="social__list">
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>
+          <a class="social__link social__link--vkontakte" href="https://vk.com" aria-label="Мы в Вконтакте"></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com">Мы в Инстаграме</a>
+          <a class="social__link social__link--instagram" href="https://www.instagram.com" aria-label="Мы в Инстаграме"></a>
         </li>
       </ul>
     </div>
