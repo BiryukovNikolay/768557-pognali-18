@@ -1,5 +1,16 @@
 .directions {
   background: #edeff6;
+  border-radius: 20px;
+  padding-bottom: 30px;
+}
+
+.directions__wrapper {
+  width: 270px;
+  margin: 0 auto;
+}
+
+.directions__wrapper-header {
+  padding: 72px 50px 66px 25px;
 }
 
 .directions__title {
@@ -21,6 +32,8 @@
 
 .directions__item-wrapper {
   background-color: #ffffff;
+  border-radius: 15px;
+  padding: 28px 24px 23px 24px;
 }
 
 .directions__slogan {
@@ -31,9 +44,56 @@
   color: rgba(68, 68, 68, 0.3);
 }
 
-.directions__button {
-  font-size: 18px;
-  color: $dark-title;
-  text-decoration: none;
-  background-color: #ffd74b;
+
+.directions__image {
+  border-radius: 15px 15px 0 0;
+}
+
+.directions__card-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $desktop-width) {
+  .directions__wrapper {
+    display: flex;
+    width: $desktop-wrapper;
+    position: relative;
+  }
+
+  .directions__list-wrapper {
+    order: -1;
+    width: 690px;
+    padding: 161px 0px 145px 70px;
+  }
+
+  .directions__wrapper-header {
+    background: url("../../img/flags-back@1x.png") no-repeat right 89px;
+    width: 630px;
+    padding: 167px 0px 140px 170px;
+  }
+
+  .directions__description {
+    width: 340px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .directions__title {
+    margin-bottom: 62px;
+  }
+
+  .directions__item {
+    display: flex;
+    width: 560px;
+  }
+
+  .directions__item-wrapper {
+    order: -1;
+    width: 375px;
+  }
+
+  .directions__button {
+    position: absolute;
+  }
 }

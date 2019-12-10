@@ -1,10 +1,16 @@
-.companion-card-title a {
-  text-decoration: none;
-  color: #1d2e5b;
-  font-size: 20px;
+.companion-card-title {
+  margin: 0;
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: #1d2e5b;
+    font-size: 20px;
+  }
 }
 
 .companion-card__wrapper {
+  padding: 26px 40px 21px 40px;
   background-color: #ffffff;
 }
 
@@ -17,4 +23,21 @@
   color: $dark-title;
   text-decoration: none;
   background-color: #ffd74b;
+}
+
+.companion-card__avatar {
+  border-radius: 25px 25px 0 0;
+}
+
+.companion-card__wrapper {
+  border-radius: 0 0 25px 25px;
+}
+
+@media (min-width: $desktop-width) {
+
+  .companion-card {
+    width: 285px;
+    min-height: 482px;
+  }
+
 }

@@ -1,3 +1,27 @@
 .main-nav__wrapper {
+  width: 270px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
+}
+
+.main-nav__list {
+  width: 100%;
+  flex-direction: column;
+  min-height: 225px;
+  justify-content: center;
+}
+
+@media (min-width: $desktop-width) {
+  
+  .main-nav__wrapper {
+    width: 1320px;
+    flex-direction: row;
+  }
+  .main-nav__list {
+    flex-direction: row;
+    width: 837px;
+    justify-content: space-around;
+    min-height: 50px;
+  }
 }

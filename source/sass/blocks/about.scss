@@ -3,3 +3,56 @@
   color: white;
   font-size: 16px;
 }
+
+.about__wrapper {
+  width: 270px;
+  margin: 0 auto;
+  padding: 35px 40px 84px 31px;
+}
+
+.about__description {
+  font-weight: 300;
+}
+
+.about__slogan {
+  font-weight: bold;
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    background: none;
+    border-radius: 0 0 50px 50px;
+    background-color: #192144;  
+  }
+
+  .about__wrapper {
+    background: url("../../img/about-desktop@1x.png") bottom right no-repeat;
+    width: 1320px;
+    min-height: 750px;
+    padding: 0;
+  }
+
+  .about__left-block {
+    width: 690px;
+    padding: 96px 0 163px 70px;
+  }
+
+  .about-title {
+    margin-bottom: 61px;
+  }
+
+  .about__description {
+    display: block;
+    margin-bottom: 44px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .about__slogan  {
+    display: block;
+    font-size: 21px;
+    line-height: 25px;
+    width: 415px;
+    margin-bottom: 85px;
+  }
+}

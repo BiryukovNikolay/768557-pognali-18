@@ -1,5 +1,5 @@
 .main-slogan {
-  background: url("../../img/traveller-illustration-mobile@1x.png") no-repeat bottom center, url("../../img/globe-back-mobile@1x.jpg");
+  background: url("../../img/traveller-illustration-mobile@1x.png") no-repeat bottom center, url("../../img/globe-back-mobile@1x.jpg") no-repeat;
   min-height: 430px;
   text-align: center;
 }
@@ -9,4 +9,18 @@
   font-weight: bold;
   color: white;
   line-height: 40px;
+}
+
+@media (min-width: $desktop-width) {
+  .main-slogan {
+    display: flex;
+    background: none;
+  }
+
+  .main-slogan__text {
+    width: 400px;
+    font-size: 60px;
+    line-height: 1.17;
+    text-align: left;
+  }
 }

@@ -15,3 +15,50 @@
 .registration__button {
   background: #ffd74b;
 }
+
+
+@media (min-width: $desktop-width) {
+  
+  .registration {
+    min-height: 450px;
+    padding: 108px 70px 40px 70px;
+  }
+
+  .registration__wrapper {
+    width: $desktop-wrapper;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .registration__description {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 61px;
+  }
+
+  .registration__form {
+    display: flex;
+    justify-content: center;
+  }
+  .registration__text {
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+    width: 850px;
+    height: 81px;
+    padding-left: 35px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .registration__button {
+    width: 324px;
+    border-radius: 0 20px 20px 0;
+    border: none;
+  }
+
+  .registration__title {
+    display: block;
+    margin-bottom: 60px;
+  }
+}

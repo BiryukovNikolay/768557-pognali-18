@@ -1,10 +1,28 @@
 .site-list {
   @include list-style-off;
-  text-align: center; 
+  text-align: center;
 }
 
-.site-list__item a {
-  font-size: 30px;
-  color: #192144;
-  text-decoration: none;
+.site-list__item  {
+  a {
+    font-size: 30px;
+    color: #192144;
+    text-decoration: none;
+  }  
+}
+
+@media (min-width: $desktop-width) {
+  
+  .site-list {
+    display: flex;
+    width: 837px;
+    justify-content: space-around;
+  }
+
+  .site-list__item  {
+  a {
+    color: #ffffff;
+  }  
+}
+
 }

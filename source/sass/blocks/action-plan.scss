@@ -1,3 +1,9 @@
 .action-plan {
   background-color: $dark-title;
 }
+
+@media (min-width: $desktop-width) {
+  .action-plan {
+    background-color: transparent;
+  }
+}

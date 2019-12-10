@@ -1,0 +1,16 @@
+.button {
+  padding: 24px;
+  border-radius: 10px;
+  display: block;
+  font-size: 18px;
+  color: $dark-title;
+  text-decoration: none;
+  background-color: #ffd74b;
+}
+
+@media (min-width: $desktop-width) {
+  
+  .button {
+    width: 274px;
+  }
+}

@@ -31,3 +31,54 @@
   text-decoration: none;
   font-size: 18px;
 }
+
+@media (min-width: $desktop-width) {
+  
+  .contacts__phone-mail {
+    min-height: 300px;
+    border-radius: 0 0 50px 50px;
+    padding: 25px;
+  }
+
+  .contacts__address {
+    min-height: 200px;
+    border-radius: 0 0 50px 50px;
+  }
+
+  .contacts__wrapper {
+    width: $desktop-wrapper;
+    margin: 0 auto;
+  }
+
+  .contacts__title {
+    text-align: center;
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .contacts__phone-mail-wrapper {
+    display: flex;
+    justify-content: space-around;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .contacts__wrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: 60px 0 0 50px;
+  }
+   
+   .contacts__description {
+     font-size: 28px;
+     line-height: 28px;
+     color: #192144;
+   }
+
+   .contacts__button {
+     border: #192144 3px solid;
+   }
+}

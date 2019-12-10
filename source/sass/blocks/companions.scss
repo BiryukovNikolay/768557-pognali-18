@@ -6,3 +6,49 @@
 .companions__list {
   @include list-style-off;
 }
+
+.companions__wrapper {
+  padding-bottom: 25px;
+  width: 270px;
+  margin: 0 auto;
+}
+
+.companions__wrapper-header {
+  padding: 73px 25px 60px 25px;
+}
+
+@media (min-width: $desktop-width) {
+  
+  .companions {
+    border-radius: 0 0 50px 50px;
+  }
+  .companions__wrapper {
+    width: $desktop-wrapper;
+    display: flex;
+    justify-content: space-between;
+    min-height: 750px;
+  }
+
+  .companions__list {
+    width: 630px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .companions__wrapper-header {
+    width: 500px;
+  }
+
+  .companions-description {
+    font-size: 28px;
+    line-height: 33px;
+    text-align: left;
+    width: 430px;
+  }
+
+  .companions-slogan {
+    font-size: 21px;
+    line-height: 25px;
+    width: 258px;
+  }
+}

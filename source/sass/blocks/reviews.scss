@@ -1,17 +1,28 @@
 .reviews {
+  margin-top: -16px;
   background-color: #161c35;
 }
 
 .reviews__item {
+  padding: 50px 116px 33px 50px;
+  text-align: left;
   color: #ffffff;
   font-size: 16px;
 }
 
 .reviews__text {
-  font-weight: lighter;
+  font-size: 16px;
+  font-weight: 300;
 }
 
 .reviews__author {
   font-weight: bold;
   font-style: normal;
+}
+
+@media (min-width: $desktop-width) { 
+  .reviews {
+    margin: 0;
+    background-color: transparent;
+  }
 }

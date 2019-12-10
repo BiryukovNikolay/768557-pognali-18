@@ -13,6 +13,7 @@
 
 .add-profile__number {
   color: #ffffff;
+  display: block;
 }
 
 .add-profile__business {
@@ -31,4 +32,54 @@
 
 .add-profile__number--third {
   background-color: #ffd74b;
+}
+
+@media (min-width: $desktop-width) {
+  
+  .add-profile {
+    min-height: 750px;
+  }
+
+  .add-profile__wrapper {
+    width: $desktop-wrapper;
+    margin: 0 auto;
+  }
+
+  .add-profile__title {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 130px;
+  }
+
+  .add-profile__link {
+    font-size: 28px;
+    line-height: 33px;
+    display: flex;
+  }
+
+  .add-profile__price {
+    display: block;
+  }
+
+  .add-profile__number {
+    order: -1;
+  }
+
+  .add-profile__number {
+    display: block;
+    width: 67px;
+    height: 67px;
+    border-radius: 100%;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .add-profile__price {
+    align-self: flex-end;
+  }
+
+  .add-profile__tariffs {
+    width: 1200px;
+    text-align: center;
+  }
 }
