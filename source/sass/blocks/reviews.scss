@@ -20,6 +20,12 @@
   font-style: normal;
 }
 
+@media (min-width: $tablet-width) {
+  .reviews {
+    background: transparent;
+  }
+}
+
 @media (min-width: $desktop-width) { 
   .reviews {
     margin: 0;

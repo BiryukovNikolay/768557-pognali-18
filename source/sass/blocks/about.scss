@@ -7,7 +7,7 @@
 .about__wrapper {
   width: 270px;
   margin: 0 auto;
-  padding: 35px 40px 84px 31px;
+  padding: 35px 0 84px 0;
 }
 
 .about__description {
@@ -16,6 +16,27 @@
 
 .about__slogan {
   font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .about__wrapper {
+    padding-top: 180px;
+    width: $tablet-wrapper;
+    margin: 0 auto;
+  }
+
+  .about {
+    background: url("../../img/about-tablet@1x.png") right no-repeat #192144;
+    min-height: 920px;
+  }
+
+  .about__left-block {
+    width: 340px;
+  }
+
+  .about__button {
+    max-width: 274px;
+  }
 }
 
 @media (min-width: $desktop-width) {

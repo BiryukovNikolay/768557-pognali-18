@@ -1,4 +1,5 @@
 .plan-list {
+  display: block;
   @include list-style-off;
   color: #161c35;
   font-weight: bold;
@@ -31,10 +32,40 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .plan-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 688px;
+  }
+
+  .plan-list__item {
+    display: block;
+    width: 223px;
+
+    &:first-child {
+      border-radius: 0 0 0 0;
+    }
+
+    &:nth-child(2) {
+      border-radius: 0 0 0 0;
+    }
+
+    &:nth-child(3) {
+      border-radius: 0 0 0 0;
+    }
+
+    &:nth-child(4) {
+      margin-left: 0;
+      border-radius: 0;
+    }
+  }
+}
+
 @media (min-width: $desktop-width) {
 
   .plan-list {
-    display: flex;
+    flex-wrap: nowrap;
     width: 1320px;
   }
 

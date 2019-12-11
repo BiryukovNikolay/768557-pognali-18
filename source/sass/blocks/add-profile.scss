@@ -34,6 +34,59 @@
   background-color: #ffd74b;
 }
 
+@media (min-width: $tablet-width) {
+
+  .add-profile__wrapper {
+    padding-bottom: 70px;
+    padding-top: 75px;
+    width: $tablet-wrapper;
+    margin: 0 auto;
+    background: url("../../img/rates@1x.png") 550px 450px/99px no-repeat;
+  }
+  .add-profile {
+    min-height: 560px;
+  }
+
+  .add-profile__title {
+    margin-bottom: 74px;
+    text-align: center;
+  }
+
+  .add-profile__tariffs {
+    margin-bottom: 33px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .add-profile__link {
+    border-top: 1px #edeff6 solid;
+    min-height: 67px;
+    align-content: baseline;
+    display: flex;
+  }
+
+  .add-profile__business {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #132576;
+    padding-left: 90px;
+  }
+
+  .add-profile__number {
+    margin-right: 20px;
+    order: -1;
+    width: 67px;
+    height: 67px;
+    border-radius: 100%;
+    text-align: center;
+  }
+
+  .add-profile__price {
+    margin-left: auto; 
+  }
+}
+
 @media (min-width: $desktop-width) {
   
   .add-profile {
@@ -63,15 +116,11 @@
 
   .add-profile__number {
     order: -1;
-  }
-
-  .add-profile__number {
     display: block;
     width: 67px;
     height: 67px;
     border-radius: 100%;
     text-align: center;
-    vertical-align: top;
   }
 
   .add-profile__price {

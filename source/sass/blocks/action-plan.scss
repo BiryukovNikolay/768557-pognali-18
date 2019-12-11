@@ -2,6 +2,12 @@
   background-color: $dark-title;
 }
 
+@media (min-width: $tablet-width) {
+  .action-plan {
+    background-color: transparent;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .action-plan {
     background-color: transparent;

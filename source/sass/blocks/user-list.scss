@@ -36,6 +36,13 @@
   margin-bottom: 32px;
 }
 
+@media (min-width: $tablet-width) {
+
+  .user-list__authentication {
+    position: absolute;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .user-list__link {
     order: 0;

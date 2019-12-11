@@ -54,6 +54,49 @@
   justify-content: space-between;
 }
 
+@media (min-width: $tablet-width) {
+  .directions__wrapper {
+    width: $tablet-wrapper;
+    margin: 0 auto;
+    padding: 68px 35px 80px 35px;
+    background: url("../../img/flags-back@1x.png") no-repeat right 89px;
+  }
+
+  .directions__wrapper-header {
+    padding: 0;
+  }
+
+  .directions__description {
+    width: 337px;
+    font-size: 28px;
+    line-height: 33px;
+    padding-bottom: 113px;
+  }
+
+  .directions__list {
+    margin-bottom: 37px;
+  }
+
+  .directions__item {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .directions__item-wrapper {
+    flex-grow: 1;
+    order: -1;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .directions__image {
+    border-radius: 0 15px 15px 0;
+  }
+
+  .directions__card-wrapper {
+    flex-direction: column;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .directions__wrapper {
     display: flex;

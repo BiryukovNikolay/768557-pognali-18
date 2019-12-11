@@ -11,5 +11,11 @@
     font-size: 45px;
     line-height: 45px;
   }
+}
 
+@media (min-width: $tablet-width) {
+  .title-small {
+    font-size: 45px;
+    line-height: 45px;
+  }
 }

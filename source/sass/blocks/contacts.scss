@@ -32,6 +32,56 @@
   font-size: 18px;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts {
+    min-height: 285px;
+  }
+
+  .contacts__wrapper {
+    padding-top: 5px;
+    width: $tablet-wrapper;
+    margin: 0 auto;
+    padding-bottom: 85px;
+  }
+
+  .contacts__phone-mail-wrapper {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .contacts__phone {
+    padding-left: 90px;
+    margin-bottom: 45px;
+  }
+
+  .contacts__mail {
+    padding-left: 90px;
+    margin-bottom: 45px;
+  }
+
+  .contacts__title {
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .contacts__description {
+    color: #192144;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: bold;
+  }
+
+  .contacts__button {
+    border: #192144 3px solid;
+    width: 618px;
+  }
+
+}
+
 @media (min-width: $desktop-width) {
   
   .contacts__phone-mail {

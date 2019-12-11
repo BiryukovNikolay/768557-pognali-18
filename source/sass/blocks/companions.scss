@@ -17,6 +17,49 @@
   padding: 73px 25px 60px 25px;
 }
 
+@media (min-width: $tablet-width) {
+
+  .companions {
+    min-height: 1251px;
+  }
+
+  .companions__wrapper {
+    width: $tablet-wrapper;
+    margin: 0 auto;
+  }
+
+  .companions__wrapper-header {
+    margin-bottom: 62px;
+  }
+
+  .companions-description {
+    width: 423px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .companions-slogan {
+    display: block;
+    width: 258px;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .companions__list-wrapper {
+    padding: 0 35px;
+  }
+
+  .companions__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+  }
+
+  .companions__item {
+    width: 285px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   
   .companions {
