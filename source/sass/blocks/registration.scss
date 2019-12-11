@@ -1,11 +1,49 @@
+.registration__wrapper {
+  width: 270px;
+  margin: 0 auto;
+  padding-top: 70px;
+  text-align: center;
+}
+
 .registration {
   font-weight: lighter;
   background: #192144;
 }
+.registration__title {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+}
 
 .registration__description {
+  padding: 0 25px 0 35px;
   font-weight: lighter;
   color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.registration__form {
+  display: flex;
+  justify-content: center;
+}
+
+.registration__text {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 24px;
+  padding-left: 25px;
+  border-radius: 20px 0 0 20px;
+  width: 190px;
+  height: 64px;
+}
+
+.registration__button {
+  margin-left: -20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 20px 20px 20px 20px;
+  border: none;
 }
 
 .registration__link {
@@ -59,6 +97,7 @@
 
   .registration__button {
     width: 82px;
+    height: 87px;
     border-radius: 0 20px 20px 0;
     border: none;
   }

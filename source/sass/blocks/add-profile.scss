@@ -1,12 +1,25 @@
 .add-profile {
+  min-height: 425px;
+  padding: 33px 0 40px 25px;
   background-color: #edeff6;
+}
+
+.add-profile__wrapper {
+  width: 270px;
+  margin: 0 auto;
 }
 
 .add-profile__tariffs {
   @include list-style-off;
 }
 
-.add-profile__tariff a {
+.add-profile__title {
+  text-align: center;
+}
+
+.add-profile__link {
+  font-size: 14px;
+  display: flex;
   text-decoration: none;
   color: #444444;
 }
