@@ -7,62 +7,79 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="img/logo-mobile-white@1x.png" width="226" height="30" alt="Проект 'Погнали'">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button" aria-label="Открыть меню"></button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a class="visually-hidden">Главная</a>
-          </li>
-          <li class="site-list__item">
-            <a href="about.html">О сервисе</a>
-          </li>
-          <li class="site-list__item">
-            <a href="directions.html">Направления</a>
-          </li>
-          <li class="site-list__item--active">
-            <a href="#">Попутчики</a>
-          </li>
-        </ul>
-        <ul class="main-nav__list user-list">
-          <li class="user-list__phone">
-            <a href="#"></a>
-          </li>
-          <li class="user-list__mail">
-            <a href="#"></a>
-          </li>
-          <li class="user-list__authentication">
-            <a href="#"></a>
-          </li>
-        </ul>
+<header class="page-header">
+    <div class="page-header__wrapper">
+      <div class="page-header__logo-wrapper">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="img/logo-mobile-blue@1x.png" width="98" height="20" alt="Проект 'Погнали'">
+        </a>
+        <button class="page-header__toggle" type="button" aria-label="Открыть меню"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 18.6 18.6"><path fill="#cccccc" d="M11.4 9.3l6.7-6.7c.6-.6.6-1.5 0-2.1s-1.5-.6-2.1 0L9.3 7.2 2.6.4C2-.1 1-.1.4.4-.1 1-.1 2 .4 2.6l6.7 6.7L.4 16c-.6.6-.6 1.5 0 2.1s1.5.6 2.1 0l6.7-6.7 6.7 6.7c.6.6 1.5.6 2.1 0s.6-1.5 0-2.1l-6.6-6.7z"/></svg></button>
       </div>
-    </nav>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="vivisually-hidden">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="about.html">О сервисе</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Направления</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Попутчики</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__phone">
+              <a class="user-list__link" href="tel:88005558628">8 800 555-86-28</a>
+            </li>
+            <li class="user-list__mail">
+              <a class="user-list__link" href="mailto:">mail@htmlacademy.ru</a>
+            </li>
+            <li class="user-list__authentication">
+              <a class="user-list__link button-radius" href="#">Авторизация</a>
+            </li>
+          </ul>
+          <ul class="main-nav__social social__list">
+            <li class="social__item">
+            <a class="social__link social__link--facebook-header" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte-header" href="https://vk.com" aria-label="Мы в Вконтакте"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram-header" href="https://www.instagram.com" aria-label="Мы в Инстаграме"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="catalog-page">
     <h1 class="catalog-page__title">Направления</h1>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__social social">
-      <img src="img/logo-mobile-blue@1x.png" alt="Логотип 'Погнали'">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="https://www.facebook.com">Мы в Фейсбуке</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--vkontakte" href="https://vk.com">Мы в Вконтакте</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="https://www.instagram.com">Мы в Инстаграме</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано:</p>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+    <div class="page-footer__wrapper">
+      <img class="page-footer__logo" src="img/logo-mobile-blue@1x.png" alt="Логотип 'Погнали'">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com" aria-label="Мы в Вконтакте"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com" aria-label="Мы в Инстаграме"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">Разработано:</p>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </div>
     </div>
   </footer>
 </body>
