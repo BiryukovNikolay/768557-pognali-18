@@ -9,6 +9,7 @@
   font-weight: lighter;
   background: #192144;
 }
+
 .registration__title {
   display: block;
   text-align: center;
@@ -39,6 +40,7 @@
 }
 
 .registration__button {
+  background: #ffd74b;
   margin-left: -20px;
   width: 70px;
   height: 70px;
@@ -50,17 +52,12 @@
   color: #ffd74b;
 }
 
-.registration__button {
-  background: #ffd74b;
-}
-
 @media (min-width: $tablet-width) {
-  
   .registration__wrapper {
     width: $tablet-wrapper;
     margin: 0 auto;
   }
-  
+
   .registration {
     min-height: 360px;
     padding-top: 72px;
@@ -105,7 +102,6 @@
 
 
 @media (min-width: $desktop-width) {
-  
   .registration {
     min-height: 450px;
     padding: 108px 70px 40px 70px;
@@ -127,6 +123,7 @@
     display: flex;
     justify-content: center;
   }
+
   .registration__text {
     font-family: inherit;
     font-weight: bold;

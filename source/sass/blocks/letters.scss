@@ -22,12 +22,11 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .letters {
     font-size: 60px;
     line-height: 24px;
   }
-  
+
   .letters__item {
     color: rgba(25, 33, 68, 0.2);
     line-height: 0;
@@ -38,9 +37,8 @@
     background-color: inherit;
     border: none;
   }
-  
+
   .letters__item--checked {
     color: #192144;
   }
 }
-

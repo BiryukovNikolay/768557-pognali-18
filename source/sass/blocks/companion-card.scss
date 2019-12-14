@@ -12,6 +12,7 @@
 .companion-card__wrapper {
   padding: 26px 40px 21px 40px;
   background-color: #ffffff;
+  border-radius: 0 0 25px 25px;
 }
 
 .companion-card__tags {
@@ -29,15 +30,9 @@
   border-radius: 25px 25px 0 0;
 }
 
-.companion-card__wrapper {
-  border-radius: 0 0 25px 25px;
-}
-
 @media (min-width: $desktop-width) {
-
   .companion-card {
     width: 285px;
     min-height: 482px;
   }
-
 }

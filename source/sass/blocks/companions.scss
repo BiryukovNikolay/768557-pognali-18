@@ -18,7 +18,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .companions {
     min-height: 1251px;
   }
@@ -61,10 +60,10 @@
 }
 
 @media (min-width: $desktop-width) {
-  
   .companions {
     border-radius: 0 0 50px 50px;
   }
+
   .companions__wrapper {
     width: $desktop-wrapper;
     display: flex;

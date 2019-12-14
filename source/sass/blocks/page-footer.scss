@@ -23,8 +23,7 @@
 }
 
 @media (min-width: $tablet-width) {
-
-.page-footer__wrapper {
+  .page-footer__wrapper {
     width: $tablet-wrapper;
     flex-direction: row;
     justify-content: space-between;
@@ -37,7 +36,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  
   .page-footer__wrapper {
     width: $desktop-wrapper;
     margin: 0 auto;

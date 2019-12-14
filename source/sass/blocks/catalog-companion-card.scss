@@ -1,11 +1,13 @@
 .catalog-companion-card {
   background-color: #ffffff;
+  border-radius: 25px;
+  padding: 15px 0 21px 0;
 }
 
 .catalog-companion-card__title {
   text-align: left;
   margin-bottom: 10px;
-  line-height: 20px; 
+  line-height: 20px;
   font-size: 20px;
   font-weight: bold;
   color: #1d2e5b;
@@ -64,14 +66,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
-
-.catalog-companion-card {
-  border-radius: 25px;
-  padding: 15px 0 21px 0;
-}
-
-.catalog-companion-card__header {
   padding: 0 20px 0 18px;
 }
 

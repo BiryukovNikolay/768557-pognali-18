@@ -102,11 +102,9 @@
     border: #192144 3px solid;
     width: 618px;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-  
   .contacts__phone-mail {
     min-height: 300px;
     border-radius: 0 0 50px 50px;
@@ -121,6 +119,10 @@
   .contacts__wrapper {
     width: $desktop-wrapper;
     margin: 0 auto;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: 60px 0 0 50px;
   }
 
   .contacts__title {
@@ -138,20 +140,13 @@
     line-height: 28px;
   }
 
-  .contacts__wrapper {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-    padding: 60px 0 0 50px;
+  .contacts__description {
+    font-size: 28px;
+    line-height: 28px;
+    color: #192144;
   }
-   
-   .contacts__description {
-     font-size: 28px;
-     line-height: 28px;
-     color: #192144;
-   }
 
-   .contacts__button {
-     border: #192144 3px solid;
-   }
+  .contacts__button {
+    border: #192144 3px solid;
+  }
 }

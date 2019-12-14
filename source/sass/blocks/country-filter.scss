@@ -34,7 +34,6 @@
 }
 
 @media (min-width: $tablet-width) {
- 
   .country-filter__wrapper {
     width: $tablet-content-wrapper;
   }
@@ -70,10 +69,9 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .country-filter__wrapper {
     width: $desktop-wrapper;
-  } 
+  }
 
   .country-filter__title-block {
     display: block;
@@ -96,7 +94,7 @@
     scroll-margin-right: 35px;
   }
 
-   .country-filter__button {
+  .country-filter__button {
     width: 100%;
   }
 }

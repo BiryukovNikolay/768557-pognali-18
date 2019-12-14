@@ -13,15 +13,11 @@
 }
 
 .companions-filter__title--small {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .companions-filter__hidden-menu {
   border-top: #f3c72b 1px solid;
-}
-
-.companions-filter__title--small {
-  font-size: 16px;
 }
 
 .companions-filter__list {
@@ -40,13 +36,12 @@
   background-color: #ffffff;
   width: 100%;
 }
- 
+
 .companions-filter__interval {
   display: flex;
 }
 
 @media (min-width: $tablet-width) {
-
   .companions-filter {
     min-height: 555px;
     padding: 40px 30px 40px 30px;
@@ -68,25 +63,22 @@
   .companions-filter__hidden-menu {
     display: flex;
     align-items: baseline;
+    border: none;
   }
 
   .companions-filter__list {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    
+
     li {
       width: 33%;
     }
-    
+
     label {
       line-height: 20px;
       font-size: 20px;
     }
-  }
-
-  .companions-filter__hidden-menu {
-    border: none;
   }
 
   .companions-filter__interval {
@@ -97,24 +89,22 @@
     font-size: 20px;
     line-height: 30px;
   }
-
 }
 
-@media (min-width: $desktop-width) { 
-  
+@media (min-width: $desktop-width) {
   .companions-filter {
     order: 1;
     align-self: flex-start;
     width: 21%;
     padding: 48px;
   }
-  
+
   .companions-filter__title {
     width: 55%;
   }
 
   .companions-filter__list {
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .companions-filter__hidden-menu {

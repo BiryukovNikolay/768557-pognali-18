@@ -2,7 +2,7 @@
   min-width: 320px;
   min-height: 570px;
   background-color: #ffffff;
-  padding: 20px 0px 40px 0px;
+  padding: 20px 0 40px 0;
 }
 
 .page-header__toggle {
@@ -20,17 +20,16 @@
 
 
 @media (min-width: $tablet-width) {
-  
   .page-header {
     min-height: 910px;
-    padding: 45px 0px 80px 0px;
+    padding: 45px 0 80px 0;
   }
 
   .page-header__wrapper {
     display: flex;
     width: $tablet-wrapper;
     margin: 0 auto;
-    flex-direction: column; 
+    flex-direction: column;
   }
 
   .page-header__logo-wrapper {
@@ -44,8 +43,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  
-  .page-header{
+  .page-header {
     background-color: $dark-title;
     min-height: 100px;
     padding: 60px 0 0 0;
