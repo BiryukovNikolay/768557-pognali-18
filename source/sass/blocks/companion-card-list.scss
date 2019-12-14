@@ -1,3 +1,7 @@
 .companion-card-list {
   @include list-style-off;
 }
+
+.companion-card-list__item {
+  margin-bottom: 10px;
+}
