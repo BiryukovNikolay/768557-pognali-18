@@ -2,13 +2,43 @@
   @include list-style-off;
   font-size: 14px;
   font-weight: 500;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .letters__item {
+  line-height: 42px;
+  text-align: center;
+  display: block;
+  width: 43px;
+  height: 42px;
   background-color: #ffffff;
+  border: 1px #cbced9 solid;
 }
 
 .letters__item--checked {
   color: #ffffff;
   background-color: #1d2e5b;
+}
+
+@media (min-width: $tablet-width) {
+  .letters {
+    font-size: 60px;
+    line-height: 24px;
+  }
+
+  .letters__item {
+    color: rgba(25, 33, 68, 0.2);
+    line-height: 0;
+    text-align: center;
+    display: block;
+    width: 69px;
+    height: 69px;
+    background-color: inherit;
+    border: none;
+  }
+
+  .letters__item--checked {
+    color: #192144;
+  }
 }

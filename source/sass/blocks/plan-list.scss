@@ -1,12 +1,20 @@
 .plan-list {
   @include list-style-off;
+  display: block;
   color: #161c35;
   font-weight: bold;
   font-size: 18px;
+  width: 270px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 .plan-list__item {
+  padding: 23px 96px 23px 25px;
+
   &:first-child {
+    border-radius: 20px 20px 0 0;
     background-color: #ff8d30;
   }
 
@@ -19,6 +27,67 @@
   }
 
   &:nth-child(4) {
+    border-radius: 0 0 20px 20px;
     background-color: #ffd74b;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .plan-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 688px;
+  }
+
+  .plan-list__item {
+    display: block;
+    width: 223px;
+
+    &:first-child {
+      border-radius: 0 0 0 0;
+    }
+
+    &:nth-child(2) {
+      border-radius: 0 0 0 0;
+    }
+
+    &:nth-child(3) {
+      border-radius: 0 0 0 0;
+    }
+
+    &:nth-child(4) {
+      margin-left: 0;
+      border-radius: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .plan-list {
+    flex-wrap: nowrap;
+    width: 1320px;
+  }
+
+  .plan-list__item {
+    width: 330px;
+
+    &:first-child {
+      border-radius: 20px 0 0 20px;
+    }
+
+    &:nth-child(2) {
+      margin-left: -20px;
+      border-radius: 20px 0 0 20px;
+    }
+
+    &:nth-child(3) {
+      margin-left: -20px;
+      border-radius: 20px 0 0 20px;
+    }
+
+    &:nth-child(4) {
+      margin-left: -20px;
+      border-radius: 20px;
+    }
   }
 }

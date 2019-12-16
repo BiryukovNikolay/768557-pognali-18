@@ -1,5 +1,79 @@
 .about {
-  background: url("../../img/about-mobile@1x.png") no-repeat;
+  background: url("../../img/about-mobile@1x.png") no-repeat #192144;
   color: white;
   font-size: 16px;
+}
+
+.about__wrapper {
+  width: 270px;
+  margin: 0 auto;
+  padding: 35px 0 84px 0;
+}
+
+.about__description {
+  font-weight: 300;
+}
+
+.about__slogan {
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .about__wrapper {
+    padding-top: 180px;
+    width: $tablet-wrapper;
+    margin: 0 auto;
+  }
+
+  .about {
+    background: url("../../img/about-tablet@1x.png") right no-repeat #192144;
+    min-height: 920px;
+  }
+
+  .about__left-block {
+    width: 340px;
+  }
+
+  .about__button {
+    max-width: 274px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    background: none;
+    border-radius: 0 0 50px 50px;
+    background-color: #192144;
+  }
+
+  .about__wrapper {
+    background: url("../../img/about-desktop@1x.png") bottom right no-repeat;
+    width: 1320px;
+    min-height: 750px;
+    padding: 0;
+  }
+
+  .about__left-block {
+    width: 690px;
+    padding: 96px 0 163px 70px;
+  }
+
+  .about-title {
+    margin-bottom: 61px;
+  }
+
+  .about__description {
+    display: block;
+    margin-bottom: 44px;
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .about__slogan {
+    display: block;
+    font-size: 21px;
+    line-height: 25px;
+    width: 415px;
+    margin-bottom: 85px;
+  }
 }

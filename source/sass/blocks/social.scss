@@ -1,18 +1,27 @@
-.page-footer {
-  font-weight: lighter;
-}
-
 .social__list {
   @include list-style-off;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
 }
 
-.page-footer__slogan {
-  font-size: 24px;
-  color: #192144;
-  font-weight: bold;
+.social__link {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 12px;
 }
 
-.copyright__text {
-  color: #444444;
-  font-size: 16px;
+.social__link--facebook-header {
+  background: url("../../img/facebook.svg") no-repeat;
+  background-position: center;
+}
+
+.social__link--vkontakte-header {
+  background: url("../../img/vk.svg") no-repeat;
+  background-position-y: center;
+}
+
+.social__link--instagram-header {
+  background: url("../../img/instagram.svg") no-repeat;
 }
