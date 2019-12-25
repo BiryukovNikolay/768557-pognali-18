@@ -1,9 +1,13 @@
 .user-list {
   @include list-style-off;
-  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
+  &--hidden {
+    flex-direction: row;
+    position: absolute;
+    top: 420px;
+  }
 }
 
 .user-list a {
@@ -11,41 +15,188 @@
   text-decoration: none;
 }
 
+.user-list__btn {
+  padding: 20px 0 20px 0;
+  margin-bottom: 50px;
+  &--hidden {
+    margin: 0;
+    height: 50px;
+    width: 170px;
+  }
+}
+
 .user-list__link {
   color: #192144;
   font-weight: bold;
+  padding: 14px 0 14px 0;
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #121936;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+  }
+
+  &--hidden {
+    font-size: 28px;
+    padding: 20px 0 20px 0;
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }
+
+.user-list__link--mail {
+  text-transform: uppercase;
+  &::before {
+    background: url("../../img/contacts-mail.svg") center no-repeat;
+    background-size: 20px 15px;
+  }
+
+  &--hidden {
+    &::before {
+      background: url("../../img/topmenu-mail.svg") center no-repeat;
+      background-color: #ffbd30;
+      background-size: 18px 14px;
+    }
+  }
+}
+
+.user-list__link--phone {
+  &::before {
+    background: url("../../img/contacts-phone.svg") center no-repeat;
+    background-size: 20px 20px;
+  }
+  &--hidden {
+    &::before {
+      background: url("../../img/topmenu-phone.svg") center no-repeat;
+      background-color: #ff8d30;
+      background-size: 18px 18px;
+    }
+  }
+}
+
 
 .user-list__authentication {
   font-size: 16px;
   text-transform: uppercase;
   color: $dark-title;
   order: -1;
-  margin-bottom: 50px;
+  &--hidden {
+    flex-grow: 1;
+    margin: 0;
+    order: 0;
+  }
 }
 
 .user-list__mail,
 .user-list__phone {
+  position: relative;
   text-align: left;
   font-weight: bold;
   font-size: 16px;
-  margin-left: 61px;
+  padding-left: 61px;
+  &--hidden {
+    padding-left: 50px; 
+  }
 }
 
-.user-list__phone {
-  margin-bottom: 32px;
-}
+.user-list__link-description--hidden {
+    display: none;
+  }
+
+// Стили для скрытого меню header (--hidden)
+
+
 
 @media (min-width: $tablet-width) {
   .user-list__authentication {
-    position: absolute;
+    align-self: flex-end;
+    margin-bottom: 380px;
+    &--hidden {
+      margin: 0;
+    }
+  }
+
+  .user-list {
+    margin-top: -468px;
+    &--hidden {
+      position: static;
+      margin: 0;
+    }
+  }
+
+  .user-list__btn {
+    width: 190px;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    height: 50px;
+  }
+
+  .user-list__mail, .user-list__phone {
+    padding-left: 90px;
+    
+    &--hidden {
+      display: none;
+    }
+  }
+
+  .user-list__link {
+    font-size: 28px;
+    padding: 20px 0 20px 0;
+
+    &::before {
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .user-list__link--mail {
+  text-transform: uppercase;
+    &::before {
+      background-size: 27px 20px;
+    }
+  }
+
+  .user-list__link--phone {
+    &::before {
+      background-size: 30px 30px;
+    }
+  }
+
+  .user-list__btn {
+    padding: 12px 0 0 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .user-list {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  .user-list__authentication {
+    margin-bottom: 0;
+  }
+
+  .user-list__link-description {
+    display: none;
+  }
+
+  .user-list__mail, .user-list__phone {
+    padding-left: 0;
+  }
+  
   .user-list__link {
+    width: 50px;
+    height: 50px;
     order: 0;
-    padding: 17px 31px 14px 29px;
   }
 
   .user-list__authentication {
@@ -56,4 +207,36 @@
   .user-list__phone {
     margin-bottom: 0;
   }
+
+  .user-list__btn {
+    margin: 0;
+  }
+
+  .user-list__link {
+    font-size: 28px;
+    padding: 20px 0 20px 0;
+
+    &::before {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  .user-list__link--mail {
+  text-transform: uppercase;
+    &::before {
+      background: url("../../img/topmenu-mail.svg") center no-repeat;
+      background-color: #ffbd30;
+      background-size: 18px 14px;
+    }
+  }
+
+  .user-list__link--phone {
+    &::before {
+      background: url("../../img/topmenu-phone.svg") center no-repeat;
+      background-color: #ff8d30;
+      background-size: 18px 18px;
+    }
+  }
 }
+

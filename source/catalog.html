@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/min-normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,31 +19,34 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
+              <a class="site-list__line"></a>
+            </li>
+            <li class="site-list__item">
               <a class="vivisually-hidden">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="about.html">О сервисе</a>
+              <a href="index.html">О сервисе</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="form.html">Направления</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
+          <ul class="main-nav__user-list user-list">
             <li class="user-list__phone">
-              <a class="user-list__link" href="tel:88005558628">8 800 555-86-28</a>
+              <a class="user-list__link user-list__link--phone" href="tel:+78005558628"><span class="user-list__link-description">800 555-86-28</span></a>
             </li>
             <li class="user-list__mail">
-              <a class="user-list__link" href="mailto:">mail@htmlacademy.ru</a>
+              <a class="user-list__link  user-list__link--mail" href="mailto: mail@htmlacademy.ru"><span class="user-list__link-description">mail@htmlacademy.ru</span></a>
             </li>
             <li class="user-list__authentication">
-              <a class="user-list__link button-radius" href="#">Авторизация</a>
+              <a class="user-list__btn button-radius" href="#">Авторизация</a>
             </li>
           </ul>
-          <ul class="main-nav__social social__list">
+          <ul class="main-nav__social social">
             <li class="social__item">
             <a class="social__link social__link--facebook-header" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"></a>
           </li>
@@ -376,19 +380,19 @@
       <div class="page-footer__social social">
         <ul class="social__list">
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"></a>
+            <a class="page-footer__social-link social__link social__link--facebook" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com" aria-label="Мы в Вконтакте"></a>
+            <a class="page-footer__social-link social__link social__link--vkontakte" href="https://vk.com" aria-label="Мы в Вконтакте"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com" aria-label="Мы в Инстаграме"></a>
+            <a class="page-footer__social-link social__link social__link--instagram" href="https://www.instagram.com" aria-label="Мы в Инстаграме"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 34"><path d="M13.6 0h-.2L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm5.7 16.8l-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8L25 13.5l-4.5 2.6-7.1-4.2v1.4l5.9 3.5zM1.9 15.1l11.4 6.8v1l-8-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.9V17l3.4-2v10l-11.6 6.9-11.4-7v-9.8zm0-3v-9l11.6-1.2 11.6 1.2v9L13.5 5.3v-.1h-.2v.1L1.9 12.1z" fill="#231f20"/></svg></a>
       </div>
     </div>
   </footer>

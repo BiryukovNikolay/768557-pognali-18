@@ -1,0 +1,131 @@
+.my-plans {
+  min-height: 456px;
+  background-color: #dfe3f0;
+  border-radius: 25px 25px 0 0;
+  padding: 28px 0 65px 0;
+}
+
+.my-plans__list {
+  @include list-style-off;
+}
+
+.my-plans__title {
+  color: #1d2e5b;
+}
+
+.my-plans__item {
+  background-color: #ffffff;
+  min-height: 154px;
+  border-radius: 25px;
+  padding: 25px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-transform: uppercase; 
+}
+
+.my-plans__item-header {
+  display: flex;
+  align-items: baseline;
+}
+
+.my-plans__item-title {
+  color: #1d2e5b;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.my-plans__subtitle {
+  font-size: 14px;
+  line-height: 25px;
+  letter-spacing: 1.4px;
+}
+
+.my-plans__button {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1.4px;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: $tablet-width) {
+  .my-plans__list {
+    padding: 55px 0 80px 0;
+  }
+
+  .my-plans__item {
+    min-height: 94px;
+    padding: 40px 37px 19px 37px;
+    border-radius: 10px;
+  }
+
+  .my-plans__item-title {
+    margin: 0;
+    order: -1;
+  }
+
+  .my-plans__item-header {
+    justify-content: space-between;
+  }
+
+  .my-plans__item-body {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .my-plans__subtitle {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .my-plans__title {
+    margin-left: 65px;
+  }
+
+  .my-plans__list {
+    font-size: 20px;
+    line-height: 18px;
+    margin-left: 65px;
+  }
+
+  .my-plans__item {
+    padding-top: 28px;
+    min-height: 38px;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .my-plans__item-title {
+    font-size: 24px;
+    line-height: 50px;
+    font-weight: bold;
+    padding-left: 35px;
+    order: 0;
+  }
+
+  .my-plans__item-header {
+    width: 50%;
+    justify-content: flex-start;
+  }
+
+  .my-plans__item-body {
+    width: 50%;
+  }
+
+  .my-plans__subtitle {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+
+  .my-plans__button {
+    font-size: 20px;
+    line-height: 18px;
+    letter-spacing: 2px;
+  }
+}

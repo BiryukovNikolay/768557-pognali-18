@@ -1,14 +1,20 @@
 .contacts {
-  padding: 30px 0 35px 0;
   min-height: 504px;
   font-weight: lighter;
+}
+
+.contacts__back {
+  position: relative;
+  z-index: 1;
+  margin-bottom: -30px;
   background: #192144;
+  border-radius: 0 0 40px 40px;
 }
 
 .contacts__wrapper {
   width: 270px;
   margin: 0 auto;
-  padding-top: 31px 0 35px 0;
+  padding: 31px 0 35px 0;
 }
 
 .contacts__phone-mail-wrapper {
@@ -24,28 +30,74 @@
 }
 
 .contacts__description {
+  position: relative;
   text-align: left;
-  padding-left: 60px;
+  padding: 0 60px;
   font-size: 16px;
+  line-height: 22px;
   margin-bottom: 30px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    left: 0;
+    background: url("../../img/contacts-location.svg") center no-repeat #121936;
+    background-size: 14px 22px;
+  }
 }
 
-.contacts__phone {
+.contacts__link {
   color: #ffd74b;
   text-decoration: none;
-}
-
-.contacts__mail {
-  color: #ffd74b;
-  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  padding: 14px 0 14px 14px;
+  &::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 45px;
+    height: 45px;
+    top: -1px;
+    left: -50px;
+    border-radius: 100px;
+  }
+  &--mail {
+    text-transform: uppercase;
+    &::before {
+      background: url("../../img/contacts-mail.svg") center no-repeat #121936;
+      background-size: 18px 13px;
+    }
+  }
+  &--phone {
+    &::before { 
+      background: url("../../img/contacts-phone.svg") center no-repeat #121936;
+      background-size: 18px 18px;
+    }
+  }
+  &--address {
+    color: #192144;
+    margin: 0 60px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 30px;
+    &::before {
+      background: url("../../img/contacts-location.svg") center no-repeat #121936;
+      background-size: 14px 22px;
+      top: 16px;
+    }
+  }
 }
 
 .contacts__address {
+  position: relative;
+  border-radius: 0 0 40px 40px;
+  margin-bottom: -30px;
   padding: 32px 0 35px 0;
   background: #ffd74b;
-  font-weight: bold;
-  color: #192144;
-  font-size: 16px;
 }
 
 .contacts__button {
@@ -55,14 +107,25 @@
   font-size: 18px;
 }
 
+.contacts-map {
+  z-index: -1;
+  position: relative;
+  min-height: 320px;
+  background-color: #d0deb0;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     min-height: 285px;
   }
 
+  .contacts__address {
+    padding-top: 60px;
+  }
+
   .contacts__wrapper {
     padding-top: 5px;
-    width: $tablet-wrapper;
+    width: 620px;
     margin: 0 auto;
     padding-bottom: 85px;
   }
@@ -74,15 +137,32 @@
     line-height: 28px;
   }
 
-  .contacts__phone {
-    padding-left: 90px;
-    margin-bottom: 45px;
+.contacts__link {
+  padding:  21px 0 17px 37px;
+  &::before {
+    width: 67px;
+    height: 67px;
+    top: -1px;
+    left: -50px;
   }
-
-  .contacts__mail {
-    padding-left: 90px;
-    margin-bottom: 45px;
+  &--mail {
+    &::before {
+      background-size: 27px 19px;
+    }
   }
+  &--phone {
+    &::before { 
+      background-size: 27px 27px;
+    }
+  }
+  &--address {
+    font-size: 28px;
+    line-height: 28px;
+    &::before {
+      background-size: 21px 31px;
+    }
+  }
+}
 
   .contacts__title {
     font-size: 28px;
@@ -91,21 +171,16 @@
     color: #ffffff;
   }
 
-  .contacts__description {
-    color: #192144;
-    font-size: 28px;
-    line-height: 28px;
-    font-weight: bold;
-  }
-
   .contacts__button {
-    border: #192144 3px solid;
-    width: 618px;
+   font-size: 24px;
+   line-height: 24px;
+    width: 100%;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts__phone-mail {
+    width: 100%;
     min-height: 300px;
     border-radius: 0 0 50px 50px;
     padding: 25px;
@@ -134,19 +209,40 @@
   }
 
   .contacts__phone-mail-wrapper {
+    flex-direction: row;
     display: flex;
     justify-content: space-around;
     font-size: 28px;
     line-height: 28px;
   }
 
-  .contacts__description {
-    font-size: 28px;
-    line-height: 28px;
-    color: #192144;
+  .contacts__link {
+    padding: 28px 0 17px 57px;
+    &::before {
+      width: 90px;
+      height: 90px;
+      top: -1px;
+      left: -50px;
+    }
+    &--mail {
+      &::before {
+        background-size: 36px 26px;
+      }
+    }
+    &--phone {
+      &::before { 
+        background-size: 36px 36px;
+      }
+    }
+    &--address {
+      margin-left: 160px;
+      &::before  {
+        background-size: 28px 43px;
+      }
+    }
   }
 
   .contacts__button {
-    border: #192144 3px solid;
+    width: 324px;
   }
 }

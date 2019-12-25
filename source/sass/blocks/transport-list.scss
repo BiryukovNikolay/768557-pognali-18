@@ -1,0 +1,11 @@
+.transport-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transport-list__icon {
+  fill: rgba(0,0,0,0.15);
+  &--active {
+    fill: #1d2e5b;
+  }
+}
