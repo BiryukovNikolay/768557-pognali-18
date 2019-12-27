@@ -13,7 +13,7 @@
 .plan-list__item {
   margin-top: -20px;
   min-height: 100px;
-  background-color: #ffd74b;
+  background-color: $yellow-background;
   padding: 23px 23px 23px 25px;
   display: flex;
   justify-content: space-between;
@@ -21,7 +21,7 @@
 
   &:first-child {
     margin-top: 0;
-    background-color: #ff8d30;
+    background-color: $bright-title;
   }
 
   &:nth-child(2) {
@@ -35,7 +35,7 @@
   &:last-child {
     min-height: 80px;
     border-radius: 20px 20px 20px 20px;
-    background-color: #ffd74b;
+    background-color: $yellow-background;
   }
 }
 

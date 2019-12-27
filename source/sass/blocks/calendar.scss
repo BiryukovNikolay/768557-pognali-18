@@ -36,7 +36,7 @@
 }
 
 .calendar__weekday {
-  color: #444444;
+  color: $soft-text;
 }
 
 .calendar__weekday--weekend {
@@ -44,8 +44,8 @@
 }
 
 .calendar__day {
-  background-color: #edeff6;
-  color: #444444;
+  background-color: $main-background;
+  color: $soft-text;
 
   &--disabled {
     color: rgba(68, 68, 68, 0.3);

@@ -4,7 +4,26 @@
 }
 
 @mixin title-small {
-  color: #ff8d30;
+  color: $bright-title;
   font-weight: bold;
   margin: 0;
+}
+
+@mixin block-radius {
+  border-radius: 0 0 25px 25px;
+  margin-bottom: -20px;
+}
+
+@media (min-width: $tablet-width) {
+  @mixin block-radius {
+    border-radius: 0 0 40px 40px;
+    margin-bottom: -30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  @mixin block-radius {
+    border-radius: 0 0 60px 60px;
+    margin-bottom: -50px;
+  }
 }

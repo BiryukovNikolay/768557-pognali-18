@@ -70,14 +70,14 @@
 
 .companion-card__tags {
   text-align: center;
-  color: #444444;
+  color: $soft-text;
 }
 
 .companions__button {
   font-size: 18px;
   color: $dark-title;
   text-decoration: none;
-  background-color: #ffd74b;
+  background-color: $yellow-background;
 }
 
 .companion-card__avatar {

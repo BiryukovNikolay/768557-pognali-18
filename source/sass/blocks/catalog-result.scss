@@ -41,7 +41,7 @@
 
   &--back {
     border-radius: 20px 0 0 20px;
-    border-right: #edeff6 1px solid;
+    border-right: $main-background 1px solid;
   }
 
   &--forward {
@@ -81,7 +81,7 @@
   }
 
   .catalog-result__page--active {
-    background-color: #ffd74b;
+    background-color: $yellow-background;
   }
 
   .catalog-result__more-button {
@@ -98,7 +98,7 @@
 
   .catalog-result__btn {
     width: 50px;
-    background-color: #edeff6;
+    background-color: $main-background;
   }
 }
 

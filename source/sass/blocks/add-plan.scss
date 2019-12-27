@@ -28,7 +28,7 @@
 }
 
 .add-plan__description {
-  color: #444444;
+  color: $soft-text;
   font-size: 16px;
   line-height: 22px;
   margin-bottom: 26px;
@@ -93,7 +93,7 @@
   padding-left: 40px;
   font-size: 15px;
   line-height: 15px;
-  color: #444444;
+  color: $soft-text;
   margin-bottom: 21px;
 }
 
@@ -145,7 +145,7 @@
   border-radius: 5px;
   border-right: #cbced9 1px solid;
   text-align: left;
-  background-color: #edeff6;
+  background-color: $main-background;
 }
 
 .add-plan__hidden-menu {
@@ -176,7 +176,7 @@
   display: block;
   height: 20px;
   width: 20px;
-  background-color: #edeff6;
+  background-color: $main-background;
   border: none;
   border-radius: 50px;
 }
@@ -203,7 +203,7 @@
   padding: 13px 15px;
   font-size: 16px;
   line-height: 22px;
-  color: #444444;
+  color: $soft-text;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,12 +1,11 @@
 .about {
+  @include block-radius;
   position: relative;
   z-index: 5;
   background: url("../../img/about-mobile@1x.png") no-repeat #192144;
   color: white;
   font-size: 16px;
   line-height: 22px;
-  border-radius: 0 0 40px 40px;
-  margin-bottom: -40px;
 }
 
 .about__wrapper {
@@ -83,7 +82,6 @@
 @media (min-width: $desktop-width) {
   .about {
     background: none;
-    border-radius: 0 0 50px 50px;
     background-color: #192144;
 
     &::before {

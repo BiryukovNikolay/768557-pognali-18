@@ -1,11 +1,10 @@
 .add-profile {
+  @include block-radius;
   position: relative;
   z-index: 2;
-  margin-bottom: -40px;
-  border-radius: 0 0 40px 40px;
   min-height: 425px;
   padding: 33px 0 40px 25px;
-  background: url("../../img/rates@1x.png") no-repeat 92% 40px #edeff6;
+  background: url("../../img/rates@1x.png") no-repeat 92% 40px $main-background;
   background-size: 99px 99px;
 }
 
@@ -30,7 +29,7 @@
   font-size: 16px;
   line-height: 22px;
   text-decoration: none;
-  color: #444444;
+  color: $soft-text;
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
