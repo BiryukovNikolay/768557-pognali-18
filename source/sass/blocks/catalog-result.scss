@@ -1,13 +1,25 @@
 .catalog-result__more-button {
+  position: relative;
+  display: block;
+  width: fit-content;
   color: #1d2e5b;
   font-size: 17px;
   line-height: 30px;
   font-weight: bold;
   text-decoration: none;
+  text-transform: uppercase;
   padding-left: 33px;
   margin: 0 auto;
-  display: block;
-  width: 148px;
+  margin-bottom: 27px;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top: 4px;
+    border: #1d2e5b 1px solid;
+  }
 }
 
 .catalog-result__companion-card-list {
@@ -23,15 +35,15 @@
   padding: 0;
   width: 50%;
   min-height: 50px;
-  border: #444444 1px solid;
-}
-
-.catalog-result__btn--back {
-  border-radius: 10px 0 0 10px;
-}
-
-.catalog-result__btn--forward {
-  border-radius: 0 10px 10px 0;
+  background-color: #ffffff;
+  border: none;
+  &--back {
+    border-radius: 20px 0 0 20px;
+    border-right: #edeff6 1px solid;
+  }
+  &--forward {
+    border-radius: 0 20px 20px 0;
+  }
 }
 
 .catalog-result__pages-list {
@@ -69,8 +81,20 @@
     background-color: #ffd74b;
   }
 
+  .catalog-result__more-button {
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 52px;
+    &::before {
+      top: 0;
+      width: 27px;
+      height: 27px;
+    }
+  }
+
   .catalog-result__btn {
     width: 50px;
+    background-color: #edeff6;
   }
 }
 
