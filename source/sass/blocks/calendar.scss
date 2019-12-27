@@ -28,6 +28,7 @@
   margin: 0 auto;
   border-collapse: collapse;
   text-align: center;
+
   td {
     height: 30px;
     border: #d4d9eb 1px solid;
@@ -45,15 +46,15 @@
 .calendar__day {
   background-color: #edeff6;
   color: #444444;
+
   &--disabled {
     color: rgba(68, 68, 68, 0.3);
+    background-color: #ffffff;
   }
+
   &--active {
     color: #ffffff;
     background-color: #1d2e5b;
-  }
-  &--disabled {
-    background-color: #ffffff;
   }
 
   &--focus {
@@ -69,6 +70,7 @@
   .calendar__title {
     font-size: 36px;
   }
+
   .calendar__button {
     height: 85px;
     width: 85px;
@@ -79,20 +81,23 @@
     line-height: 18px;
     letter-spacing: 2px;
     width: 100%;
+
     td {
       height: 70px;
     }
+
     tr {
       font-size: 18px;
       line-height: 30px;
       letter-spacing: 1.8px;
     }
-  }  
+  }
 }
 
 @media (min-width: $desktop-width) {
   .calendar__table {
     text-align: left;
+
     td {
       font-weight: normal;
       position: relative;
@@ -101,7 +106,7 @@
       height: 72px;
     }
   }
-  
+
   .calendar__day--first {
     display: inline;
   }
@@ -109,16 +114,16 @@
   .calendar__day--check-inn {
     &::after {
       position: absolute;
-      content: 'Заезд';
+      content: "Заезд";
       display: block;
       top: 36px;
     }
   }
-  
+
   .calendar__day--check-out {
     &::after {
       position: absolute;
-      content: 'Выезд';
+      content: "Выезд";
       display: block;
       top: 36px;
     }

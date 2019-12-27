@@ -8,12 +8,12 @@
   position: absolute;
   top: 16px;
   left: 16px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 5px 0;
 }
 
 .companion-card__level-value {
-  border-bottom:  rgba(255,255,255,0.3) 1px solid;
+  border-bottom: rgba(255, 255, 255, 0.3) 1px solid;
   display: block;
   width: 31px;
   font-size: 24px;
@@ -25,7 +25,7 @@
   padding-top: 2px;
   font-size: 14px;
   line-height: 14px;
-  color:  rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .companion-card-title {
@@ -41,7 +41,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 5px;
     height: 5px;
     background-color: #f97676;
@@ -89,10 +89,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .companion-card {
-    margin-bottom: 40px;
-  }
-
   .companion-card-list__item {
     display: flex;
     flex-direction: column;
@@ -101,7 +97,6 @@
 
 @media (min-width: $desktop-width) {
   .companion-card {
-    margin-bottom: 30px;
     width: 285px;
     min-height: 482px;
   }

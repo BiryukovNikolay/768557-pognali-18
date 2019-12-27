@@ -85,7 +85,7 @@
     min-height: 560px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 198px;
       height: 285px;
@@ -124,7 +124,6 @@
     padding-right: 33px;
     font-size: 28px;
     line-height: 33px;
-
   }
 
   .add-profile__business {
@@ -133,6 +132,19 @@
     line-height: 20px;
     color: #132576;
     padding-left: 90px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 67px;
+      background: url("../../img/business.svg") center center no-repeat  #e2e5f2;
+      background-size: 17px 21px;
+      border-radius: 100px;
+      top: -24px;
+      left: 0;
+    }
   }
 
   .add-profile__name {
@@ -157,32 +169,14 @@
     text-align: right;
     margin-left: auto;
   }
-
-
-  .add-profile__business {
-    position: relative;
-    font-size: 20px;
-    line-height: 20px;
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 67px;
-      height: 67px;
-      background: url("../../img/business.svg") center center no-repeat  #e2e5f2;
-      background-size: 17px 21px;
-      border-radius: 100px;
-      top: -24px;
-      left: 0px;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
   .add-profile {
     min-height: 750px;
+
     &::before {
-      content: '';
+      content: "";
       width: 444px;
       height: 300px;
       top: 340px;

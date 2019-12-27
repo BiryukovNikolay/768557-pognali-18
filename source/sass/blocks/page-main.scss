@@ -1,16 +1,16 @@
 .page-main {
-    width: 100%;
-  }
+  width: 100%;
+}
 
- .page-main__back {
-   background-color: #161c36;
- } 
+.page-main__back {
+  background-color: #161c36;
+}
 
 @media (min-width: $tablet-width) {
   .page-main {
     min-height: 1100px;
   }
-  
+
   .page-main__wrapper {
     height: 890px;
     background: url("../../img/traveller-illustration-tablet@1x.png") no-repeat center 300px, url("../../img/globe-back-tablet@1x.jpg") no-repeat bottom center #182044;

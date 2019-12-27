@@ -1,7 +1,6 @@
 .directions {
   position: relative;
   background: #edeff6;
-  border-radius: 20px;
   padding-bottom: 30px;
   z-index: 4;
   border-radius: 0 0 40px 40px;
@@ -55,14 +54,14 @@
   padding-left: 20px;
   color: rgba(68, 68, 68, 0.3);
   position: relative;
-  
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 11px;
     height: 11px;
     background: url("../../img/user.svg") no-repeat;
-    left: 0; 
+    left: 0;
   }
 }
 
@@ -87,8 +86,9 @@
 
   .directions__wrapper-header {
     padding: 0;
+
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 141px;
       height: 141px;
@@ -139,10 +139,10 @@
     padding-left: 31px;
 
     &::before {
-    width: 21px;
-    height: 21px;
-    left: 0; 
-  }
+      width: 21px;
+      height: 21px;
+      left: 0;
+    }
   }
 
   .directions__slogan {

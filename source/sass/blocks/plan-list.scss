@@ -64,9 +64,9 @@
     width: 51%;
     min-height: 140px;
     border-radius: 0 0 0 0;
-    
+
     &:nth-child(even) {
-      margin-left: -15px
+      margin-left: -15px;
     }
 
     &:first-child {
@@ -93,7 +93,7 @@
   }
 
   .plan-list__description {
-  width: fit-content; 
+    width: fit-content;
   }
 }
 

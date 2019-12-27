@@ -32,8 +32,9 @@
 @media (min-width: $tablet-width) {
   .about {
     background: #192144;
+
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: $tablet-wrapper;
       height: 213px;
@@ -85,7 +86,7 @@
     border-radius: 0 0 50px 50px;
     background-color: #192144;
 
-     &::before {
+    &::before {
       width: 213px;
       height: 213px;
       top: 71px;

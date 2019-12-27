@@ -11,14 +11,16 @@
   width: 100%;
 }
 
-@media (min-width: $tablet-width) {  
+@media (min-width: $tablet-width) {
   .main-nav__list {
     text-align: left;
+    margin-bottom: 142px;
   }
 
   .main-nav__wrapper {
     width: $tablet-wrapper;
     padding: 99px 0 84px 55px;
+
     &--hidden {
       padding: 0;
       width: fit-content;
@@ -27,10 +29,6 @@
 
   .main-nav__social {
     align-self: start;
-  }
-
-  .main-nav__list {
-    margin-bottom: 142px;
   }
 }
 

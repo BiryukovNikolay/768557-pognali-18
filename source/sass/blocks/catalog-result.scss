@@ -11,8 +11,9 @@
   padding-left: 33px;
   margin: 0 auto;
   margin-bottom: 27px;
+
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 18px;
     height: 18px;
@@ -37,10 +38,12 @@
   min-height: 50px;
   background-color: #ffffff;
   border: none;
+
   &--back {
     border-radius: 20px 0 0 20px;
     border-right: #edeff6 1px solid;
   }
+
   &--forward {
     border-radius: 0 20px 20px 0;
   }
@@ -85,6 +88,7 @@
     font-size: 20px;
     line-height: 30px;
     padding-left: 52px;
+
     &::before {
       top: 0;
       width: 27px;

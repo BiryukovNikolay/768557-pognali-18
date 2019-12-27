@@ -23,21 +23,18 @@
   line-height: 40px;
   padding-top: 25px;
   margin: 0;
-  width: 100%; 
+  width: 100%;
 }
 
 .form-page__foto-level {
   display: flex;
   justify-content: space-around;
+  padding-top: 23px;
+  margin-bottom: 20px;
 }
 
 .form-page__image {
   border-radius: 300px;
-}
-
-.form-page__foto-level {
-  padding-top: 23px;
-  margin-bottom: 20px;
 }
 
 .form-page__change-button {
@@ -59,7 +56,7 @@
   text-align: center;
   padding: 0 14px;
   background-color: #edeff6;
-  margin: -10px auto 0 auto; 
+  margin: -10px auto 0 auto;
 }
 
 .form-page__border-block {
@@ -77,11 +74,10 @@
 
 .form-page__transport {
   min-height: 94px;
-  padding: 15px 25px; 
+  padding: 15px 25px;
 }
 
 @media (min-width: $tablet-width) {
-
   .form-page__wrapper {
     width: $tablet-content-wrapper;
   }
@@ -172,7 +168,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 65px;
   }
 
