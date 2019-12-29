@@ -1,5 +1,6 @@
 .catalog-page {
   background-color: #e2e5f2;
+  padding-bottom: 66px;
 }
 
 .catalog-page__wrapper {
@@ -8,8 +9,9 @@
 }
 
 .catalog-page__background {
+  @include block-radius;
+  margin-bottom: 0;
   background-color: #161c35;
-  border-radius: 0 0 50px 50px;
 }
 
 .catalog-page__title-wrapper {

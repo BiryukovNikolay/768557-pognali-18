@@ -1,5 +1,6 @@
 .main-slogan {
-  background: url("../../img/traveller-illustration-mobile@1x.png") no-repeat bottom center, url("../../img/globe-back-mobile@1x.jpg") no-repeat;
+  padding: 51px 40px 0 40px;
+  background: url("../img/traveller-illustration-mobile@1x.png") no-repeat bottom center, url("../img/globe-back-mobile@1x.jpg") no-repeat;
   min-height: 430px;
   text-align: center;
 }
@@ -14,13 +15,19 @@
 @media (min-width: $tablet-width) {
   .main-slogan {
     background: transparent;
+    padding: 80px 144px 0 144px;
+  }
+
+  .main-slogan__text {
+    font-size: 60px;
+    line-height: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-slogan {
-    display: flex;
-    background: none;
+    width: 50%;
+    padding: 80px 200px 0 60px;
   }
 
   .main-slogan__text {

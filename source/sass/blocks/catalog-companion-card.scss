@@ -1,7 +1,16 @@
 .catalog-companion-card {
+  position: relative;
   background-color: #ffffff;
   border-radius: 25px;
   padding: 15px 0 21px 0;
+}
+
+.catalog-companion-card__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 0 20px 0 18px;
+  border-bottom: $main-background 1px solid;
 }
 
 .catalog-companion-card__title {
@@ -11,27 +20,70 @@
   font-size: 20px;
   font-weight: bold;
   color: #1d2e5b;
+
+  &::before {
+    width: 6px;
+    height: 6px;
+    top: 5px;
+    right: -66px;
+  }
 }
 
 .catalog-companion-card__tags {
-  color: #444444;
+  color: $soft-text;
   line-height: 18px;
   font-size: 15px;
   width: 170px;
   padding-left: 10px;
+  text-align: left;
+}
+
+.catalog-companion-card__like {
+  position: absolute;
+  top: 55px;
+  left: 64px;
+  width: 31px;
+  height: 31px;
+  background-color: $main-background;
+  border-radius: 100px;
+  border: none;
+
+  &--active {
+    background-color: #f9eaea;
+  }
 }
 
 .catalog-companion-card__title--small {
-  width: 100px;
-  color: #444444;
+  width: fit-content;
+  background-color: #ffffff;
+  color: $soft-text;
   font-size: 15px;
   font-weight: normal;
+  margin-left: 14px;
+  margin-top: -7px;
+  padding: 0 14px 0 14px;
 }
 
 .catalog-companion-card__country-title {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
   color: #1d2e5b;
   font-size: 15px;
   font-weight: 500;
+  padding-left: 40px;
+  margin-bottom: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 18px;
+    background-color: tomato;
+    left: 0;
+    top: -4px;
+  }
 }
 
 .catalog-companion-card__wishes {
@@ -39,34 +91,53 @@
 }
 
 .catalog-companion-card__wishes-block {
-  padding: 20px 20px 20px 25px;
+  padding: 0 20px 20px 25px;
+  border-bottom: $main-background 1px solid;
 }
 
-.companion-card__transport {
+.catalog-companion-card__transport {
   @include list-style-off;
+  padding-left: 25px;
+}
+
+.catalog-companion-card__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.catalog-companion-card__right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .catalog-companion-card__transport-level {
   display: flex;
+  margin-bottom: 14px;
 }
 
 .catalog-companion-card__level-value {
+  border: none;
   color: #1d2e5b;
   font-size: 24px;
   font-weight: bold;
 }
 
+.catalog-companion-card__level-block {
+  margin-top: -4px;
+  margin-left: 20px;
+  width: 45px;
+  height: 45px;
+}
+
 .catalog-companion-card__button {
+  width: 85%;
+  margin: 0 20px;
+  padding: 13px 0;
   color: #161c35;
   font-size: 17px;
   font-weight: bold;
-}
-
-.catalog-companion-card__header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  padding: 0 20px 0 18px;
 }
 
 .catalog-companion-card__image {
@@ -76,4 +147,199 @@
 
 .catalog-companion-card__tittle-wrapper {
   width: 80px;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-companion-card {
+    margin-bottom: 40px;
+    position: relative;
+    padding: 35px 25px 25px 35px;
+  }
+
+  .catalog-companion-card__header {
+    padding: 0;
+    border: none;
+  }
+
+  .catalog-companion-card__tittle-wrapper {
+    width: fit-content;
+  }
+
+  .catalog-companion-card__head-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .catalog-companion-card__title {
+    font-size: 30px;
+    line-height: 30px;
+
+    &::before {
+      width: 7px;
+      height: 7px;
+      top: 11px;
+      right: -30px;
+    }
+  }
+
+  .catalog-companion-card__like {
+    width: 50px;
+    height: 50px;
+    top: 175px;
+    left: 391px;
+  }
+
+  .catalog-companion-card__follower {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    color: #161c35;
+    position: absolute;
+    top: 186px;
+    right: 200px;
+  }
+
+  .catalog-companion-card__tags {
+    font-size: 20px;
+    line-height: 24px;
+    width: 220px;
+    margin-top: 50px;
+    margin-left: -175px;
+  }
+
+  .catalog-companion-card__wishes-block {
+    order: 3;
+    padding: 0 20px 0 25px;
+    border: none;
+    border-top: $main-background 1px solid;
+    margin-top: 20px;
+  }
+
+  .catalog-companion-card__wishes {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .catalog-companion-card__country-title {
+    margin-right: 32px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &::before {
+      width: 35px;
+      height: 24px;
+      top: 0;
+    }
+  }
+
+  .catalog-companion-card__image {
+    width: 190px;
+    height: 190px;
+    border-radius: 10px;
+  }
+
+  .catalog-companion-card__transport-level {
+    margin-top: -200px;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .catalog-companion-card__transport {
+    flex-direction: column;
+  }
+
+  .catalog-companion-card__left,
+  .catalog-companion-card__right {
+    .catalog-companion-card__title--small {
+      display: none;
+    }
+  }
+
+  .catalog-companion-card__button {
+    width: 148px;
+    margin-top: -75px;
+    margin-left: 208px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-companion-card {
+    margin-bottom: 30px;
+    min-height: 285px;
+    padding: 0;
+    display: flex;
+  }
+
+  .catalog-companion-card__tittle-wrapper {
+    width: 36%;
+    padding: 48px 0 0 59px;
+  }
+
+  .catalog-companion-card__title {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+
+    &::before {
+      right: 295px;
+    }
+  }
+
+  .catalog-companion-card__tags {
+    margin-top: 92px;
+    margin-left: -290px;
+  }
+
+  .catalog-companion-card__image {
+    border-radius: 20px 0 0 20px;
+    width: 285px;
+    height: 285px;
+  }
+
+  .catalog-companion-card__like {
+    top: 188px;
+    left: 514px;
+  }
+
+  .catalog-companion-card__follower {
+    left: 569px;
+    top: 200px;
+  }
+
+  .catalog-companion-card__wishes-block {
+    margin: 0;
+    margin-top: -235px;
+    padding-left: 42px;
+    width: 33.6%;
+    order: 0;
+    align-self: flex-end;
+
+    h4 {
+      display: none;
+    }
+  }
+
+  .catalog-companion-card__wishes {
+    flex-direction: column;
+  }
+
+  .catalog-companion-card__transport-level {
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    margin-top: auto;
+    margin-right: 44px;
+  }
+
+  .catalog-companion-card__transport {
+    flex-direction: row;
+  }
+
+  .catalog-companion-card__button {
+    margin-left: 366px;
+    margin-top: -50px;
+    margin-bottom: 47px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

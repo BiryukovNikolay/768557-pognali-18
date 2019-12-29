@@ -1,7 +1,9 @@
 .directions {
-  background: #edeff6;
-  border-radius: 20px;
+  @include block-radius;
+  position: relative;
+  background: $main-background;
   padding-bottom: 30px;
+  z-index: 4;
 }
 
 .directions__wrapper {
@@ -18,11 +20,15 @@
 }
 
 .directions__description {
-  color: #444444;
+  color: $soft-text;
 }
 
 .directions__list {
   @include list-style-off;
+}
+
+.directions__item {
+  margin-bottom: 10px;
 }
 
 .directions__title a {
@@ -31,6 +37,9 @@
 }
 
 .directions__item-wrapper {
+  position: relative;
+  z-index: 2;
+  margin-top: -20px;
   background-color: #ffffff;
   border-radius: 15px;
   padding: 28px 24px 23px 24px;
@@ -41,7 +50,18 @@
 }
 
 .directions__views {
+  padding-left: 20px;
   color: rgba(68, 68, 68, 0.3);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background: url("../img/user.svg") no-repeat;
+    left: 0;
+  }
 }
 
 
@@ -56,14 +76,26 @@
 
 @media (min-width: $tablet-width) {
   .directions__wrapper {
+    position: relative;
     width: $tablet-wrapper;
     margin: 0 auto;
-    padding: 68px 35px 80px 35px;
-    background: url("../../img/flags-back@1x.png") no-repeat right 89px;
+    padding: 102px 35px 80px 35px;
+    background: url("../img/flags-back@1x.png") no-repeat right 89px;
   }
 
   .directions__wrapper-header {
     padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 141px;
+      height: 141px;
+      background-color: #e2e5f2;
+      border-radius: 30px;
+      top: 440px;
+      left: -5px;
+    }
   }
 
   .directions__description {
@@ -74,18 +106,48 @@
   }
 
   .directions__list {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 37px;
   }
 
   .directions__item {
     display: flex;
-    margin-bottom: 10px;
+    min-height: 140px;
+    margin-bottom: 30px;
   }
 
   .directions__item-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
     flex-grow: 1;
     order: -1;
     border-radius: 15px 0 0 15px;
+  }
+
+  .directions__title {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 6px;
+  }
+
+  .directions__views {
+    font-size: 20px;
+    padding-left: 31px;
+
+    &::before {
+      width: 21px;
+      height: 21px;
+      left: 0;
+    }
+  }
+
+  .directions__slogan {
+    position: absolute;
+    font-size: 20px;
+    top: 54px;
   }
 
   .directions__image {
@@ -93,15 +155,20 @@
   }
 
   .directions__card-wrapper {
+    height: 100%;
+    justify-content: space-between;
     flex-direction: column;
   }
 }
 
 @media (min-width: $desktop-width) {
   .directions__wrapper {
+    background: url("../img/flags-back@1x.png") no-repeat right 89px;
     display: flex;
     width: $desktop-wrapper;
     position: relative;
+    padding-top: 28px;
+    padding-bottom: 0;
   }
 
   .directions__list-wrapper {
@@ -111,9 +178,13 @@
   }
 
   .directions__wrapper-header {
-    background: url("../../img/flags-back@1x.png") no-repeat right 89px;
     width: 630px;
-    padding: 167px 0 140px 170px;
+    padding: 167px 0 140px 100px;
+
+    &::before {
+      top: 155px;
+      left: 52px;
+    }
   }
 
   .directions__description {
@@ -123,10 +194,11 @@
   }
 
   .directions__title {
-    margin-bottom: 62px;
+    margin-bottom: 43px;
   }
 
   .directions__item {
+    margin-bottom: 10px;
     display: flex;
     width: 560px;
   }
@@ -137,6 +209,7 @@
   }
 
   .directions__button {
-    position: absolute;
+    margin-left: 723px;
+    margin-top: -137px;
   }
 }

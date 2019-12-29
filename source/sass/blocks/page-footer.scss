@@ -1,3 +1,10 @@
+.page-footer {
+  margin-top: -40px;
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 40px 40px 0 0;
+}
+
 .page-footer__slogan {
   font-size: 24px;
   color: #192144;
@@ -15,9 +22,22 @@
 
 .page-footer__logo {
   width: 100px;
+  margin-bottom: 41px;
+}
+
+.page-footer__social {
+  margin-bottom: 37px;
+}
+
+.page-footer__social-link {
+  background-color: $yellow-background;
 }
 
 .page-footer__copyright {
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+  border-top: rgba(0, 0, 0, 0.55) 1px solid;
   display: flex;
   justify-content: space-between;
 }
@@ -27,7 +47,19 @@
     width: $tablet-wrapper;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
     padding: 50px 0 45px 0;
+  }
+
+  .page-footer__copyright {
+    border: none;
+    padding: 0;
+    width: 160px;
+  }
+
+  .copyright__text {
+    font-size: 20px;
+    line-height: 24px;
   }
 
   .page-footer {

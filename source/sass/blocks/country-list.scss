@@ -1,6 +1,6 @@
 .country-list {
   @include list-style-off;
-  color: #444444;
+  color: $soft-text;
   font-size: 16px;
   line-height: 22px;
   font-weight: normal;

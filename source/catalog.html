@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Погнали</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/min-normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,31 +19,34 @@
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
+              <a class="site-list__line"></a>
+            </li>
+            <li class="site-list__item">
               <a class="vivisually-hidden">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="about.html">О сервисе</a>
+              <a href="index.html">О сервисе</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="form.html">Направления</a>
             </li>
             <li class="site-list__item">
               <a href="catalog.html">Попутчики</a>
             </li>
           </ul>
-          <ul class="main-nav__list user-list">
+          <ul class="main-nav__user-list user-list">
             <li class="user-list__phone">
-              <a class="user-list__link" href="tel:88005558628">8 800 555-86-28</a>
+              <a class="user-list__link user-list__link--phone" href="tel:+78005558628"><span class="user-list__link-description">800 555-86-28</span></a>
             </li>
             <li class="user-list__mail">
-              <a class="user-list__link" href="mailto:">mail@htmlacademy.ru</a>
+              <a class="user-list__link  user-list__link--mail" href="mailto: mail@htmlacademy.ru"><span class="user-list__link-description">mail@htmlacademy.ru</span></a>
             </li>
             <li class="user-list__authentication">
-              <a class="user-list__link button-radius" href="#">Авторизация</a>
+              <a class="user-list__btn button-radius" href="#">Авторизация</a>
             </li>
           </ul>
-          <ul class="main-nav__social social__list">
+          <ul class="main-nav__social social">
             <li class="social__item">
             <a class="social__link social__link--facebook-header" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"></a>
           </li>
@@ -133,56 +137,56 @@
           <form action="https://echo.htmlacademy.ru" method="POST">
             <div class="companions-filter__wrapper">
               <div class="companions-filter__hidden-menu">
-                <button><h3 class="companions-filter__title companions-filter__title--small">Хобби</h3></button>
-                <ul class="companions-filter__list hobbie-list">
+                <button class="companions-filter__title companions-filter__title--small" type="button"><h3>Хобби</h3></button>
+                <ul class="companions-filter__list">
                   <li>
-                    <label class="hobbie-list__item"><input class="visually-hidden" type="checkbox" name="rock heavy">Спортзал</label>
+                    <label class="companions-filter__item"><input class="visually-hidden" type="checkbox" name="rock heavy">Спортзал</label>
                   </li>
                   <li>
-                    <label class="hobbie-list__item"><input class="visually-hidden" type="checkbox" name="russian rap">Кальян</label>
+                    <label class="companions-filter__item"><input class="visually-hidden" type="checkbox" name="russian rap">Кальян</label>
                   </li>
                   <li>
-                    <label class="hobbie-list__item"><input class="visually-hidden" type="checkbox" name="eurodance">Диван</label>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="companions-filter__wrapper">
-              <div class="companions-filter__hidden-menu">
-                <button><h3 class="companions-filter__title companions-filter__title--small">Музыка</h3></button>
-                <ul class="companions-filter__list music-list">
-                  <li>
-                    <label class="music-list__item"><input class="visually-hidden" type="checkbox" name="rock heavy">Тяжелый рок</label>
-                  </li>
-                  <li>
-                    <label class="music-list__item"><input class="visually-hidden" type="checkbox" name="russian rap">Русский рэп</label>
-                  </li>
-                  <li>
-                    <label class="music-list__item"><input class="visually-hidden" type="checkbox" name="eurodance">Евроденс</label>
+                    <label class="companions-filter__item"><input class="visually-hidden" type="checkbox" name="eurodance">Диван</label>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="companions-filter__wrapper">
               <div class="companions-filter__hidden-menu">
-                <button><h3 class="companions-filter__title companions-filter__title--small">Еда</h3></button>
-                <ul class="companions-filter__list food-list">
+                <button class="companions-filter__title companions-filter__title--small" type="button"><h3>Музыка</h3></button>
+                <ul class="companions-filter__list">
                   <li>
-                    <label class="food-list__item"><input class="visually-hidden" type="checkbox" name="rock heavy">Мясоед</label>
+                    <label class="companions-filter__item"><input class="visually-hidden" type="checkbox" name="rock heavy">Тяжелый рок</label>
                   </li>
                   <li>
-                    <label class="food-list__item"><input class="visually-hidden" type="checkbox" name="russian rap">Сидит на ПП</label>
+                    <label class="companions-filter__item"><input class="visually-hidden" type="checkbox" name="russian rap">Русский рэп</label>
                   </li>
                   <li>
-                    <label class="food-list__item"><input class="visually-hidden" type="checkbox" name="eurodance">Веган-сыроед</label>
+                    <label class="companions-filter__item"><input class="visually-hidden" type="checkbox" name="eurodance">Евроденс</label>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="companions-filter__wrapper">
               <div class="companions-filter__hidden-menu">
-                <button><h3 class="companions-filter__title companions-filter__title--small">Транспорт</h3></button>
-                <ul class="companions-filter__list transport-list">
+                <button class="companions-filter__title companions-filter__title--small" type="button"><h3>Еда</h3></button>
+                <ul class="companions-filter__list">
+                  <li>
+                    <label class="companions-filter__item"><input class="visually-hidden" type="checkbox" name="rock heavy">Мясоед</label>
+                  </li>
+                  <li>
+                    <label class="companions-filter__item"><input class="visually-hidden" type="checkbox" name="russian rap">Сидит на ПП</label>
+                  </li>
+                  <li>
+                    <label class="companions-filter__item"><input class="visually-hidden" type="checkbox" name="eurodance">Веган-сыроед</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="companions-filter__wrapper">
+              <div class="companions-filter__hidden-menu companions-filter__transport">
+                <button class="companions-filter__title companions-filter__title--small" type="button"><h3>Транспорт</h3></button>
+                <ul class="companions-filter__list companions-filter__list--transport transport-list">
                   <li class="transport-list__icon transport-list__icon--plane transport-list__icon--active"></li>
                   <li class="transport-list__icon transport-list__icon--train transport-list__icon--active"></li>
                   <li class="transport-list__icon transport-list__icon--cycle"></li>
@@ -191,11 +195,20 @@
               </div>
             </div>
             <div class="companions-filter__wrapper">
-              <div class="companions-filter__hidden-menu">
-                <button><h3 class="companions-filter__title companions-filter__title--small">Левел</h3></button>
-                <div class="companions-filter__interval">
-                  <label class="visually-hidden"><input type="text">От</label>
-                  <label class="visually-hidden"><input type="text">До</label>
+              <div class="companions-filter__hidden-menu companions-filter__interval-block">
+                <button class="companions-filter__title companions-filter__title--small" type="button"><h3>Левел</h3></button>
+                <div class="companions-filter__interval-wrapper">
+                  <div class="companions-filter__interval">
+                    <input class="companions-filter__interval-input" type="text" value="30">
+                    <input class="companions-filter__interval-input" type="text" value="100">
+                  </div>
+                  <div class="companions-filter__range-controls range-controls">
+                    <div class="range-controls__scale">
+                      <div class="range-controls__bar"></div>
+                    </div>
+                    <div class="range-controls__toggle range-controls__toggle--min"></div>
+                    <div class="range-controls__toggle range-controls__toggle--max"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -207,149 +220,175 @@
             <li>
               <div class="companion-card-list__item catalog-companion-card">
                 <header class="catalog-companion-card__header">
+                  <button class="catalog-companion-card__like catalog-companion-card__like--active"></button>
                   <img class="catalog-companion-card__image" src="img/firsova-mobile@1x.jpg" alt="Таня Фирсова">
                   <div class="catalog-companion-card__tittle-wrapper">
                     <h3 class="catalog-companion-card__title companion-card-title">Таня Фирсова</h3>
-                    <span>1,5M</span>
+                    <span class="catalog-companion-card__follower">1,5M</span>
                   </div>
                   <p class="catalog-companion-card__tags companion-card__tags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
                 </header>
-                <h4 class="catalog-companion-card__title--small">хочет посетить:</h4>
                 <div class="catalog-companion-card__wishes-block">
+                <h4 class="catalog-companion-card__title--small">хочет посетить:</h4>
                   <ul class="catalog-companion-card__wishes">
                     <li>
-                      <b class="catalog-companion-card__country-title">Шри-Ланка</b>
+                      <a href="#" class="catalog-companion-card__country-title">Шри-Ланка</a>
                     </li>
                     <li>
-                      <b class="catalog-companion-card__country-title">Тайланд</b>
+                      <a href="#" class="catalog-companion-card__country-title">Тайланд</a>
                     </li>
                     <li>
-                      <b class="catalog-companion-card__country-title">Сейшелы</b>
+                      <a href="#" class="catalog-companion-card__country-title">Сейшелы</a>
                     </li>
                   </ul>
                 </div>
                 <div class="catalog-companion-card__transport-level">
-                  <h4 class="catalog-companion-card__title--small">транспорт:</h4>
-                  <ul class="companion-card__transport transport-list">
-                    <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--plane transport-list__icon--active"></li>
-                    <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--train "></li>
-                    <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--cycle"></li>
-                    <li class="transport-list__icon transport-list__catalog-icon transport-list__icon--running "></li>
-                  </ul>
-                  <h4 class="catalog-companion-card__title--small">левел:</h4>
-                  <span class="catalog-companion-card__level-value">99</span>
+                  <div class="catalog-companion-card__left">
+                    <h4 class="catalog-companion-card__title--small">транспорт:</h4>
+                    <ul class="catalog-companion-card__transport transport-list">
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--plane transport-list__icon--active"></li>
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--train "></li>
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--cycle"></li>
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--running "></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-companion-card__right">
+                    <h4 class="catalog-companion-card__title--small">левел:</h4>
+                    <div class="catalog-companion-card__level-block level-block">
+                      <b class="catalog-companion-card__level-value level-block__value">99</b>
+                    </div>
+                  </div>
                 </div>
-                <button class="catalog-companion-card__button button-radius" type="button">Позвать</button>
+                <button class="catalog-companion-card__button button-radius" type="button">Позвать!</button>
               </div>
             </li>
             <li>
               <div class="companion-card-list__item catalog-companion-card">
-                <header class="catalog-companion-card__header ">
+                <header class="catalog-companion-card__header">
+                  <button class="catalog-companion-card__like"></button>
                   <img class="catalog-companion-card__image" src="img/demin-mobile@1x.jpg" alt="Петя Демин">
                   <div class="catalog-companion-card__tittle-wrapper">
                     <h3 class="catalog-companion-card__title companion-card-title">Петя Демин</h3>
-                    <span>150</span>
+                    <span class="catalog-companion-card__follower">1,5M</span>
                   </div>
                   <p class="catalog-companion-card__tags companion-card__tags">#бургер #бар #футбол #концерт #краф</p>
                 </header>
-                <h4 class="catalog-companion-card__title--small">хочет посетить:</h4>
                 <div class="catalog-companion-card__wishes-block">
+                <h4 class="catalog-companion-card__title--small">хочет посетить:</h4>
                   <ul class="catalog-companion-card__wishes">
                     <li>
-                      <img class="companion-card__flag" width="35" height="24" src="#" alt="Флаг страны">
-                      <b class="catalog-companion-card__country-title">Бельгия</b>
+                      <a href="#" class="catalog-companion-card__country-title">Бельгия</a>
                     </li>
                     <li>
-                      <img class="companion-card__flag" width="35" height="24" src="#" alt="Флаг страны">
-                      <b class="catalog-companion-card__country-title">Чехия</b>
+                      <a href="#" class="catalog-companion-card__country-title">Чехия</a>
                     </li>
                   </ul>
                 </div>
                 <div class="catalog-companion-card__transport-level">
-                  <h4 class="catalog-companion-card__title--small">транспорт:</h4>
-                  <ul class="companion-card__transport transport-list">
-                    <li class="transport-list__catalog-icon transport-list__icon--plane transport-list__icon--active"></li>
-                    <li class="transport-list__catalog-icon transport-list__icon--train transport-list__icon--active"></li>
-                    <li class="transport-list__catalog-icon transport-list__icon--cycle"></li>
-                    <li class="transport-list__catalog-icon transport-list__icon--running transport-list__icon--active"></li>
-                  </ul>
-                  <h4 class="catalog-companion-card__title--small">левел:</h4>
-                  <span class="catalog-companion-card__level-value">80</span>
+                  <div class="catalog-companion-card__left">
+                    <h4 class="catalog-companion-card__title--small">транспорт:</h4>
+                    <ul class="catalog-companion-card__transport transport-list">
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--plane transport-list__icon--active"></li>
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--train "></li>
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--cycle"></li>
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--running "></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-companion-card__right">
+                    <h4 class="catalog-companion-card__title--small">левел:</h4>
+                    <div class="catalog-companion-card__level-block level-block">
+                      <b class="catalog-companion-card__level-value level-block__value">80</b>
+                    </div>
+                  </div>
                 </div>
-                <button class="catalog-companion-card__button button-radius" type="button">Позвать</button>
+                <button class="catalog-companion-card__button button-radius" type="button">Позвать!</button>
               </div>
             </li>
             <li>
               <div class="companion-card-list__item catalog-companion-card">
-                <header class="catalog-companion-card__header ">
+                <header class="catalog-companion-card__header">
+                  <button class="catalog-companion-card__like"></button>
                   <img class="catalog-companion-card__image" src="img/smolov-mobile@1x.jpg" alt="Марк Смолов">
                   <div class="catalog-companion-card__tittle-wrapper">
                     <h3 class="catalog-companion-card__title companion-card-title">Марк Смолов</h3>
-                    <span>1700</span>
+                    <span class="catalog-companion-card__follower">1700</span>
                   </div>
                   <p class="catalog-companion-card__tags companion-card__tags">#рэп #тату #хайпбист #кроссовки #суприм</p>
                 </header>
-                <h4 class="catalog-companion-card__title--small">хочет посетить:</h4>
                 <div class="catalog-companion-card__wishes-block">
+                <h4 class="catalog-companion-card__title--small">хочет посетить:</h4>
                   <ul class="catalog-companion-card__wishes">
                     <li>
-                      <b class="catalog-companion-card__country-title">США</b>
+                      <a href="#"class="catalog-companion-card__country-title">США</a>
                     </li>
                     <li>
-                      <b class="catalog-companion-card__country-title">Австралия</b>
+                      <a href="#"class="catalog-companion-card__country-title">Австралия</a>
                     </li>
                     <li>
-                      <b class="catalog-companion-card__country-title">Доминикана</b>
+                      <a href="#" class="catalog-companion-card__country-title">Доминикана</a>
                     </li>
                   </ul>
                 </div>
                 <div class="catalog-companion-card__transport-level">
-                  <h4 class="catalog-companion-card__title--small">транспорт:</h4>
-                  <ul class="companion-card__transport transport-list">
-                    <li class="transport-list__catalog-icon transport-list__icon--plane transport-list__icon--active"></li>
-                    <li class="transport-list__catalog-icon transport-list__icon--train"></li>
-                    <li class="transport-list__catalog-icon transport-list__icon--cycle transport-list__icon--active"></li>
-                    <li class="transport-list__catalog-icon transport-list__icon--running"></li>
-                  </ul>
-                  <h4 class="catalog-companion-card__title--small">левел:</h4>
-                  <span class="catalog-companion-card__level-value">25</span>
+                  <div class="catalog-companion-card__left">
+                    <h4 class="catalog-companion-card__title--small">транспорт:</h4>
+                    <ul class="catalog-companion-card__transport transport-list">
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--plane transport-list__icon--active"></li>
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--train "></li>
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--cycle"></li>
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--running "></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-companion-card__right">
+                    <h4 class="catalog-companion-card__title--small">левел:</h4>
+                    <div class="catalog-companion-card__level-block level-block">
+                      <b class="catalog-companion-card__level-value level-block__value">25</b>
+                    </div>
+                  </div>
                 </div>
-                <button class="catalog-companion-card__button button-radius" type="button">Позвать</button>
+                <button class="catalog-companion-card__button button-radius" type="button">Позвать!</button>
               </div>
             </li>
             <li>
               <div class="companion-card-list__item catalog-companion-card">
-                <header class="catalog-companion-card__header ">
+                <header class="catalog-companion-card__header">
+                  <button class="catalog-companion-card__like"></button>
                   <img class="catalog-companion-card__image" src="img/rogovaya-mobile@1x.jpg" alt="Лариса Роговая">
                   <div class="catalog-companion-card__tittle-wrapper">
-                    <h3 class="catalog-companion-card__title companion-card-title">Лариса Роговая</h3>
-                    <span>23</span>
+                    <h3 class="catalog-companion-card__title companion-card-title companion-card-title--on-line">Лариса Роговая</h3>
+                    <span class="catalog-companion-card__follower">23</span>
                   </div>
                   <p class="catalog-companion-card__tags companion-card__tags">#образование #карьера #учеба #линкедин</p>
                 </header>
-                <h4 class="catalog-companion-card__title--small">хочет посетить:</h4>
                 <div class="catalog-companion-card__wishes-block">
+                  <h4 class="catalog-companion-card__title--small">хочет посетить:</h4>
                   <ul class="catalog-companion-card__wishes">
                     <li>
-                      <b class="catalog-companion-card__country-title">Великобритания</b>
+                      <a href="#" class="catalog-companion-card__country-title">Великобритания</a>
                     </li>
                     <li>
-                      <b class="catalog-companion-card__country-title">Германия</b>
+                      <a href="#" class="catalog-companion-card__country-title">Германия</a>
                     </li>
                   </ul>
                 </div>
                 <div class="catalog-companion-card__transport-level">
-                  <h4 class="catalog-companion-card__title--small">транспорт:</h4>
-                  <ul class="companion-card__transport transport-list">
-                    <li class="transport-list__catalog-icon transport-list__icon--plane transport-list__icon--active"></li>
-                    <li class="transport-list__catalog-icon transport-list__icon--train transport-list__icon--active"></li>
-                    <li class="transport-list__catalog-icon transport-list__icon--cycle"></li>
-                    <li class="transport-list__catalog-icon transport-list__icon--running"></li>
-                  </ul>
-                  <h4 class="catalog-companion-card__title--small">левел:</h4>
-                  <span class="catalog-companion-card__level-value">50</span>
+                  <div class="catalog-companion-card__left">
+                    <h4 class="catalog-companion-card__title--small">транспорт:</h4>
+                    <ul class="catalog-companion-card__transport transport-list">
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--plane transport-list__icon--active"></li>
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--train "></li>
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--cycle"></li>
+                      <li class="transport-list__icon transport-list__icon--catalog transport-list__icon--running "></li>
+                    </ul>
+                  </div>
+                  <div class="catalog-companion-card__right">
+                    <h4 class="catalog-companion-card__title--small">левел:</h4>
+                    <div class="catalog-companion-card__level-block level-block">
+                      <b class="catalog-companion-card__level-value level-block__value">25</b>
+                    </div>
+                  </div>
                 </div>
-                <button class="catalog-companion-card__button button-radius">Позвать</button>
+                <button class="catalog-companion-card__button button-radius" type="button">Позвать!</button>
               </div>
             </li>
           </ul>
@@ -373,22 +412,22 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
       <img class="page-footer__logo" src="img/logo-mobile-blue@1x.png" alt="Логотип 'Погнали'">
-      <div class="page-footer__social social">
-        <ul class="social__list">
+      <div class="page-footer__social">
+        <ul class="social">
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"></a>
+            <a class="page-footer__social-link social__link social__link--facebook" href="https://www.facebook.com" aria-label="Мы в Фейсбуке"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com" aria-label="Мы в Вконтакте"></a>
+            <a class="page-footer__social-link social__link social__link--vkontakte" href="https://vk.com" aria-label="Мы в Вконтакте"></a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com" aria-label="Мы в Инстаграме"></a>
+            <a class="page-footer__social-link social__link social__link--instagram" href="https://www.instagram.com" aria-label="Мы в Инстаграме"></a>
           </li>
         </ul>
       </div>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано:</p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 34"><path d="M13.6 0h-.2L0 1.4V26l13.5 8L27 26V1.4L13.6 0zm5.7 16.8l-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8L25 13.5l-4.5 2.6-7.1-4.2v1.4l5.9 3.5zM1.9 15.1l11.4 6.8v1l-8-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.2-4.9V17l3.4-2v10l-11.6 6.9-11.4-7v-9.8zm0-3v-9l11.6-1.2 11.6 1.2v9L13.5 5.3v-.1h-.2v.1L1.9 12.1z" fill="#231f20"/></svg></a>
       </div>
     </div>
   </footer>

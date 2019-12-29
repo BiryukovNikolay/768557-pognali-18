@@ -1,10 +1,16 @@
 .add-profile {
+  @include block-radius;
+  position: relative;
+  z-index: 2;
   min-height: 425px;
   padding: 33px 0 40px 25px;
-  background-color: #edeff6;
+  background: url("../img/rates@1x.png") no-repeat 92% 40px $main-background;
+  background-size: 99px 99px;
 }
 
 .add-profile__wrapper {
+  background-size: 99px 99px;
+  padding-left: 25px;
   width: 270px;
   margin: 0 auto;
 }
@@ -14,22 +20,46 @@
 }
 
 .add-profile__title {
-  text-align: center;
+  text-align: left;
+  padding-right: 143px;
+  margin-bottom: 43px;
 }
 
 .add-profile__link {
-  font-size: 14px;
-  display: flex;
+  font-size: 16px;
+  line-height: 22px;
   text-decoration: none;
-  color: #444444;
+  color: $soft-text;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+
+.add-profile__price {
+  order: 3;
+  padding-bottom: 13px;
+}
+
+.add-profile__name {
+  border-top: rgba(68, 68, 68, 0.05) 1px solid;
+  padding-top: 13px;
+  width: 81.5%;
 }
 
 .add-profile__number {
   color: #ffffff;
   display: block;
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+  text-align: center;
+  padding-top: 7px;
 }
 
 .add-profile__business {
+  font-size: 16px;
+  line-height: 16px;
   color: #192144;
   text-decoration: none;
   font-weight: bold;
@@ -48,34 +78,51 @@
 }
 
 @media (min-width: $tablet-width) {
+  .add-profile {
+    position: relative;
+    background-image: none;
+    min-height: 560px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 198px;
+      height: 285px;
+      background-color: #e2e5f2;
+      border-radius: 20px;
+      top: 216px;
+      right: 23px;
+    }
+  }
+
   .add-profile__wrapper {
+    position: relative;
     padding-bottom: 70px;
     padding-top: 75px;
     width: $tablet-wrapper;
     margin: 0 auto;
-    background: url("../../img/rates@1x.png") 550px 450px/99px no-repeat;
-  }
-
-  .add-profile {
-    min-height: 560px;
+    background: url("../img/rates@1x.png") 550px 450px no-repeat;
+    background-size: 99px 99px;
+    z-index: 1;
   }
 
   .add-profile__title {
+    padding: 0;
     margin-bottom: 74px;
     text-align: center;
   }
 
   .add-profile__tariffs {
-    margin-bottom: 33px;
+    margin-bottom: 59px;
     font-size: 28px;
     line-height: 33px;
   }
 
   .add-profile__link {
-    border-top: 1px #edeff6 solid;
     min-height: 67px;
-    align-content: baseline;
-    display: flex;
+    padding-right: 33px;
+    font-size: 28px;
+    line-height: 33px;
   }
 
   .add-profile__business {
@@ -84,6 +131,24 @@
     line-height: 20px;
     color: #132576;
     padding-left: 90px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 67px;
+      height: 67px;
+      background: url("../img/business.svg") center center no-repeat  #e2e5f2;
+      background-size: 17px 21px;
+      border-radius: 100px;
+      top: -24px;
+      left: 0;
+    }
+  }
+
+  .add-profile__name {
+    padding-top: 20px;
+    width: 58%;
   }
 
   .add-profile__number {
@@ -93,9 +158,14 @@
     height: 67px;
     border-radius: 100%;
     text-align: center;
+    padding-top: 20px;
   }
 
   .add-profile__price {
+    width: 28%;
+    padding-top: 20px;
+    border-top: rgba(68, 68, 68, 0.05) 1px solid;
+    text-align: right;
     margin-left: auto;
   }
 }
@@ -103,16 +173,25 @@
 @media (min-width: $desktop-width) {
   .add-profile {
     min-height: 750px;
+
+    &::before {
+      content: "";
+      width: 444px;
+      height: 300px;
+      top: 340px;
+      right: 272px;
+    }
   }
 
   .add-profile__wrapper {
     width: $desktop-wrapper;
     margin: 0 auto;
+    background-size: 198px 198px;
+    background-position: 994px 360px;
   }
 
   .add-profile__title {
     text-align: center;
-    padding-top: 100px;
     padding-bottom: 130px;
   }
 
@@ -122,7 +201,12 @@
     display: flex;
   }
 
+  .add-profile__name {
+    width: 58.5%;
+  }
+
   .add-profile__price {
+    width: 32%;
     display: block;
     align-self: flex-end;
   }
@@ -137,7 +221,7 @@
   }
 
   .add-profile__tariffs {
-    width: 1200px;
+    padding-right: 345px;
     text-align: center;
   }
 }

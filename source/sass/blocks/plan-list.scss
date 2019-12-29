@@ -11,11 +11,17 @@
 }
 
 .plan-list__item {
-  padding: 23px 96px 23px 25px;
+  margin-top: -20px;
+  min-height: 100px;
+  background-color: $yellow-background;
+  padding: 23px 23px 23px 25px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px 20px 0 0;
 
   &:first-child {
-    border-radius: 20px 20px 0 0;
-    background-color: #ff8d30;
+    margin-top: 0;
+    background-color: $bright-title;
   }
 
   &:nth-child(2) {
@@ -26,50 +32,83 @@
     background-color: #ffbd30;
   }
 
-  &:nth-child(4) {
-    border-radius: 0 0 20px 20px;
-    background-color: #ffd74b;
+  &:last-child {
+    min-height: 80px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: $yellow-background;
   }
+}
+
+.plan-list__description {
+  width: 150px;
+}
+
+.plan-list__number {
+  color: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
   .plan-list {
     display: flex;
     flex-wrap: wrap;
-    width: 688px;
+    width: 100%;
+    font-size: 24px;
+    line-height: 24px;
   }
 
   .plan-list__item {
-    display: block;
-    width: 223px;
+    margin-top: -1px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 31px 96px 28px 31px;
+    width: 51%;
+    min-height: 140px;
+    border-radius: 0 0 0 0;
+
+    &:nth-child(even) {
+      margin-left: -15px;
+    }
 
     &:first-child {
-      border-radius: 0 0 0 0;
+      border-radius: 20px 0 0 0;
     }
 
     &:nth-child(2) {
-      border-radius: 0 0 0 0;
+      border-radius: 20px 20px 0 0;
     }
 
-    &:nth-child(3) {
-      border-radius: 0 0 0 0;
+    &:nth-last-child(-n+2) {
+      border-radius: 0 0 0 20px;
     }
 
-    &:nth-child(4) {
-      margin-left: 0;
-      border-radius: 0;
+    &:last-child {
+      min-height: 140px;
+      border-radius: 0 0 20px 20px;
     }
+  }
+
+  .plan-list__number {
+    font-size: 30px;
+    line-height: 20px;
+  }
+
+  .plan-list__description {
+    width: fit-content;
   }
 }
 
 @media (min-width: $desktop-width) {
   .plan-list {
-    flex-wrap: nowrap;
-    width: 1320px;
+    width: $desktop-wrapper;
   }
 
   .plan-list__item {
-    width: 330px;
+    margin-top: 0;
+    flex-direction: row;
+    padding: 30px;
+    padding-right: 50px;
+    width: 26.5%;
+    min-height: 60px;
 
     &:first-child {
       border-radius: 20px 0 0 20px;
@@ -86,8 +125,14 @@
     }
 
     &:nth-child(4) {
+      width: 24%;
+      padding-right: 30px;
       margin-left: -20px;
       border-radius: 20px;
     }
+  }
+
+  .plan-list__number {
+    font-size: 24px;
   }
 }

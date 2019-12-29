@@ -1,5 +1,8 @@
 .companions {
-  background: #161c35;
+  @include block-radius;
+  position: relative;
+  z-index: 3;
+  background: url("../img/smolov-back-desktop@1x.png") no-repeat 144px 39px, url("../img/rogovaya-back-mobile@1x.png") no-repeat left 313px #161c35;
   color: #ffffff;
 }
 
@@ -19,16 +22,30 @@
 
 @media (min-width: $tablet-width) {
   .companions {
+    background: url("../img/rogovaya-back-desktop@1x.png") no-repeat 406px 39px, url("../img/smolov-back-desktop@1x.png") no-repeat 40px 400px #192144;
     min-height: 1251px;
   }
 
   .companions__wrapper {
     width: $tablet-wrapper;
     margin: 0 auto;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 213px;
+      height: 213px;
+      background-color: #141b3b;
+      border-radius: 30px;
+      top: 43px;
+      left: 40px;
+    }
   }
 
   .companions__wrapper-header {
-    margin-bottom: 62px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 62px;
   }
 
   .companions-description {
@@ -57,11 +74,16 @@
   .companions__item {
     width: 285px;
   }
+
+  .companions__button {
+    font-weight: 24px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .companions {
-    border-radius: 0 0 50px 50px;
+    background: url("../img/rogovaya-back-desktop@1x.png") no-repeat  40px 400px, url("../img/smolov-back-desktop@1x.png") no-repeat 406px 39px #192144;
+    min-height: 750px;
   }
 
   .companions__wrapper {
@@ -78,7 +100,12 @@
   }
 
   .companions__wrapper-header {
+    padding-left: 107px;
     width: 500px;
+  }
+
+  .companions__list-wrapper {
+    padding-top: 80px;
   }
 
   .companions-description {
@@ -92,5 +119,10 @@
     font-size: 21px;
     line-height: 25px;
     width: 258px;
+  }
+
+  .companions__button {
+    margin-left: -550px;
+    margin-top: -197px;
   }
 }

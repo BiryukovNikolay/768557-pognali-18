@@ -1,11 +1,15 @@
 .about {
-  background: url("../../img/about-mobile@1x.png") no-repeat #192144;
+  @include block-radius;
+  position: relative;
+  z-index: 5;
+  background: url("../img/about-mobile@1x.png") no-repeat #192144;
   color: white;
   font-size: 16px;
+  line-height: 22px;
 }
 
 .about__wrapper {
-  width: 270px;
+  width: 220px;
   margin: 0 auto;
   padding: 35px 0 84px 0;
 }
@@ -15,19 +19,54 @@
 }
 
 .about__slogan {
+  display: block;
+  margin-bottom: 53px;
   font-weight: bold;
 }
 
+.about__button {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
+  .about {
+    background: #192144;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: $tablet-wrapper;
+      height: 213px;
+      background-color: #141b3b;
+      border-radius: 30px;
+      top: 250px;
+      left: 40px;
+      z-index: -1;
+    }
+  }
+
+  .about__background {
+    min-height: 920px;
+    background: url("../img/about-tablet@1x.png") right 317px no-repeat;
+  }
+
   .about__wrapper {
-    padding-top: 180px;
+    padding-top: 280px;
+    padding-left: 30px;
     width: $tablet-wrapper;
     margin: 0 auto;
   }
 
-  .about {
-    background: url("../../img/about-tablet@1x.png") right no-repeat #192144;
-    min-height: 920px;
+  .about__description {
+    font-size: 28px;
+    line-height: 33px;
+    font-weight: normal;
+  }
+
+  .about__slogan {
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: bold;
   }
 
   .about__left-block {
@@ -35,6 +74,7 @@
   }
 
   .about__button {
+    display: block;
     max-width: 274px;
   }
 }
@@ -42,12 +82,23 @@
 @media (min-width: $desktop-width) {
   .about {
     background: none;
-    border-radius: 0 0 50px 50px;
     background-color: #192144;
+
+    &::before {
+      width: 213px;
+      height: 213px;
+      top: 71px;
+      left: 40px;
+    }
+  }
+
+  .about__background {
+    background-image: none;
+    min-height: 750px;
   }
 
   .about__wrapper {
-    background: url("../../img/about-desktop@1x.png") bottom right no-repeat;
+    background: url("../img/about-desktop@1x.png") bottom right no-repeat;
     width: 1320px;
     min-height: 750px;
     padding: 0;

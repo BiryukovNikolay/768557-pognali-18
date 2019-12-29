@@ -1,0 +1,29 @@
+.transport-list {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.transport-list__icon {
+  @include list-style-off;
+  width: 33px;
+  height: 33px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  fill: rgba(0, 0, 0, 0.15);
+
+  &--active {
+    fill: #1d2e5b;
+  }
+}
+
+.transport-list__icon--catalog {
+  background-color: $main-background;
+}
+
+@media (min-width: $tablet-width) {
+  .transport-list__icon {
+    width: 43px;
+    height: 43px;
+  }
+}

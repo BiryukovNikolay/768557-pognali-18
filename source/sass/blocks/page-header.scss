@@ -12,12 +12,27 @@
   background-color: inherit;
 }
 
-.logo-wrapper {
+.page-header__logo-wrapper {
   width: 270px;
   margin: 0 auto;
   display: flex;
+  margin-bottom: 75px;
 }
 
+.site-list__item--active {
+  display: none;
+}
+
+// Стили для скрытого меню header (--hidden)
+
+.page-header--hidden {
+  padding-top: 20px;
+  background-color: #192144;
+}
+
+.page-header__logo-wrapper--hidden {
+  margin-bottom: 0;
+}
 
 @media (min-width: $tablet-width) {
   .page-header {
@@ -30,11 +45,25 @@
     width: $tablet-wrapper;
     margin: 0 auto;
     flex-direction: column;
+
+    &--hidden {
+      width: $tablet-wrapper;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   .page-header__logo-wrapper {
     width: 355px;
     display: flex;
+    align-items: flex-start;
+    margin: 0;
+
+    &--hidden {
+      width: 50%;
+      justify-content: space-between;
+    }
   }
 
   .main-nav {
@@ -46,13 +75,23 @@
   .page-header {
     background-color: $dark-title;
     min-height: 100px;
-    padding: 60px 0 0 0;
+    padding: 46px 0 0 0;
   }
 
   .page-header__wrapper {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
     width: 1320px;
     margin: 0 auto;
+  }
+
+  .page-header__logo-image {
+    width: 200px;
+    height: 52px;
+  }
+
+  .page-header__toggle {
+    display: none;
   }
 }

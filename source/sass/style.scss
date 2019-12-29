@@ -2,12 +2,16 @@
 @import "common.scss";
 @import "blocks/button-radius.scss";
 @import "blocks/page-header.scss";
+@import "blocks/button.scss";
+@import "blocks/range-controls.scss";
+@import "blocks/level-block.scss";
 @import "blocks/main-slogan.scss";
 @import "fonts.scss";
 @import "blocks/reviews.scss";
 @import "blocks/action-plan.scss";
 @import "mixins.scss";
 @import "blocks/plan-list.scss";
+@import "blocks/transport-list.scss";
 @import "blocks/about.scss";
 @import "blocks/directions.scss";
 @import "blocks/companions.scss";
@@ -31,5 +35,8 @@
 @import "blocks/page-footer.scss";
 @import "blocks/copyright.scss";
 @import "blocks/main-nav.scss";
-@import "blocks/button.scss";
 @import "blocks/page-main.scss";
+@import "blocks/form-page.scss";
+@import "blocks/my-plans.scss";
+@import "blocks/add-plan.scss";
+@import "blocks/calendar.scss";

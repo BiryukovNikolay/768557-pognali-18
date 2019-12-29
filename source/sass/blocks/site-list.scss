@@ -1,10 +1,15 @@
 .site-list {
   @include list-style-off;
+  margin: 0;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .site-list__item {
   a {
     font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
     color: #192144;
     text-decoration: none;
   }
@@ -18,14 +23,34 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
+    flex-direction: row;
     display: flex;
-    width: 837px;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
 
   .site-list__item {
     a {
+      display: block;
+      padding-top: 11px;
+      font-size: 20px;
+      line-height: 30px;
+      margin-right: 37px;
       color: #ffffff;
+    }
+  }
+
+  .site-list__line {
+    width: 60px;
+    display: block;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      width: 60px;
+      height: 2px;
+      background-color: #ffffff;
     }
   }
 }
