@@ -2,7 +2,7 @@
   @include block-radius;
   position: relative;
   z-index: 3;
-  background: url("../../img/smolov-back-desktop@1x.png") no-repeat 144px 39px, url("../../img/rogovaya-back-mobile@1x.png") no-repeat left 313px #161c35;
+  background: url("../img/smolov-back-desktop@1x.png") no-repeat 144px 39px, url("../img/rogovaya-back-mobile@1x.png") no-repeat left 313px #161c35;
   color: #ffffff;
 }
 
@@ -22,7 +22,7 @@
 
 @media (min-width: $tablet-width) {
   .companions {
-    background: url("../../img/rogovaya-back-desktop@1x.png") no-repeat 406px 39px, url("../../img/smolov-back-desktop@1x.png") no-repeat 40px 400px #192144;
+    background: url("../img/rogovaya-back-desktop@1x.png") no-repeat 406px 39px, url("../img/smolov-back-desktop@1x.png") no-repeat 40px 400px #192144;
     min-height: 1251px;
   }
 
@@ -82,7 +82,7 @@
 
 @media (min-width: $desktop-width) {
   .companions {
-    background: url("../../img/rogovaya-back-desktop@1x.png") no-repeat  40px 400px, url("../../img/smolov-back-desktop@1x.png") no-repeat 406px 39px #192144;
+    background: url("../img/rogovaya-back-desktop@1x.png") no-repeat  40px 400px, url("../img/smolov-back-desktop@1x.png") no-repeat 406px 39px #192144;
     min-height: 750px;
   }
 

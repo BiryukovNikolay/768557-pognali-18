@@ -2,7 +2,7 @@
   @include block-radius;
   position: relative;
   z-index: 5;
-  background: url("../../img/about-mobile@1x.png") no-repeat #192144;
+  background: url("../img/about-mobile@1x.png") no-repeat #192144;
   color: white;
   font-size: 16px;
   line-height: 22px;
@@ -47,7 +47,7 @@
 
   .about__background {
     min-height: 920px;
-    background: url("../../img/about-tablet@1x.png") right 317px no-repeat;
+    background: url("../img/about-tablet@1x.png") right 317px no-repeat;
   }
 
   .about__wrapper {
@@ -98,7 +98,7 @@
   }
 
   .about__wrapper {
-    background: url("../../img/about-desktop@1x.png") bottom right no-repeat;
+    background: url("../img/about-desktop@1x.png") bottom right no-repeat;
     width: 1320px;
     min-height: 750px;
     padding: 0;

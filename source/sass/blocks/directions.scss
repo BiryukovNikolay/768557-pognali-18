@@ -59,7 +59,7 @@
     position: absolute;
     width: 11px;
     height: 11px;
-    background: url("../../img/user.svg") no-repeat;
+    background: url("../img/user.svg") no-repeat;
     left: 0;
   }
 }
@@ -80,7 +80,7 @@
     width: $tablet-wrapper;
     margin: 0 auto;
     padding: 102px 35px 80px 35px;
-    background: url("../../img/flags-back@1x.png") no-repeat right 89px;
+    background: url("../img/flags-back@1x.png") no-repeat right 89px;
   }
 
   .directions__wrapper-header {
@@ -163,7 +163,7 @@
 
 @media (min-width: $desktop-width) {
   .directions__wrapper {
-    background: url("../../img/flags-back@1x.png") no-repeat right 89px;
+    background: url("../img/flags-back@1x.png") no-repeat right 89px;
     display: flex;
     width: $desktop-wrapper;
     position: relative;

@@ -4,7 +4,7 @@
   z-index: 2;
   min-height: 425px;
   padding: 33px 0 40px 25px;
-  background: url("../../img/rates@1x.png") no-repeat 92% 40px $main-background;
+  background: url("../img/rates@1x.png") no-repeat 92% 40px $main-background;
   background-size: 99px 99px;
 }
 
@@ -101,7 +101,7 @@
     padding-top: 75px;
     width: $tablet-wrapper;
     margin: 0 auto;
-    background: url("../../img/rates@1x.png") 550px 450px no-repeat;
+    background: url("../img/rates@1x.png") 550px 450px no-repeat;
     background-size: 99px 99px;
     z-index: 1;
   }
@@ -138,7 +138,7 @@
       position: absolute;
       width: 67px;
       height: 67px;
-      background: url("../../img/business.svg") center center no-repeat  #e2e5f2;
+      background: url("../img/business.svg") center center no-repeat  #e2e5f2;
       background-size: 17px 21px;
       border-radius: 100px;
       top: -24px;

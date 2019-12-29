@@ -59,13 +59,13 @@
   text-transform: uppercase;
 
   &::before {
-    background: url("../../img/contacts-mail.svg") center no-repeat;
+    background: url("../img/contacts-mail.svg") center no-repeat;
     background-size: 20px 15px;
   }
 
   &--hidden {
     &::before {
-      background: url("../../img/topmenu-mail.svg") center no-repeat;
+      background: url("../img/topmenu-mail.svg") center no-repeat;
       background-color: #ffbd30;
       background-size: 18px 14px;
     }
@@ -74,13 +74,13 @@
 
 .user-list__link--phone {
   &::before {
-    background: url("../../img/contacts-phone.svg") center no-repeat;
+    background: url("../img/contacts-phone.svg") center no-repeat;
     background-size: 20px 20px;
   }
 
   &--hidden {
     &::before {
-      background: url("../../img/topmenu-phone.svg") center no-repeat;
+      background: url("../img/topmenu-phone.svg") center no-repeat;
       background-color: $bright-title;
       background-size: 18px 18px;
     }
@@ -225,7 +225,7 @@
     text-transform: uppercase;
 
     &::before {
-      background: url("../../img/topmenu-mail.svg") center no-repeat;
+      background: url("../img/topmenu-mail.svg") center no-repeat;
       background-color: #ffbd30;
       background-size: 18px 14px;
     }
@@ -233,7 +233,7 @@
 
   .user-list__link--phone {
     &::before {
-      background: url("../../img/topmenu-phone.svg") center no-repeat;
+      background: url("../img/topmenu-phone.svg") center no-repeat;
       background-color: $bright-title;
       background-size: 18px 18px;
     }
