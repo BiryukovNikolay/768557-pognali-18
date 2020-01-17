@@ -6,30 +6,35 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 45px;
   height: 45px;
   border-radius: 100px;
 }
 
-.social__link--facebook {
-  background: url("../img/facebook.svg") no-repeat;
-  background-position: center;
-}
-
-.social__link--vkontakte {
-  background: url("../img/vk.svg") no-repeat;
-  background-position-y: center;
-}
-
-.social__link--instagram {
-  background: url("../img/instagram.svg") no-repeat;
-}
-
 @media (min-width: $tablet-width) {
   .social__link {
-    width: 26px;
-    height: 26px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .social__link-icon {
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
+
+    &--vk {
+      width: 31px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 

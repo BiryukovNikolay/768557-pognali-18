@@ -12,22 +12,26 @@
 }
 
 .directions__wrapper-header {
-  padding: 72px 50px 66px 25px;
+  padding: 92px 50px 33px 25px;
 }
 
 .directions__title {
   @include title-small;
+  font-size: 21px;
 }
 
 .directions__description {
+  margin-top: 22px;
   color: $soft-text;
 }
 
 .directions__list {
   @include list-style-off;
+  margin-bottom: 26px;
 }
 
 .directions__item {
+  position: relative;
   margin-bottom: 10px;
 }
 
@@ -39,18 +43,21 @@
 .directions__item-wrapper {
   position: relative;
   z-index: 2;
-  margin-top: -20px;
+  margin-top: -16px;
   background-color: #ffffff;
-  border-radius: 15px;
-  padding: 28px 24px 23px 24px;
+  border-radius: 10px;
+  padding: 28px 24px 22px 24px;
 }
 
 .directions__slogan {
+  font-size: 16px;
+  letter-spacing: 1.1px;
   color: rgba(68, 68, 68, 0.3);
 }
 
 .directions__views {
   padding-left: 20px;
+  font-size: 17px;
   color: rgba(68, 68, 68, 0.3);
   position: relative;
 
@@ -60,13 +67,22 @@
     width: 11px;
     height: 11px;
     background: url("../img/user.svg") no-repeat;
-    left: 0;
+    left: 4px;
+    top: 4px;
   }
 }
 
 
 .directions__image {
-  border-radius: 15px 15px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.directions__flag-icon {
+  position: absolute;
+  z-index: 3;
+  top: 87px;
+  left: 25px;
+
 }
 
 .directions__card-wrapper {
@@ -74,13 +90,25 @@
   justify-content: space-between;
 }
 
+.directions__button {
+  position: relative;
+  z-index: 4;
+  box-shadow: 1px -18px 24px 27px #edeff6;
+}
+
+
 @media (min-width: $tablet-width) {
   .directions__wrapper {
     position: relative;
     width: $tablet-wrapper;
     margin: 0 auto;
-    padding: 102px 35px 80px 35px;
-    background: url("../img/flags-back@1x.png") no-repeat right 89px;
+    padding: 122px 35px 50px 35px;
+    background: url("../img/flags-back@1x.png") no-repeat right 130px;
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/flags-back@2x.png") no-repeat right 130px;
+      background-size: 289px 575px;
+    }
   }
 
   .directions__wrapper-header {
@@ -92,17 +120,18 @@
       width: 141px;
       height: 141px;
       background-color: #e2e5f2;
-      border-radius: 30px;
-      top: 440px;
-      left: -5px;
+      border-radius: 20px;
+      top: 456px;
+      left: 0px;
     }
   }
 
   .directions__description {
-    width: 337px;
+    width: 58%;
     font-size: 28px;
     line-height: 33px;
-    padding-bottom: 113px;
+    padding-bottom: 76px;
+    margin-top: 59px;
   }
 
   .directions__list {
@@ -114,17 +143,19 @@
   .directions__item {
     display: flex;
     min-height: 140px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
 
   .directions__item-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 31px 24px 20px 29px;
     margin: 0;
     flex-grow: 1;
     order: -1;
-    border-radius: 15px 0 0 15px;
+    border-radius: 20px 0 0 20px;
+    height: 140px;
   }
 
   .directions__title {
@@ -141,17 +172,27 @@
       width: 21px;
       height: 21px;
       left: 0;
+      top: 0;
     }
   }
 
   .directions__slogan {
     position: absolute;
     font-size: 20px;
-    top: 54px;
+    top: 58px;
+  }
+
+  .directions__flag-icon {
+    width: 72px;
+    height: 47px;
+    top: 16px;
+    left: 397px;
   }
 
   .directions__image {
-    border-radius: 0 15px 15px 0;
+    width: 186px;
+    height: 140px;
+    border-radius: 0 20px 20px 0;
   }
 
   .directions__card-wrapper {
@@ -159,36 +200,46 @@
     justify-content: space-between;
     flex-direction: column;
   }
+
+  .directions__button {
+    padding-top: 29px;
+    border-radius: 20px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .direction {
+    padding-bottom: 0;
+  }
+
   .directions__wrapper {
-    background: url("../img/flags-back@1x.png") no-repeat right 89px;
     display: flex;
+    justify-content: space-between;
     width: $desktop-wrapper;
     position: relative;
     padding-top: 28px;
     padding-bottom: 0;
+    background-position: right 136px;
   }
 
   .directions__list-wrapper {
     order: -1;
-    width: 690px;
-    padding: 161px 0 145px 70px;
+    width: 48%;
+    padding: 166px 0 108px 38px;
   }
 
   .directions__wrapper-header {
-    width: 630px;
-    padding: 167px 0 140px 100px;
+    width: 40%;
+    padding: 186px 0 140px 16px;
 
     &::before {
-      top: 155px;
-      left: 52px;
+      top: 138px;
+      left: 0px;
     }
   }
 
   .directions__description {
-    width: 340px;
+    width: 76%;
     font-size: 28px;
     line-height: 33px;
   }
@@ -198,18 +249,33 @@
   }
 
   .directions__item {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: flex;
     width: 560px;
   }
 
   .directions__item-wrapper {
+    padding-top: 26px;
     order: -1;
     width: 375px;
   }
 
   .directions__button {
-    margin-left: 723px;
-    margin-top: -137px;
+    margin-left: 731px;
+    margin-top: -117px;
+  }
+
+  .directions__slogan {
+    top: 51px;
+  }
+
+  .directions__image {
+    width: 189px;
+  }
+
+  .directions__flag-icon {
+    height: 48px;
+    top: 22px;
+    left: 335px;
   }
 }

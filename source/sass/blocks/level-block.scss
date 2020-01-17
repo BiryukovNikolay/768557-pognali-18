@@ -6,15 +6,15 @@
   justify-content: center;
   align-items: center;
   border-radius: 300px;
-  border: 3px $bright-title solid;
 }
 
 .level-block__value {
+  margin-top: 9px;
   width: 50px;
   text-align-last: center;
   color: $dark-title;
   font-size: 38px;
-  line-height: 38px;
+  line-height: 28px;
   font-weight: bold;
   border-bottom: #cbced9 2px solid;
 }
@@ -41,4 +41,19 @@
   .level-block__title {
     color: $main-background;
   }
+}
+
+body {
+  background-color: #424c52;
+}
+
+.progress {
+  transform: rotate(-90deg);
+}
+.progress-circle{
+  fill: transparent;
+  stroke:#ff8d30;
+  stroke-width: 3;
+  stroke-dasharray: 255;
+  transition: stroke-dashoffset ease-out .4s;
 }

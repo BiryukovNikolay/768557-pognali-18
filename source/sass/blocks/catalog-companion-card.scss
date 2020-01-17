@@ -1,8 +1,56 @@
 .catalog-companion-card {
   position: relative;
   background-color: #ffffff;
-  border-radius: 25px;
-  padding: 15px 0 21px 0;
+  border-radius: 20px;
+  padding: 15px 0 23px 0;
+
+  &:hover {
+    box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+
+    & .catalog-companion-card__image{
+      transform: scale(1.05);
+      z-index: 0;
+    }
+  }
+}
+
+.catalog-companion-card__progress-block {
+  position: absolute;
+  top: 2px;
+  right: 6px;
+  width: 60px;
+  height: 60px;
+}
+
+.catalog-companion-card__progress {
+  position: absolute;
+  top: 8px;
+  left: -1px;
+  width: 51px;
+  height: 51px;
+}
+
+.catalog-companion-card__level-value {
+  border: none;
+  display: block;
+  margin-top: 13px;
+  margin-right: 10px;
+  font-size: 24px;
+  line-height: 21px;
+}
+
+.catalog-companion-card__level-block {
+  position: absolute;
+  width: 60px;
+  height: 59px;
+}
+
+.catalog-companion-card__level-title {
+  display: none;
+  color: #d9d9d9;
+  padding-top: 2px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .catalog-companion-card__header {
@@ -14,6 +62,8 @@
 }
 
 .catalog-companion-card__title {
+  position: relative;
+  margin-top: 0px;
   text-align: left;
   margin-bottom: 10px;
   line-height: 20px;
@@ -22,10 +72,28 @@
   color: #1d2e5b;
 
   &::before {
+    position: absolute;
+    content: "";
     width: 6px;
     height: 6px;
-    top: 5px;
-    right: -66px;
+    background-color: #f97676;
+    top: 8px;
+    left: 139px;
+    border-radius: 10px;
+  }
+
+  &--on-line {
+    &::before {
+      background-color: #81e31e;
+    }
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -33,23 +101,66 @@
   color: $soft-text;
   line-height: 18px;
   font-size: 15px;
-  width: 170px;
+  width: 185px;
   padding-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 21px;
   text-align: left;
 }
 
 .catalog-companion-card__like {
   position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 55px;
-  left: 64px;
+  left: 67px;
   width: 31px;
   height: 31px;
   background-color: $main-background;
   border-radius: 100px;
   border: none;
+  fill: rgb(25, 33, 68);
+
+  svg {
+    opacity: 0.3;
+  }
 
   &--active {
     background-color: #f9eaea;
+
+    svg {
+      fill: #f02323;
+    }
+
+    &:hover {
+      background-color: #f9d8d8;
+    }
+
+    &:active {
+      background-color: #f9d8d8;
+
+      svg {
+        opacity: 0.3;
+      }
+    }
+  }
+
+  &:hover {
+    background-color: #e2e5f2;
+
+    svg {
+      opacity: 0.5;
+    }  
+  }
+
+  &:active {
+    background-color: #e2e5f2;
+    
+    svg {
+      opacity: 0.1;
+    }
   }
 }
 
@@ -59,31 +170,27 @@
   color: $soft-text;
   font-size: 15px;
   font-weight: normal;
-  margin-left: 14px;
-  margin-top: -7px;
-  padding: 0 14px 0 14px;
+  margin-top: -9px;
+  margin-bottom: 16px;
 }
 
 .catalog-companion-card__country-title {
-  position: relative;
-  display: block;
+  display: flex;
+  align-items: end;
   text-decoration: none;
   text-transform: uppercase;
   color: #1d2e5b;
   font-size: 15px;
   font-weight: 500;
-  padding-left: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 26px;
-    height: 18px;
-    background-color: tomato;
-    left: 0;
-    top: -4px;
-  }
+.catalog-companion-card__flag {
+  margin-right: 14px;
+}
+
+.catalog-companion-card__country {
+  padding-top: 4px;
 }
 
 .catalog-companion-card__wishes {
@@ -91,16 +198,16 @@
 }
 
 .catalog-companion-card__wishes-block {
-  padding: 0 20px 20px 25px;
+  padding: 0 20px 12px 25px;
   border-bottom: $main-background 1px solid;
 }
 
 .catalog-companion-card__transport {
   @include list-style-off;
-  padding-left: 25px;
 }
 
 .catalog-companion-card__left {
+  padding-left: 25px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -110,37 +217,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-right: 20px;
 }
 
 .catalog-companion-card__transport-level {
+  position: relative;
+  margin-top: 3px;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 14px;
-}
-
-.catalog-companion-card__level-value {
-  border: none;
-  color: #1d2e5b;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.catalog-companion-card__level-block {
-  margin-top: -4px;
-  margin-left: 20px;
-  width: 45px;
-  height: 45px;
 }
 
 .catalog-companion-card__button {
   width: 85%;
   margin: 0 20px;
-  padding: 13px 0;
+  padding: 11px 0;
   color: #161c35;
   font-size: 17px;
   font-weight: bold;
 }
 
+.catalog-companion-card__image-wrapper {
+  overflow: hidden;
+  border-radius: 100%;
+}
+
 .catalog-companion-card__image {
+  position: relative;
+  z-index: 0;
   margin-right: 16px;
   border-radius: 100%;
 }
@@ -153,7 +257,7 @@
   .catalog-companion-card {
     margin-bottom: 40px;
     position: relative;
-    padding: 35px 25px 25px 35px;
+    padding: 35px 25px 10px 35px;
   }
 
   .catalog-companion-card__header {
@@ -177,16 +281,31 @@
     &::before {
       width: 7px;
       height: 7px;
-      top: 11px;
+      top: 9px;
+      left: initial;
       right: -30px;
     }
+  }
+
+  .catalog-companion-card__title--small {
+    margin-left: 47px;
   }
 
   .catalog-companion-card__like {
     width: 50px;
     height: 50px;
     top: 175px;
-    left: 391px;
+    left: 403px;
+
+    &--heart-active {
+      width: 20px;
+      height: 17px;
+    }
+
+    &--heart{
+      width: 20px;
+      height: 17px;
+    }
   }
 
   .catalog-companion-card__follower {
@@ -196,23 +315,24 @@
     color: #161c35;
     position: absolute;
     top: 186px;
-    right: 200px;
+    right: 186px;
   }
 
   .catalog-companion-card__tags {
     font-size: 20px;
     line-height: 24px;
-    width: 220px;
-    margin-top: 50px;
-    margin-left: -175px;
+    width: 233px;
+    margin-top: 46px;
+    right: 205px;
+    position: absolute;
   }
 
   .catalog-companion-card__wishes-block {
     order: 3;
-    padding: 0 20px 0 25px;
+    padding: 0;
     border: none;
     border-top: $main-background 1px solid;
-    margin-top: 20px;
+    margin-top: 80px;
   }
 
   .catalog-companion-card__wishes {
@@ -220,8 +340,13 @@
     flex-direction: row;
   }
 
+  .catalog-companion-card__flag {
+    width: 35px;
+    height: 24px;
+  }
+
   .catalog-companion-card__country-title {
-    margin-right: 32px;
+    margin-right: 25px;
     font-size: 20px;
     line-height: 30px;
 
@@ -232,14 +357,20 @@
     }
   }
 
+  .catalog-companion-card__image-wrapper {
+    height: 290px;
+    border-radius: 20px;
+  }
+
   .catalog-companion-card__image {
     width: 190px;
     height: 190px;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin-right: 33px;
   }
 
   .catalog-companion-card__transport-level {
-    margin-top: -200px;
+    margin-top: -297px;
     align-items: flex-end;
     flex-direction: column;
   }
@@ -255,24 +386,84 @@
     }
   }
 
+  .catalog-companion-card__progress-block {
+    top: 133px;
+  }
+
+  .catalog-companion-card__progress {
+    top: 0px;
+    left: -4px;
+    width: 80px;
+    height: 70px;
+  }
+
+  .catalog-companion-card__level-title {
+    display: block;
+    border-top: #cbced9 2px solid;
+    margin-left: 12px;
+    padding: 0px 2px;
+  }
+
+  .catalog-companion-card__level-value {
+    margin-top: 18px;
+    margin-right: -12px;
+  }
+
+  .catalog-companion-card__right {
+    margin: 0;
+  }
+
+  .catalog-companion-card__left {
+    padding-right: 11px;
+  }
+
   .catalog-companion-card__button {
+    position: absolute;
     width: 148px;
-    margin-top: -75px;
-    margin-left: 208px;
+    height: 50px;
+    top: 176px;
+    left: 236px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-companion-card {
+    position: relative;
     margin-bottom: 30px;
     min-height: 285px;
     padding: 0;
     display: flex;
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 61%;
+      width: 1px;
+      left: 65%;
+      top: 50px;
+      background-color: #edeff6;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 60%;
+      width: 8px;
+      right: 35%;
+      top: 47px;
+      background-color: initial;
+      z-index: 1;
+      box-shadow: inset 0 -19px 18px -14px #ffffff, 0px 19px 25px -23px #ffffff inset;
+    }
+  }
+
+  .transport-list__icon--catalog {
+    width: 34px;
   }
 
   .catalog-companion-card__tittle-wrapper {
     width: 36%;
-    padding: 48px 0 0 59px;
+    padding: 47px 0 0 27px;
   }
 
   .catalog-companion-card__title {
@@ -281,13 +472,14 @@
     font-weight: bold;
 
     &::before {
-      right: 295px;
+      right: 334px;
     }
   }
 
   .catalog-companion-card__tags {
     margin-top: 92px;
-    margin-left: -290px;
+    top: 2px;
+    right: 380px;
   }
 
   .catalog-companion-card__image {
@@ -298,17 +490,22 @@
 
   .catalog-companion-card__like {
     top: 188px;
-    left: 514px;
+    left: 489px
   }
 
   .catalog-companion-card__follower {
-    left: 569px;
+    left: 549px;
     top: 200px;
   }
 
+  .catalog-companion-card__left {
+    margin-bottom: 10px;
+  }
+
   .catalog-companion-card__wishes-block {
+    border: none;
     margin: 0;
-    margin-top: -235px;
+    margin-top: -245px;
     padding-left: 42px;
     width: 33.6%;
     order: 0;
@@ -323,23 +520,42 @@
     flex-direction: column;
   }
 
+  .catalog-companion-card__country-title {
+    margin-bottom: 1px;
+  }
+
+  .catalog-companion-card__flag {
+    margin-right: 18px;
+  }
+
+  .catalog-companion-card__level-value {
+    color: #161c35;
+  }
+
   .catalog-companion-card__transport-level {
     flex-direction: row;
     justify-content: flex-end;
     margin: 0;
-    margin-top: auto;
-    margin-right: 44px;
+   margin-top: auto;
+    margin-bottom: 45px;
+    margin-right: 104px;
   }
 
   .catalog-companion-card__transport {
+    padding-right: 33px;
     flex-direction: row;
   }
 
   .catalog-companion-card__button {
-    margin-left: 366px;
-    margin-top: -50px;
-    margin-bottom: 47px;
+    left: 321px;
+    top: 189px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .catalog-companion-card__progress-block {
+    text-align: center;
+    top: -19px;
+    right: -53px;
   }
 }

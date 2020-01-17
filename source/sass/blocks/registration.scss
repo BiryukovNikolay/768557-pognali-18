@@ -1,7 +1,7 @@
 .registration__wrapper {
   width: 270px;
   margin: 0 auto;
-  padding-top: 70px;
+  padding-top: 92px;
   text-align: center;
 }
 
@@ -17,9 +17,12 @@
 }
 
 .registration__description {
+  width: 74%;
+  margin: 0 auto;
+  line-height: 22px;
   font-weight: lighter;
   color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 .registration__form {
@@ -28,23 +31,42 @@
 }
 
 .registration__text {
+  color: rgba(68, 68, 68, 0.3);
   flex-grow: 2;
   font-family: inherit;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 18px;
   line-height: 24px;
   padding-left: 25px;
-  border-radius: 20px 0 0 20px;
-  width: 190px;
-  height: 70px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  width: 60%;
+  height: 62px;
+
+  &:hover {
+    color: rgba(68, 68, 68, 0.5);
+    background-color: #edeff6;
+  }
+
+  &:focus {
+    color: #ffffff;
+    border: #ffffff 4px solid;
+    background-color: initial;
+  }
+
+  &--error {
+    background-color: #ffefef;
+    color: #ff0000;
+  }
 }
 
 .registration__button {
+  padding-left: 27px;
   background: $yellow-background;
   margin-left: -20px;
-  width: 70px;
-  height: 70px;
-  border-radius: 20px 20px 20px 20px;
+  width: 60px;
+  height: 62px;
+  border-radius: 10px;
   border: none;
 }
 
@@ -54,10 +76,19 @@
 
 .registration__link {
   color: $yellow-background;
+
+  &:hover {
+    color: #ff8d30;
+  }
+
+  &:active {
+    color: rgba(255, 141, 48, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .registration__wrapper {
+    padding-top: 54px;
     width: 620px;
     margin: 0 auto;
   }
@@ -73,6 +104,9 @@
   }
 
   .registration__description {
+    width: 104%;
+    margin-top: 57px;
+    margin-bottom: 63px;
     font-size: 28px;
     line-height: 33px;
     text-align: center;
@@ -105,7 +139,7 @@
 @media (min-width: $desktop-width) {
   .registration {
     min-height: 450px;
-    padding: 108px 70px 40px 70px;
+    padding: 104px 71px 40px 61px;
   }
 
   .registration__wrapper {
@@ -115,14 +149,18 @@
   }
 
   .registration__description {
+    width: 100%;
     font-size: 28px;
     line-height: 33px;
-    margin-bottom: 61px;
+    margin-top: -3px;
+    margin-bottom: 55px;
   }
 
   .registration__form {
+    width: 89%;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
   }
 
   .registration__text {

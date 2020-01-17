@@ -1,4 +1,5 @@
 .user-list {
+  margin-bottom: 26px;
   @include list-style-off;
   display: flex;
   flex-direction: column;
@@ -7,7 +8,12 @@
   &--hidden {
     flex-direction: row;
     position: absolute;
-    top: 420px;
+    width: 270px;
+    top: 442px;
+  }
+
+  &--page--hidden {
+    display: none;
   }
 }
 
@@ -17,20 +23,24 @@
 }
 
 .user-list__btn {
-  padding: 20px 0 20px 0;
+  padding: 12px 0;
   margin-bottom: 50px;
 
   &--hidden {
+    height: 40px;
+    width: 190px;
     margin: 0;
-    height: 50px;
-    width: 170px;
+  }
+
+  &:hover {
+    background-color: #ffbd30;
   }
 }
 
 .user-list__link {
   color: #192144;
   font-weight: bold;
-  padding: 14px 0 14px 0;
+  padding: 16px 0 14px 0;
 
   &::before {
     position: absolute;
@@ -45,37 +55,73 @@
   }
 
   &--hidden {
+    padding-left: 40px;
+    margin-left: -50px;
+    height: 40px;
     font-size: 28px;
-    padding: 20px 0 20px 0;
 
     &::before {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
     }
   }
 }
 
 .user-list__link--mail {
+  height: 40px;
   text-transform: uppercase;
 
   &::before {
-    background: url("../img/contacts-mail.svg") center no-repeat;
+    background: url("../img/contacts-mail.svg") center no-repeat #121936;
     background-size: 20px 15px;
+  }
+
+  &:hover {
+    &::before {
+      background: url("../img/contacts-mail-hover.svg") center no-repeat #121936;
+      background-size: 20px 15px;
+    }
   }
 
   &--hidden {
     &::before {
+      font-size: 28px;
+      width: 40px;
+      height: 40px;
       background: url("../img/topmenu-mail.svg") center no-repeat;
       background-color: #ffbd30;
       background-size: 18px 14px;
+    }
+
+    &:hover {
+      &::before {
+        background: url("../img/topmenu-mail.svg") center no-repeat;
+        background-color: #ff8d30;
+        background-size: 18px 14px;
+      }
+    }
+
+    &:active {
+      &::before {
+        background: url("../img/topmenu-mail-active.svg") center no-repeat;
+        background-color: #ff8d30;
+        background-size: 18px 14px;
+      }
     }
   }
 }
 
 .user-list__link--phone {
   &::before {
-    background: url("../img/contacts-phone.svg") center no-repeat;
+    background: url("../img/contacts-phone.svg") center no-repeat #121936;
     background-size: 20px 20px;
+  }
+
+  &:hover {
+    &::before {
+      background: url("../img/contacts-phone-hover.svg") center no-repeat #121936;
+      background-size: 20px 20px;
+    }
   }
 
   &--hidden {
@@ -84,12 +130,28 @@
       background-color: $bright-title;
       background-size: 18px 18px;
     }
+
+    &:hover {
+      &::before {
+        background: url("../img/topmenu-phone.svg") center no-repeat;
+        background-size: 18px 18px;
+        background-color: #f26926;
+      }
+    }
+
+    &:active {
+      &::before {
+        background: url("../img/topmenu-phone-active.svg") center no-repeat;
+        background-color: #f26926;
+        background-size: 18px 18px;
+      }
+    }
   }
 }
 
 
 .user-list__authentication {
-  font-size: 16px;
+  font-size: 17px;
   text-transform: uppercase;
   color: $dark-title;
   order: -1;
@@ -110,18 +172,23 @@
   padding-left: 61px;
 
   &--hidden {
-    padding-left: 50px;
+    padding-left: 41px;
   }
 }
 
-.user-list__link-description--hidden {
+.user-list__link-description1--hidden {
+  display: none;
+}
+
+.user-list__link-description2--hidden {
   display: none;
 }
 
 @media (min-width: $tablet-width) {
   .user-list__authentication {
     align-self: flex-end;
-    margin-bottom: 380px;
+    margin-bottom: 385px;
+    margin-top: -10px;
 
     &--hidden {
       margin: 0;
@@ -129,11 +196,18 @@
   }
 
   .user-list {
+    margin-bottom: 140px;
     margin-top: -468px;
 
     &--hidden {
       position: static;
       margin: 0;
+      margin-left: auto;
+      margin-top: -51px;
+    }
+
+    &--page--hidden {
+      display: flex;
     }
   }
 
@@ -144,11 +218,19 @@
     text-align: center;
     height: 50px;
     padding: 12px 0 0 0;
+
+    &--hidden {
+      margin-left: auto;
+    }
+  }
+
+  .user-list__mail {
+    margin-top: -8px;
   }
 
   .user-list__mail,
   .user-list__phone {
-    padding-left: 90px;
+    padding: 0;
 
     &--hidden {
       display: none;
@@ -157,7 +239,7 @@
 
   .user-list__link {
     font-size: 28px;
-    padding: 20px 0 20px 0;
+    padding: 24px 0 20px 92px;
 
     &::before {
       width: 70px;
@@ -166,6 +248,8 @@
   }
 
   .user-list__link--mail {
+    margin-left: -50px;
+    margin-left: 0;
     text-transform: uppercase;
 
     &::before {
@@ -183,7 +267,13 @@
 @media (min-width: $desktop-width) {
   .user-list {
     flex-direction: row;
+    align-items: baseline;
     margin: 0;
+    margin-top: 3px;
+
+    &--catalog {
+      display: block;
+    }
   }
 
   .user-list__authentication {
@@ -191,7 +281,11 @@
     margin: 0;
   }
 
-  .user-list__link-description {
+  .user-list__link-description1 {
+    display: none;
+  }
+
+  .user-list__link-description2 {
     display: none;
   }
 
@@ -229,6 +323,22 @@
       background-color: #ffbd30;
       background-size: 18px 14px;
     }
+
+    &:hover {
+      &::before {
+        background: url("../img/topmenu-mail.svg") center no-repeat;
+        background-color: #ff8d30;
+        background-size: 18px 14px;
+      }
+    }
+
+    &:active {
+      &::before {
+        background: url("../img/topmenu-mail-active.svg") center no-repeat;
+        background-color: #ff8d30;
+        background-size: 18px 14px;
+      }
+    }
   }
 
   .user-list__link--phone {
@@ -236,6 +346,22 @@
       background: url("../img/topmenu-phone.svg") center no-repeat;
       background-color: $bright-title;
       background-size: 18px 18px;
+    }
+
+    &:hover {
+      &::before {
+        background: url("../img/topmenu-phone.svg") center no-repeat;
+        background-size: 18px 18px;
+        background-color: #f26926;
+      }
+    }
+
+    &:active {
+      &::before {
+        background: url("../img/topmenu-phone-active.svg") center no-repeat;
+        background-color: #f26926;
+        background-size: 18px 18px;
+      }
     }
   }
 }

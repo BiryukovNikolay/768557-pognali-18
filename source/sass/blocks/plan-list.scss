@@ -4,8 +4,8 @@
   color: #161c35;
   font-weight: bold;
   font-size: 18px;
+  line-height: 18px;
   width: 270px;
-  text-transform: uppercase;
   margin: 0 auto;
   padding-bottom: 40px;
 }
@@ -14,10 +14,10 @@
   margin-top: -20px;
   min-height: 100px;
   background-color: $yellow-background;
-  padding: 23px 23px 23px 25px;
+  padding: 23px 23px 17px 25px;
   display: flex;
   justify-content: space-between;
-  border-radius: 20px 20px 0 0;
+  border-radius: 10px 10px 0 0;
 
   &:first-child {
     margin-top: 0;
@@ -34,7 +34,7 @@
 
   &:last-child {
     min-height: 80px;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 10px 10px 10px 10px;
     background-color: $yellow-background;
   }
 }
@@ -57,16 +57,20 @@
   }
 
   .plan-list__item {
-    margin-top: -1px;
+    margin-top: 0;
     flex-direction: column;
     justify-content: space-between;
     padding: 31px 96px 28px 31px;
-    width: 51%;
+    width: 50%;
     min-height: 140px;
     border-radius: 0 0 0 0;
 
     &:nth-child(even) {
       margin-left: -15px;
+    }
+
+    &:nth-child(odd) {
+      width: 52%;
     }
 
     &:first-child {
@@ -82,7 +86,6 @@
     }
 
     &:last-child {
-      min-height: 140px;
       border-radius: 0 0 20px 20px;
     }
   }
@@ -99,6 +102,7 @@
 
 @media (min-width: $desktop-width) {
   .plan-list {
+    justify-content: flex-start;
     width: $desktop-wrapper;
   }
 
@@ -107,8 +111,12 @@
     flex-direction: row;
     padding: 30px;
     padding-right: 50px;
-    width: 26.5%;
-    min-height: 60px;
+    width: 27.6%;
+    min-height: 107px;
+
+    &:nth-child(odd) {
+      width: 25.4%;
+    }
 
     &:first-child {
       border-radius: 20px 0 0 20px;
@@ -120,11 +128,13 @@
     }
 
     &:nth-child(3) {
+      width: 27.5%;
       margin-left: -20px;
       border-radius: 20px 0 0 20px;
     }
 
     &:nth-child(4) {
+      min-height: 100px;
       width: 24%;
       padding-right: 30px;
       margin-left: -20px;

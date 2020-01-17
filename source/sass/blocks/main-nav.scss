@@ -6,37 +6,65 @@
 }
 
 .main-nav__list {
-  margin-bottom: 42px;
+  margin-bottom: 32px;
   text-align: center;
+}
+
+.main-nav__social-link {
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 1;
+    background-color: #192144;
+    fill: #ffffff
+  }
 }
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
+    margin-top: -15px;
     text-align: left;
-    margin-bottom: 142px;
+    margin-bottom: 114px;
   }
 
   .main-nav__wrapper {
     width: $tablet-wrapper;
-    padding: 99px 0 84px 55px;
+    padding: 99px 0 0 55px;
 
     &--hidden {
+      margin: 0;
       padding: 0;
-      width: fit-content;
+      width: 100%;
     }
   }
 
   .main-nav__social {
+    margin-left: 5px;
     align-self: start;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .main-nav {
+    width: 85%;
+  }
+
   .main-nav__wrapper {
+    width: 100%;
+    margin-left: 39px;
     justify-content: space-between;
     flex-direction: row;
     padding: 0;
     align-items: flex-start;
+
+    &--hidden {
+      width: 100%;
+      margin-left: 39px;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 0;
+      align-items: flex-start;
+    }
   }
 
   .main-nav__list {

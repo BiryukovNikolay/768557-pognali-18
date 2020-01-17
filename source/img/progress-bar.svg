@@ -1,0 +1,8 @@
+<svg version="1.1" width="100px" height="100px" class="progress">
+  <linearGradient id="progress-fill">
+    <stop offset="0" class="color-one" />
+    <stop offset="1" class="color-two" />
+  </linearGradient>
+  <circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle>
+  <circle r="40" cx="50" cy="50" class="progress-circle" stroke-width="10" stroke-dashoffset="50"></circle>  
+</svg>

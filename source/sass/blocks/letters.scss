@@ -7,18 +7,32 @@
 }
 
 .letters__item {
+  color: #1d2e5b;
   line-height: 42px;
   text-align: center;
   display: block;
-  width: 43px;
-  height: 42px;
+  width: 45px;
+  height: 41px;
   background-color: #ffffff;
   border: 1px #cbced9 solid;
+
+    &:hover {
+      border: #959bb2 1px solid;
+    }
+
+    &:active {
+      color: #ffffff;
+      background-color: #1d2e5b;
+    }
 }
 
 .letters__item--checked {
   color: #ffffff;
   background-color: #1d2e5b;
+}
+
+.letters__item--checked-form {
+  background-color: #cbced9;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,17 +42,41 @@
   }
 
   .letters__item {
+    font-weight: bold;
     color: rgba(25, 33, 68, 0.2);
-    line-height: 0;
+    line-height: 80px;
     text-align: center;
     display: block;
-    width: 69px;
-    height: 69px;
+    width: 77px;
+    height: 83px;
     background-color: inherit;
     border: none;
   }
 
   .letters__item--checked {
     color: #192144;
+  }
+
+  .letters__item--checked-form {
+    background-color: #1d2e5b;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .letters {
+    align-content: flex-start;
+  }
+
+  .letters__item {
+    margin-bottom: -11px;
+    font-size: 60px;
+    line-height: 24px;
+    color: #1d2e5b;
+  }
+
+  .letters > li {
+    margin-bottom: 71px;
+    width: 19.6%;
   }
 }
