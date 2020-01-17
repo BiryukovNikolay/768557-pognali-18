@@ -115,7 +115,7 @@
       right: -35%;
       top: 120%;
       background-color: #101d41;
-      border-radius: 4px; 
+      border-radius: 4px;
     }
 
     &::before {
@@ -162,16 +162,20 @@
 
   .companion-card-title {
     &::before {
-    width: 7px;
-    height: 7px;
-    left: -22px;
+      width: 7px;
+      height: 7px;
+      left: -22px;
+    }
+
+    a {
+      font-size: 24px;
     }
   }
 
   .companion-card__wrapper {
     border-radius: 0 0 20px 20px;
     padding-top: 29px;
-    padding-bottom: 18px; 
+    padding-bottom: 18px;
   }
 
   .companion-card__flags {
@@ -193,12 +197,6 @@
     margin-top: 24px;
     margin-bottom: 15px;
     font-size: 19px;
-  }
-
-  .companion-card-title {
-    a {
-      font-size: 24px;
-    }
   }
 }
 

@@ -1,13 +1,15 @@
 .progress {
   transform: rotate(-90deg);
 }
-.progress__circle{
+
+.progress__circle {
   fill: transparent;
-  stroke:#ff8d30;
+  stroke: #ff8d30;
   stroke-width: 3;
   stroke-dasharray: 255;
-  transition: stroke-dashoffset ease-out .4s;
+  transition: stroke-dashoffset ease-out 0.4s;
 }
+
 .progress__level-try {
   background-color: aqua;
 }

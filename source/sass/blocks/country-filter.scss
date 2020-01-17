@@ -73,7 +73,7 @@
 }
 
 .country-filter__icon {
-  margin-top: 0px;
+  margin-top: 0;
   fill: #161c35;
   margin-right: -7px;
 }
@@ -131,6 +131,8 @@
 
   .country-filter__icon {
     display: none;
+    width: 19px;
+    height: 19px;
   }
 
   .country-filter__toggle {
@@ -157,7 +159,7 @@
 
   .country-filter__desktop-wrapper {
     display: flex;
-    align-items: baseline;    
+    align-items: baseline;
     padding: 0 33px;
     padding-top: 4px;
   }
@@ -176,7 +178,7 @@
     width: 27px;
     height: 5px;
   }
-  
+
   .country-filter__close-dots {
     width: 27px;
     height: 11px;
@@ -225,21 +227,16 @@
     margin-right: 21px;
   }
 
-  .country-filter__icon {
-    width: 19px;
-    height: 19px;
-  }
-
   .country-filter__close-title {
     display: block;
   }
-   
-   //скрытое меню фильтра
+
+  //скрытое меню фильтра
   .country-filter__toggle--close {
     display: flex;
     width: 181px;
     margin-bottom: -83px;
-    margin-right: 0px;
+    margin-right: 0;
     padding: 0;
     justify-content: space-between;
     align-items: center;
@@ -284,7 +281,6 @@
   .country-filter__close--close {
     display: none;
   }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -308,7 +304,8 @@
   }
 
   .country-filter__desktop-wrapper {
-    padding: 0px 22px;
+    position: relative;
+    padding: 0 22px;
     display: flex;
     align-items: baseline;
   }
@@ -361,11 +358,6 @@
   }
 
   //свернутое меню фильтра
-
-  .country-filter__desktop-wrapper {
-    position: relative;
-  }
-
   .country-filter__icon--close {
     display: block;
     width: 23px;

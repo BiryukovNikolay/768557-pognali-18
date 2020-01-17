@@ -28,7 +28,7 @@ document.addEventListener("resize", function() {
           console.log("hello")
         }
     });
-  
+
   burgerX.classList.toggle("page-header__toggle--hidden");
   pageHeader.classList.toggle("page-header--hidden");
   pageHeadWrap.classList.toggle("page-header__wrapper--hidden");
@@ -182,4 +182,3 @@ choiceCountry.addEventListener("click", function(evt) {
   countriesField.classList.toggle("add-plan__countries--open");
   choiceCountry.classList.toggle("add-plan__country-choice-start--open");
 })
-

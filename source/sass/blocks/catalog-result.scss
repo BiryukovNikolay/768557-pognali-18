@@ -102,7 +102,7 @@
     &:hover {
       color: rgba(22, 28, 53, 0.6);
     }
-    
+
     &:active {
       background-color: #ffd74b;
     }
@@ -146,7 +146,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog-result {
-    margin-top: 0px;
+    margin-top: 0;
     margin-left: 60px;
     width: 66%;
   }

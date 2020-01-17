@@ -72,7 +72,7 @@
   }
 
   &:active {
-    color: rgba(255, 189, 48, 0.3)
+    color: rgba(255, 189, 48, 0.3);
   }
 
   &--mail {
@@ -168,15 +168,15 @@
   &:active {
     color: rgba(255, 255, 255, 0.3);
     fill: rgba(255, 255, 255, 0.3);
-  } 
+  }
 }
 
 .contacts-map {
   z-index: 0;
   position: relative;
   min-height: 320px;
-  background-color: #d0deb0;
   background: url("../img/map-mobile@1x.jpg") no-repeat center -14px $main-background;
+
   @media (min-resolution: $retina-dppx) {
     background: url("../img/map-mobile@2x.jpg") no-repeat center -14px $main-background;
     background-size: cover;
@@ -259,10 +259,11 @@
     padding-bottom: 20px;
     margin-bottom: 16px;
   }
-  
+
   .contacts-map {
     min-height: 565px;
     background: url("../img/map-tablet@1x.jpg") no-repeat center -35px $main-background;
+
     @media (min-resolution: $retina-dppx) {
       background: url("../img/map-tablet@2x.jpg") no-repeat center -35px $main-background;
       background-size: cover;
@@ -272,7 +273,7 @@
 
 @media (min-width: $desktop-width) {
   .contacts {
-    margin-top: -1px;  
+    margin-top: -1px;
   }
 
   .contacts__phone-mail {
@@ -293,7 +294,7 @@
     align-items: baseline;
     justify-content: space-around;
     padding-left: 7px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
   }
 
   .contacts__title {
@@ -359,6 +360,7 @@
   .contacts-map {
     min-height: 500px;
     background: url("../img/map-desktop@1x.jpg") no-repeat center -100px $main-background;
+
     @media (min-resolution: $retina-dppx) {
       background: url("../img/map-desktop@2x.jpg") no-repeat center -100px $main-background;
       background-size: cover;

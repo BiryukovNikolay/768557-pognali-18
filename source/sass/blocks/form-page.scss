@@ -100,7 +100,7 @@
   background-color: #dfe3f0;
   font-size: 17px;
   line-height: 30px;
-  padding:  7px 0px 3px;
+  padding: 7px 0 3px;
   margin-bottom: 33px;
 
   &:hover {
@@ -148,7 +148,7 @@
 
 .form-page__transport {
   min-height: 51px;
-  padding: 4px 25px 0px;
+  padding: 4px 25px 0;
 }
 
 .form-page__transport-list {
@@ -318,7 +318,7 @@
   .form-page__border-block--tags {
     width: 58%;
     margin-top: 5px;
-  
+
     .form-page__subtitle {
       text-align: left;
       margin-left: 20px;

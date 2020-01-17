@@ -1,7 +1,8 @@
 .about {
   min-height: 352px;
+
   @include block-radius;
-  margin-top: -1px; 
+  margin-top: -1px;
   position: relative;
   z-index: 5;
   background: url("../img/about-mobile@1x.png") 18px 0 no-repeat #192144;
@@ -58,7 +59,7 @@
 
     @media (min-resolution: $retina-dppx) {
       background: url("../img/about-tablet@2x.png") 383px 288px no-repeat;
-      background-size:  380px 550px;
+      background-size: 380px 550px;
     }
   }
 

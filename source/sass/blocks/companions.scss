@@ -16,9 +16,9 @@
 
 .companions__item {
   &:hover {
-    box-shadow: 0px 6px 21px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 6px 21px 0 rgba(0, 0, 0, 0.08);
 
-    & .companion-card__avatar{
+    & .companion-card__avatar {
       transform: scale(1.05);
       z-index: -1;
     }
@@ -153,7 +153,7 @@
 
   .companions__list-wrapper {
     padding-top: 167px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .companions-description {

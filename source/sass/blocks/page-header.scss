@@ -8,6 +8,9 @@
 
   &--hidden {
     position: initial;
+    background-color: #161c35;
+    min-height: 46px;
+    padding: 0;
   }
 }
 
@@ -42,13 +45,6 @@
   background: url("../img/menu-scroll.svg") center no-repeat;
 }
 
-.page-header--hidden {
-  padding-top: 20px;
-  background-color: #161c35;
-  min-height: 46px;
-  padding: 0;
-}
-
 .page-header--scroll {
   background-color: #ffffff;
   min-height: 73px;
@@ -59,7 +55,7 @@
 }
 
 .page-header__logo-wrapper--hidden {
-  padding-top: 27px; 
+  padding-top: 27px;
   margin-bottom: 0;
 }
 
@@ -202,7 +198,7 @@
   }
 
   .page-header__logo-image-white--hidden {
-    display: none
+    display: none;
   }
 
   .page-header__logo-image-blue--hidden {

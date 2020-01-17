@@ -16,14 +16,14 @@
   background-color: #ffffff;
   border: 1px #cbced9 solid;
 
-    &:hover {
-      border: #959bb2 1px solid;
-    }
+  &:hover {
+    border: #959bb2 1px solid;
+  }
 
-    &:active {
-      color: #ffffff;
-      background-color: #1d2e5b;
-    }
+  &:active {
+    color: #ffffff;
+    background-color: #1d2e5b;
+  }
 }
 
 .letters__item--checked {

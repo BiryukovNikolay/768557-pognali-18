@@ -1,5 +1,6 @@
 .country-list {
   display: none;
+
   @include list-style-off;
   color: $soft-text;
   font-size: 16px;
@@ -33,7 +34,7 @@
     line-height: 30px;
     font-style: normal;
   }
-  
+
   .country-list--active {
     top: 5px;
     left: 462px;

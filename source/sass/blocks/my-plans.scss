@@ -20,7 +20,7 @@
   min-height: 154px;
   border-radius: 10px;
   padding: 25px;
-  padding-top: 0px;
+  padding-top: 0;
   padding-bottom: 2px;
   margin-bottom: 10px;
   display: flex;
@@ -36,7 +36,7 @@
 
 .my-plans__item-title {
   margin-left: 4px;
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-top: 10px;
   text-transform: initial;
   color: #1d2e5b;
@@ -54,7 +54,7 @@
 }
 
 .my-plans__subtitle--companions {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   margin-top: -9px;
 }
 
@@ -70,11 +70,10 @@
   &:hover {
     color: rgba(0, 0, 0, 0.6);
   }
-  
+
   &:active {
     color: rgba(0, 0, 0, 0.1);
   }
-  
 }
 
 @media (min-width: $tablet-width) {
@@ -107,7 +106,6 @@
       left: 0;
       background-color: #1d2e5b;
       opacity: 0.3;
-
     }
   }
 
@@ -168,7 +166,7 @@
     min-height: 38px;
     flex-direction: row;
     align-items: baseline;
-    
+
     &::before {
       display: none;
     }
