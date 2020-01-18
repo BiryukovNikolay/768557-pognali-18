@@ -1,9 +1,19 @@
 .copyright__text {
   color: $soft-text;
   font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
 }
 
 .copyright__link {
   width: 28px;
   height: 34px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__text {
+    margin-top: 14px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }

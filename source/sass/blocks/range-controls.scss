@@ -9,7 +9,7 @@
 }
 
 .range-controls__bar {
-  width: 56.5%;
+  width: 65.5%;
   height: 2px;
   background-color: #1d2e5b;
   margin-left: auto;
@@ -22,12 +22,43 @@
   top: 20px;
   border-radius: 100px;
   background-color: #1d2e5b;
+
+  &:hover {
+    transform: scale(1.25);
+  }
+
+  &:active {
+    box-shadow: 0 3px 7px 0 rgba(29, 46, 91, 0.35);
+    transform: scale(1.25);
+  }
 }
 
 .range-controls__toggle--min {
-  right: 56.5%;
+  right: 64.5%;
 }
 
 .range-controls__toggle--max {
   right: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .range-controls__bar {
+    width: 71.5%;
+    height: 3px;
+  }
+
+  .range-controls__toggle {
+    top: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .range-controls__toggle {
+    width: 12px;
+    height: 12px;
+  }
+
+  .range-controls__toggle--min {
+    right: 62.5%;
+  }
 }

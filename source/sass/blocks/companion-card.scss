@@ -2,12 +2,25 @@
   position: relative;
 }
 
-.companion-card__level-block {
+.companion-card__progress-block {
+  position: absolute;
+  top: 17px;
+  left: 17px;
   width: 60px;
   height: 60px;
+}
+
+.companion-card__progress {
   position: absolute;
-  top: 16px;
-  left: 16px;
+  top: -7px;
+  left: -6px;
+  width: 72px;
+  height: 72px;
+}
+
+.companion-card__level-block {
+  width: 60px;
+  height: 59px;
   background-color: rgba(0, 0, 0, 0.5);
   padding: 5px 0;
 }
@@ -17,7 +30,7 @@
   display: block;
   width: 31px;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 21px;
   color: #ffffff;
 }
 
@@ -45,8 +58,8 @@
     width: 5px;
     height: 5px;
     background-color: #f97676;
-    top: calc(50% - 3px);
-    right: 122px;
+    top: calc(50% - 4px);
+    left: -19px;
     border-radius: 10px;
   }
 
@@ -55,43 +68,135 @@
       background-color: #81e31e;
     }
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .companion-card__wrapper {
   margin-top: -5px;
   margin-bottom: 10px;
-  padding: 26px 40px 21px 40px;
+  padding: 26px 40px 16px 40px;
   background-color: #ffffff;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 10px 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.companion-card__flags {
+  @include list-style-off;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  margin-top: -38px;
+}
+
+.companion-card__flag-icon {
+  position: relative;
+  margin-right: 19px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    &::after {
+      z-index: 3;
+      content: attr(data-hover);
+      position: absolute;
+      padding: 10px;
+      color: #ffffff;
+      right: -35%;
+      top: 120%;
+      background-color: #101d41;
+      border-radius: 4px;
+    }
+
+    &::before {
+      content: " ";
+      z-index: 2;
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: transparent transparent #101d41 transparent;
+    }
+  }
+}
+
 .companion-card__tags {
+  margin-top: 14px;
+  margin-bottom: 11px;
   text-align: center;
   color: $soft-text;
 }
 
-.companions__button {
-  font-size: 18px;
-  color: $dark-title;
-  text-decoration: none;
-  background-color: $yellow-background;
+.companion-card__avatar-wrapper {
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
 }
 
 .companion-card__avatar {
-  border-radius: 25px 25px 0 0;
+  position: relative;
+  z-index: -1;
+  border-radius: 10px 10px 0 0;
 }
 
 .companion-card__transport {
-  width: 150px;
+  width: 134px;
 }
 
 @media (min-width: $tablet-width) {
   .companion-card-list__item {
     display: flex;
     flex-direction: column;
+  }
+
+  .companion-card-title {
+    &::before {
+      width: 7px;
+      height: 7px;
+      left: -22px;
+    }
+
+    a {
+      font-size: 24px;
+    }
+  }
+
+  .companion-card__wrapper {
+    border-radius: 0 0 20px 20px;
+    padding-top: 29px;
+    padding-bottom: 18px;
+  }
+
+  .companion-card__flags {
+    margin-bottom: 13px;
+    margin-top: -41px;
+  }
+
+  .companion-card__avatar-wrapper {
+    border-radius: 20px 20px 0 0;
+  }
+
+  .companion-card__avatar {
+    border-radius: 20px 20px 0 0;
+    width: 285px;
+    height: 284px;
+  }
+
+  .companion-card__tags {
+    margin-top: 24px;
+    margin-bottom: 15px;
+    font-size: 19px;
   }
 }
 

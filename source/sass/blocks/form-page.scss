@@ -4,13 +4,14 @@
 }
 
 .form-page {
+  margin-top: -1px;
   background-color: $main-background;
 }
 
 .form-page__tittle-wrapper {
   background-color: $dark-title;
   min-height: 75px;
-  border-radius: 0 0 25px 25px;
+  border-radius: 0 0 20px 20px;
 }
 
 .form-page__wrapper--foto-level {
@@ -18,32 +19,97 @@
 }
 
 .form-page__title {
+  position: relative;
   color: #ffffff;
   font-size: 36px;
   line-height: 40px;
-  padding-top: 25px;
+  padding-top: 50px;
+  padding-bottom: 9px;
   margin: 0;
-  width: 100%;
+  width: fit-content;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #ff8d30;
+    bottom: -2px;
+    border-radius: 10px;
+  }
 }
 
 .form-page__foto-level {
   display: flex;
   justify-content: space-around;
   padding-top: 23px;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 }
 
 .form-page__image {
+  margin-left: 2px;
   border-radius: 300px;
 }
 
+.form-page__progress-block {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  top: -4px;
+  left: -2px;
+}
+
+.form-page__progress {
+  position: absolute;
+  top: -7px;
+  left: -6px;
+  width: 120px;
+  height: 120px;
+}
+
+.form-page__level-block {
+  width: 95px;
+  height: 95px;
+  margin-top: 4px;
+  margin-left: 5px;
+  padding: 5px 0;
+  background-color: transparent;
+}
+
+.form-page__level-value {
+  border: none;
+  width: 31px;
+  margin-right: 8px;
+  color: #161c35;
+  font-size: 36px;
+  line-height: 30px;
+}
+
+.form-page__level-title {
+  font-size: 18px;
+  line-height: 14px;
+  border-top: #161c35 2px solid;
+  color: #161c35;
+  padding: 0 5px;
+  padding-top: 6px;
+}
+
 .form-page__change-button {
+  font-weight: bold;
   width: 100%;
   background-color: #dfe3f0;
   font-size: 17px;
   line-height: 30px;
-  padding: 5px 0;
+  padding: 7px 0 3px;
   margin-bottom: 33px;
+
+  &:hover {
+    background-color: #d1d7e9;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .form-page__subtitle {
@@ -56,7 +122,7 @@
   text-align: center;
   padding: 0 14px;
   background-color: $main-background;
-  margin: -10px auto 0 auto;
+  margin: -8px auto 0 auto;
 }
 
 .form-page__border-block {
@@ -66,28 +132,50 @@
   line-height: 22px;
   color: $soft-text;
   margin-bottom: 25px;
+
+  &:hover {
+    border: #aeb4cb 1px solid;
+  }
+
+  &:active {
+    border: #161c35 1px solid;
+  }
 }
 
 .form-page__tags {
-  padding: 26px;
+  padding: 12px 15px 21px 25px;
 }
 
 .form-page__transport {
-  min-height: 94px;
-  padding: 15px 25px;
+  min-height: 51px;
+  padding: 4px 25px 0;
+}
+
+.form-page__transport-list {
+  justify-content: center;
 }
 
 @media (min-width: $tablet-width) {
   .form-page__wrapper {
     width: $tablet-content-wrapper;
+    margin-bottom: 41px;
+  }
+
+  .form-page__tittle-wrapper {
+    border-radius: 0 0 60px 60px;
   }
 
   .form-page__title {
-    min-height: 200px;
+    min-height: 188px;
     font-size: 60px;
     line-height: 70px;
-    padding-bottom: 70px;
-    padding-top: 57px;
+    padding-bottom: 62px;
+    padding-top: 119px;
+
+    &::before {
+      height: 8px;
+      bottom: -4px;
+    }
   }
 
   .form-page__foto-level {
@@ -111,11 +199,22 @@
   }
 
   .form-page__border-block--transport {
+    min-height: 94px;
+    margin-top: 6px;
     order: -1;
     width: 50%;
   }
 
+  .form-page__transport {
+    padding: 25px 55px;
+  }
+
+  .form-page__transport-list {
+    justify-content: space-between;
+  }
+
   .form-page__subtitle {
+    letter-spacing: 1.1px;
     order: 2;
     margin-bottom: -10px;
     font-size: 20px;
@@ -130,6 +229,7 @@
 
   .form-page__change-button {
     margin-bottom: 51px;
+    letter-spacing: 1.1px;
     font-size: 20px;
     line-height: 18px;
     padding: 21px 0;
@@ -137,7 +237,7 @@
   }
 
   .form-page__tags {
-    padding: 37px 40px;
+    padding: 34px 38px;
   }
 }
 
@@ -146,21 +246,26 @@
     width: $desktop-wrapper;
   }
 
+  .form-page__tittle-wrapper {
+    border-radius: 0 0 60px 60px;
+  }
+
   .form-page__title {
     font-size: 60px;
     line-height: 70px;
     margin-left: 65px;
-    padding-top: 120px;
+    padding-top: 99px;
   }
 
   .form-page__foto-level {
     align-items: center;
     justify-content: flex-end;
     margin-right: 94px;
-    margin-bottom: 0;
+    margin-bottom: -5px;
   }
 
   .form-page__level-block {
+    margin-bottom: 98px;
     margin-right: 45px;
   }
 
@@ -172,6 +277,10 @@
     margin-left: 65px;
   }
 
+  .form-page__change-title {
+    display: none;
+  }
+
   .form-page__wrapper--desktop {
     margin-top: -213px;
   }
@@ -180,15 +289,35 @@
     border-radius: 10px 10px 0 0;
     width: 190px;
     height: 190px;
+    margin-top: -41px;
+  }
+
+  .form-page__progress-block {
+    top: -32px;
+    left: -46px;
   }
 
   .form-page__border-block--transport {
     order: 0;
-    width: 30%;
+    width: 30.5%;
+  }
+
+  .form-page__level-value {
+    color: #ffffff;
+  }
+
+  .form-page__level-title {
+    border-top: #ffffff 2px solid;
+    color: #ffffff;
+  }
+
+  .form-page__transport-list {
+    justify-content: center;
   }
 
   .form-page__border-block--tags {
-    width: 55%;
+    width: 58%;
+    margin-top: 5px;
 
     .form-page__subtitle {
       text-align: left;
@@ -206,5 +335,7 @@
     border-radius: 0 0 10px 10px;
     margin-right: 94px;
     margin-left: 970px;
+    padding: 15px 0;
+    margin-bottom: 19px;
   }
 }

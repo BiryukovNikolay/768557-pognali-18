@@ -1,21 +1,49 @@
 .region-list {
   @include list-style-off;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 26px;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
+  margin-top: 7px;
+  text-transform: uppercase;
 }
 
 .region-list__item {
   color: rgba(25, 33, 68, 0.3);
+
+  &--checked {
+    color: rgba(25, 33, 68, 1);
+  }
+
+  &:hover {
+    color: rgba(25, 33, 68, 0.6);
+  }
+
+  &:active {
+    color: rgba(25, 33, 68, 1);
+  }
 }
 
 @media (min-width: $tablet-width) {
   .region-list {
-    justify-content: space-around;
+    width: 87%;
+    margin-bottom: 0;
+    justify-content: space-between;
     font-size: 20px;
     line-height: 24px;
+    text-transform: uppercase;
     display: flex;
     align-items: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .region-list {
+    justify-content: flex-start;
+    width: 60%;
+  }
+
+  .region-list__item {
+    margin-right: 27px;
   }
 }

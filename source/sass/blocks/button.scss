@@ -1,28 +1,33 @@
 .button {
   position: relative;
   font-weight: bold;
-  padding: 24px;
+  padding: 21px;
   border-radius: 10px;
-  display: block;
+  display: flex;
   font-size: 18px;
   color: $dark-title;
   text-decoration: none;
   background-color: $yellow-background;
+  justify-content: space-between;
+  align-items: center;
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 14px;
-    background: url("../img/triangle-arrow-right.svg") no-repeat bottom center;
-    right: 29px;
-    top: 40%;
+  &:hover {
+    background-color: #ffbd30;
+  }
+
+  &:active {
+    background-color: #ffbd30;
+    color: rgba(29, 46, 91, 0.3);
+
+    svg {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: $tablet-width) {
   .button {
-    padding: 28px 24px;
+    padding: 28px 35px;
     font-size: 24px;
     line-height: 24px;
   }

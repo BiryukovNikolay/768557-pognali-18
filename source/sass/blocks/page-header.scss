@@ -1,11 +1,23 @@
 .page-header {
-  min-width: 320px;
+  min-width: 100%;
   min-height: 570px;
   background-color: #ffffff;
-  padding: 20px 0 40px 0;
+  padding: 20px 0 30px 0;
+  position: absolute;
+  z-index: 3;
+
+  &--hidden {
+    position: initial;
+    background-color: #161c35;
+    min-height: 46px;
+    padding: 0;
+  }
 }
 
 .page-header__toggle {
+  width: 19px;
+  height: 19px;
+  background: url("../img/close.svg") center no-repeat;
   display: block;
   margin-left: auto;
   border: 0;
@@ -16,28 +28,60 @@
   width: 270px;
   margin: 0 auto;
   display: flex;
-  margin-bottom: 75px;
-}
-
-.site-list__item--active {
-  display: none;
+  padding-top: 7px;
+  margin-bottom: 66px;
 }
 
 // Стили для скрытого меню header (--hidden)
 
-.page-header--hidden {
-  padding-top: 20px;
-  background-color: #192144;
+.page-header__toggle--hidden {
+  margin-top: 4px;
+  background: url("../img/menu.svg") center no-repeat;
+  width: 25px;
+  height: 11px;
+}
+
+.page-header__toggle--scroll {
+  background: url("../img/menu-scroll.svg") center no-repeat;
+}
+
+.page-header--scroll {
+  background-color: #ffffff;
+  min-height: 73px;
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
 }
 
 .page-header__logo-wrapper--hidden {
+  padding-top: 27px;
   margin-bottom: 0;
+}
+
+.page-header__logo-image-blue--hidden {
+  display: none;
+}
+
+.page-header__logo-image-white--hidden {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
+    z-index: 12;
+    width: 100%;
     min-height: 910px;
-    padding: 45px 0 80px 0;
+    padding: 45px 0 74px 0;
+
+    &--hidden {
+      min-height: 46px;
+      padding: 23px 0 10px 0;
+    }
+
+    &--scroll {
+      min-height: 132px;
+    }
   }
 
   .page-header__wrapper {
@@ -57,11 +101,13 @@
   .page-header__logo-wrapper {
     width: 355px;
     display: flex;
+    justify-content: space-between;
     align-items: flex-start;
     margin: 0;
+    margin-top: -6px;
 
     &--hidden {
-      width: 50%;
+      width: 52%;
       justify-content: space-between;
     }
   }
@@ -69,13 +115,56 @@
   .main-nav {
     display: flex;
   }
+
+  .page-header__logo-image-blue {
+    width: 165px;
+    height: 42px;
+  }
+
+  .page-header__logo-image-white {
+    width: 165px;
+    height: 42px;
+  }
+
+  .page-header__logo-image-blue--hidden {
+    display: none;
+  }
+
+  .page-header__logo-image-white--hidden {
+    display: none;
+  }
+
+  .page-header__toggle {
+    position: relative;
+    z-index: 5;
+    margin-top: 10px;
+
+    &--hidden {
+      margin-top: 17px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
+    position: relative;
     background-color: $dark-title;
     min-height: 100px;
     padding: 46px 0 0 0;
+
+    &-hidden {
+      position: relative;
+      background-color: $dark-title;
+      min-height: 100px;
+      padding: 46px 0 0 0;
+    }
+
+    &--scroll {
+      position: fixed;
+      background-color: #ffffff;
+      min-height: 90px;
+      padding: 17px 0 0 0;
+    }
   }
 
   .page-header__wrapper {
@@ -84,11 +173,36 @@
     align-items: flex-start;
     width: 1320px;
     margin: 0 auto;
+
+    &--hidden {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      width: 1320px;
+      margin: 0 auto;
+    }
   }
 
-  .page-header__logo-image {
+  .page-header__logo-wrapper {
+    width: fit-content;
+  }
+
+  .page-header__logo-image-white {
     width: 200px;
     height: 52px;
+  }
+
+  .page-header__logo-image-blue {
+    width: 200px;
+    height: 52px;
+  }
+
+  .page-header__logo-image-white--hidden {
+    display: none;
+  }
+
+  .page-header__logo-image-blue--hidden {
+    display: none;
   }
 
   .page-header__toggle {

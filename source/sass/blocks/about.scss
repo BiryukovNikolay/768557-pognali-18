@@ -1,17 +1,25 @@
 .about {
+  min-height: 352px;
+
   @include block-radius;
+  margin-top: -1px;
   position: relative;
   z-index: 5;
-  background: url("../img/about-mobile@1x.png") no-repeat #192144;
+  background: url("../img/about-mobile@1x.png") 18px 0 no-repeat #192144;
   color: white;
   font-size: 16px;
   line-height: 22px;
+
+  @media (min-resolution: $retina-dppx) {
+    background: url("../img/about-mobile@2x.png") 18px 0 no-repeat #192144;
+    background-size: contain;
+  }
 }
 
 .about__wrapper {
   width: 220px;
   margin: 0 auto;
-  padding: 35px 0 84px 0;
+  padding: 13px 0 1px 0;
 }
 
 .about__description {
@@ -38,44 +46,55 @@
       width: $tablet-wrapper;
       height: 213px;
       background-color: #141b3b;
-      border-radius: 30px;
-      top: 250px;
+      border-radius: 20px;
+      top: 241px;
       left: 40px;
       z-index: -1;
     }
   }
 
   .about__background {
-    min-height: 920px;
-    background: url("../img/about-tablet@1x.png") right 317px no-repeat;
+    min-height: 925px;
+    background: url("../img/about-tablet@1x.png") 383px 288px no-repeat;
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/about-tablet@2x.png") 383px 288px no-repeat;
+      background-size: 380px 550px;
+    }
   }
 
   .about__wrapper {
-    padding-top: 280px;
-    padding-left: 30px;
+    padding-top: 247px;
+    padding-left: 34px;
     width: $tablet-wrapper;
     margin: 0 auto;
   }
 
   .about__description {
+    margin-bottom: 31px;
     font-size: 28px;
     line-height: 33px;
     font-weight: normal;
   }
 
   .about__slogan {
+    width: 90%;
+    margin-bottom: 52px;
     font-size: 21px;
     line-height: 25px;
     font-weight: bold;
   }
 
   .about__left-block {
-    width: 340px;
+    width: 48%;
   }
 
   .about__button {
-    display: block;
+    border-radius: 20px;
+    display: flex;
     max-width: 274px;
+    padding-left: 34px;
+    padding-top: 30px;
   }
 }
 
@@ -88,7 +107,7 @@
       width: 213px;
       height: 213px;
       top: 71px;
-      left: 40px;
+      left: 61px;
     }
   }
 
@@ -98,24 +117,29 @@
   }
 
   .about__wrapper {
-    background: url("../img/about-desktop@1x.png") bottom right no-repeat;
+    background: url("../img/about-desktop@1x.png")  690px 85px no-repeat;
     width: 1320px;
     min-height: 750px;
     padding: 0;
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/about-desktop@2x.png")  690px 85px no-repeat;
+      background-size: 630px 665px;
+    }
   }
 
   .about__left-block {
-    width: 690px;
+    width: 55%;
     padding: 96px 0 163px 70px;
   }
 
   .about-title {
-    margin-bottom: 61px;
+    margin-bottom: 58px;
   }
 
   .about__description {
     display: block;
-    margin-bottom: 44px;
+    margin-bottom: 36px;
     font-size: 28px;
     line-height: 33px;
   }
