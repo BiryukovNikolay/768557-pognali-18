@@ -207,14 +207,10 @@ blockquote {
     .page-header__logo-wrapper--hidden {
       padding-top: 7px; }
   .page-header__logo-image-white {
-    width: 200px;
-    height: 52px; }
-  .page-header__logo-image-blue {
-    width: 200px;
-    height: 52px; }
-  .page-header__logo-image-white {
     display: none; }
   .page-header__logo-image-blue {
+    width: 200px;
+    height: 52px;
     display: block; }
   .page-header__toggle {
     display: none; } }
