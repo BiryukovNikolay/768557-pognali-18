@@ -104,7 +104,6 @@ var catalogWrapper = document.querySelector(".catalog-page__wrapper");
 
 if (filterOpen) {
 filterOpen.addEventListener("click", function(evt) {
-  console.log("ee");
   evt.preventDefault();
   catalogWrapper.classList.remove("catalog-page__wrapper--close");
   buttonClose.classList.remove("country-filter__button--close");
@@ -119,7 +118,6 @@ filterOpen.addEventListener("click", function(evt) {
 
 if (buttonClose) {
 buttonClose.addEventListener("click", function(evt) {
-  console.log("eeEEE");
   evt.preventDefault();
   catalogWrapper.classList.add("catalog-page__wrapper--close");
   buttonClose.classList.add("country-filter__button--close");
@@ -134,7 +132,6 @@ buttonClose.addEventListener("click", function(evt) {
 
 if (filterClose) {
 filterClose.addEventListener("click", function(evt) {
-  console.log("eeEEE");
   evt.preventDefault();
   catalogWrapper.classList.add("catalog-page__wrapper--close");
   buttonClose.classList.add("country-filter__button--close");
