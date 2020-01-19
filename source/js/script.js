@@ -22,19 +22,13 @@ var logoBlue = document.querySelector(".page-header__logo-image-blue");
 var businessBtn = document.querySelector(".add-profile__business");
 var businessModal = document.querySelector(".business-modal");
 var businessClose = document.querySelector(".business-modal__button");
-var window = window.innerWidth;
-document.addEventListener("resize", function() {
-        if (window => 1440){
-          console.log("hello")
-        }
-    });
 
   burgerX.classList.toggle("page-header__toggle--hidden");
   pageHeader.classList.toggle("page-header--hidden");
   pageHeadWrap.classList.toggle("page-header__wrapper--hidden");
   logo.classList.toggle("page-header__logo-wrapper--hidden");
   mainNav.classList.toggle("main-nav__wrapper--hidden");
-  siteList.classList.toggle("visually-hidden");
+  siteList.classList.toggle("main-nav__list--hidden");
   userList.classList.toggle("user-list--hidden");
   phone.classList.toggle("user-list__phone--hidden");
   linke.classList.toggle("user-list__link--hidden");
@@ -75,7 +69,7 @@ burgerX.addEventListener("click", function(evt) {
   pageHeadWrap.classList.toggle("page-header__wrapper--hidden");
   logo.classList.toggle("page-header__logo-wrapper--hidden");
   mainNav.classList.toggle("main-nav__wrapper--hidden");
-  siteList.classList.toggle("visually-hidden");
+  siteList.classList.toggle("main-nav__list--hidden");
   userList.classList.toggle("user-list--hidden");
   phone.classList.toggle("user-list__phone--hidden");
   linke.classList.toggle("user-list__link--hidden");

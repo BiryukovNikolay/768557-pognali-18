@@ -185,6 +185,10 @@
 
   .page-header__logo-wrapper {
     width: fit-content;
+
+    &--hidden {
+      padding-top: 7px;
+    }
   }
 
   .page-header__logo-image-white {
@@ -197,12 +201,12 @@
     height: 52px;
   }
 
-  .page-header__logo-image-white--hidden {
+  .page-header__logo-image-white {
     display: none;
   }
 
-  .page-header__logo-image-blue--hidden {
-    display: none;
+  .page-header__logo-image-blue {
+    display: block;
   }
 
   .page-header__toggle {
