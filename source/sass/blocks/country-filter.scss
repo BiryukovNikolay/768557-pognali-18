@@ -172,10 +172,6 @@
     padding-top: 4px;
   }
 
-  .country-filter__region-list {
-    min-height: 135px;
-  }
-
   .country-filter__close-x {
     width: 20px;
     height: 20px;
@@ -265,8 +261,14 @@
     }
   }
 
-  .country-filter__region-list--close {
-    display: flex;
+  .country-filter__region-list {
+    min-height: 135px;
+    width: 84%;
+
+    &--close {
+      display: flex;
+      width: 87%;
+    }
   }
 
   .country-filter__toggle-title {
@@ -289,14 +291,6 @@
 
   .country-filter__close--close {
     display: none;
-  }
-
-  .country-filter__region-list {
-    width: 84%;
-
-    &--close {
-      width: 87%;
-    }
   }
 }
 
