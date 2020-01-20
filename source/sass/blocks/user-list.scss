@@ -255,11 +255,23 @@
     &::before {
       background-size: 27px 20px;
     }
+
+    &:hover {
+      &::before {
+        background-size: 27px 20px;
+      }
+    } 
   }
 
   .user-list__link--phone {
     &::before {
       background-size: 30px 30px;
+    }
+
+    &:hover {
+      &::before {
+        background-size: 30px 30px;
+      }
     }
   }
 }

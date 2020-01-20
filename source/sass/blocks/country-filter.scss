@@ -8,11 +8,18 @@
 
 .country-filter__toggle {
   font-family: inherit;
+  border: none;
+  background-color: inherit;
   display: none;
 }
 
 .country-filter__toggle-title {
   display: none;
+}
+
+.country-filter__close {
+  border: none;
+  background-color: inherit;
 }
 
 .country-filter__close-dots {
@@ -229,6 +236,7 @@
   }
 
   .country-filter__close-title {
+    font-weight: bold;
     display: block;
   }
 
@@ -281,6 +289,14 @@
 
   .country-filter__close--close {
     display: none;
+  }
+
+  .country-filter__region-list {
+    width: 84%;
+
+    &--close {
+      width: 87%;
+    }
   }
 }
 

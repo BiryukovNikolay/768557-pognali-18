@@ -147,13 +147,26 @@ filterClose.addEventListener("click", function(evt) {
 var choiceCountry = document.querySelector(".add-plan__country-choice-start");
 var formDropdown = document.querySelector(".add-plan__dropdown");
 
-var countriesField = choiceCountry.querySelector(".add-plan__countries");
-var hiddenMenu = choiceCountry.querySelector(".add-plan__hidden-menu");
-var hiddenMenuIcon = choiceCountry.querySelector(".add-plan__hidden-menu-icon");
-var formClose = choiceCountry.querySelector(".add-plan__close");
-var formCloseIcon = choiceCountry.querySelector(".add-plan__close-icon");
-var transportIcon = document.querySelectorAll(".transport-list__icon");
+if (choiceCountry) {
+  var countriesField = choiceCountry.querySelector(".add-plan__countries");
+  var hiddenMenu = choiceCountry.querySelector(".add-plan__hidden-menu");
+  var hiddenMenuIcon = choiceCountry.querySelector(".add-plan__hidden-menu-icon");
+  var formClose = choiceCountry.querySelector(".add-plan__close");
+  var formCloseIcon = choiceCountry.querySelector(".add-plan__close-icon");
 
+  choiceCountry.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    formClose.classList.toggle("add-plan__close--open");
+    formDropdown.classList.toggle("add-plan__dropdown--open");
+    formCloseIcon.classList.toggle("add-plan__close-icon--open");
+    hiddenMenuIcon.classList.toggle("add-plan__hidden-menu-icon--open");
+    hiddenMenu.classList.toggle("add-plan__hidden-menu--open");
+    countriesField.classList.toggle("add-plan__countries--open");
+    choiceCountry.classList.toggle("add-plan__country-choice-start--open");
+  })
+}
+
+var transportIcon = document.querySelectorAll(".transport-list__icon");
 
 for (var i = 0; i < transportIcon.length; i++) {
 
@@ -162,14 +175,3 @@ for (var i = 0; i < transportIcon.length; i++) {
     transportIcon.classList.toggle("transport-list__icon--active");
   })
 }
-
-choiceCountry.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  formClose.classList.toggle("add-plan__close--open");
-  formDropdown.classList.toggle("add-plan__dropdown--open");
-  formCloseIcon.classList.toggle("add-plan__close-icon--open");
-  hiddenMenuIcon.classList.toggle("add-plan__hidden-menu-icon--open");
-  hiddenMenu.classList.toggle("add-plan__hidden-menu--open");
-  countriesField.classList.toggle("add-plan__countries--open");
-  choiceCountry.classList.toggle("add-plan__country-choice-start--open");
-})

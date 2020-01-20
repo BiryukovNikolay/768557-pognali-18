@@ -8,7 +8,8 @@
 
 body {
   margin: 0;
-  font-family: "BloggerSans", "Lucida Console", "Monaco", sans-serif; }
+  font-family: "BloggerSans", "Lucida Console", "Monaco", sans-serif;
+  font-weight: 300; }
 
 *,
 *::after,
@@ -429,7 +430,7 @@ body {
   src: url("../fonts/bloggersans-bolditalic.woff2") format("woff2"), url("../fonts/bloggersans-bolditalic.woff") format("woff"); }
 
 @font-face {
-  font-weight: light;
+  font-weight: 300;
   font-family: "BloggerSans";
   font-style: normal;
   font-display: swap;
@@ -450,7 +451,7 @@ body {
   src: url("../fonts/bloggersans-mediumitalic.woff2") format("woff2"), url("../fonts/bloggersans-mediumitalic.woff") format("woff"); }
 
 @font-face {
-  font-weight: light;
+  font-weight: 300;
   font-family: "BloggerSans";
   font-style: italic;
   font-display: swap;
@@ -789,10 +790,10 @@ body {
       z-index: -1; }
   .about__background {
     min-height: 925px;
-    background: url("../img/about-tablet@1x.png") 383px 288px no-repeat; } }
+    background: url("../img/about-tablet@1x.png") 99% 288px no-repeat; } }
   @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 1.5dppx) {
     .about__background {
-      background: url("../img/about-tablet@2x.png") 383px 288px no-repeat;
+      background: url("../img/about-tablet@2x.png") 99% 288px no-repeat;
       background-size: 380px 550px; } }
 
 @media (min-width: 768px) {
@@ -805,7 +806,7 @@ body {
     margin-bottom: 31px;
     font-size: 28px;
     line-height: 33px;
-    font-weight: normal; }
+    font-weight: 300; }
   .about__slogan {
     width: 90%;
     margin-bottom: 52px;
@@ -813,7 +814,7 @@ body {
     line-height: 25px;
     font-weight: bold; }
   .about__left-block {
-    width: 48%; }
+    width: 46%; }
   .about__button {
     border-radius: 20px;
     display: -webkit-box;
@@ -984,7 +985,7 @@ body {
       top: 456px;
       left: 0; }
   .directions__description {
-    width: 58%;
+    width: 56%;
     font-size: 28px;
     line-height: 33px;
     padding-bottom: 76px;
@@ -1438,11 +1439,12 @@ body {
   .companion-card__avatar {
     border-radius: 20px 20px 0 0;
     width: 285px;
-    height: 284px; }
+    height: 287px; }
   .companion-card__progress-block {
     top: 24px;
     left: 22px; }
   .companion-card__tags {
+    width: 232px;
     margin-top: 24px;
     margin-bottom: 15px;
     font-size: 19px; } }
@@ -1842,7 +1844,7 @@ body {
     display: block;
     text-align: center; }
   .registration__description {
-    width: 104%;
+    width: 100%;
     margin-top: 57px;
     margin-bottom: 63px;
     font-size: 28px;
@@ -2400,10 +2402,16 @@ body {
 
 .country-filter__toggle {
   font-family: inherit;
+  border: none;
+  background-color: inherit;
   display: none; }
 
 .country-filter__toggle-title {
   display: none; }
+
+.country-filter__close {
+  border: none;
+  background-color: inherit; }
 
 .country-filter__close-dots {
   width: 17px;
@@ -2587,6 +2595,7 @@ body {
     height: 19px;
     margin-right: 21px; }
   .country-filter__close-title {
+    font-weight: bold;
     display: block; }
   .country-filter__toggle--close {
     display: -webkit-box;
@@ -2633,7 +2642,11 @@ body {
   .country-filter__title--close {
     display: none; }
   .country-filter__close--close {
-    display: none; } }
+    display: none; }
+  .country-filter__region-list {
+    width: 84%; }
+    .country-filter__region-list--close {
+      width: 87%; } }
 
 @media (min-width: 1440px) {
   .country-filter {
@@ -2745,7 +2758,6 @@ body {
 
 @media (min-width: 768px) {
   .region-list {
-    width: 87%;
     margin-bottom: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -4047,7 +4059,11 @@ body {
     text-transform: uppercase; }
     .user-list__link--mail::before {
       background-size: 27px 20px; }
+    .user-list__link--mail:hover::before {
+      background-size: 27px 20px; }
   .user-list__link--phone::before {
+    background-size: 30px 30px; }
+  .user-list__link--phone:hover::before {
     background-size: 30px 30px; } }
 
 @media (min-width: 1440px) {
@@ -4341,10 +4357,10 @@ body {
 @media (min-width: 768px) {
   .page-main__wrapper {
     height: 890px;
-    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 284px 303px, url("../img/globe-back-tablet@1x.jpg") no-repeat -356px 282px #161c36; } }
+    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 71.8% 303px, url("../img/globe-back-tablet@1x.jpg") no-repeat -356px 282px #161c36; } }
   @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 768px) and (min-resolution: 1.5dppx) {
     .page-main__wrapper {
-      background: url("../img/traveller-illustration-tablet@2x.png") no-repeat 284px 303px, url("../img/globe-back-tablet@2x.jpg") no-repeat -356px 282px cover #161c36; } }
+      background: url("../img/traveller-illustration-tablet@2x.png") no-repeat 71.8% 303px, url("../img/globe-back-tablet@2x.jpg") no-repeat -356px 282px cover #161c36; } }
 
 @media (min-width: 768px) {
   .page-main__wrapper-header {
