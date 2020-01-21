@@ -55,10 +55,10 @@
 
   .about__background {
     min-height: 925px;
-    background: url("../img/about-tablet@1x.png") 383px 288px no-repeat;
+    background: url("../img/about-tablet@1x.png") 99% 288px no-repeat;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../img/about-tablet@2x.png") 383px 288px no-repeat;
+      background: url("../img/about-tablet@2x.png") 99% 288px no-repeat;
       background-size: 380px 550px;
     }
   }
@@ -74,7 +74,7 @@
     margin-bottom: 31px;
     font-size: 28px;
     line-height: 33px;
-    font-weight: normal;
+    font-weight: 300;
   }
 
   .about__slogan {
@@ -86,7 +86,7 @@
   }
 
   .about__left-block {
-    width: 48%;
+    width: 46%;
   }
 
   .about__button {
