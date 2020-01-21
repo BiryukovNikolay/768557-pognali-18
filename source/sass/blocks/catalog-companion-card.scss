@@ -428,6 +428,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog-companion-card {
+    overflow: hidden;
     position: relative;
     margin-bottom: 30px;
     min-height: 285px;

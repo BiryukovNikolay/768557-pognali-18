@@ -108,6 +108,10 @@
   }
 }
 
+.calendar__day--active {
+  background-color: #1d2e5b;
+}
+
 @media (min-width: $tablet-width) {
   .calendar__title {
     padding-top: 7px;
