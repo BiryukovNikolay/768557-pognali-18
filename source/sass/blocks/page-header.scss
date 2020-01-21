@@ -185,24 +185,20 @@
 
   .page-header__logo-wrapper {
     width: fit-content;
+
+    &--hidden {
+      padding-top: 7px;
+    }
   }
 
   .page-header__logo-image-white {
-    width: 200px;
-    height: 52px;
+    display: none;
   }
 
   .page-header__logo-image-blue {
     width: 200px;
     height: 52px;
-  }
-
-  .page-header__logo-image-white--hidden {
-    display: none;
-  }
-
-  .page-header__logo-image-blue--hidden {
-    display: none;
+    display: block;
   }
 
   .page-header__toggle {
