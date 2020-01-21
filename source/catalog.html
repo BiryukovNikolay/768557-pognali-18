@@ -10,9 +10,12 @@
   <script>
     document.createElement( "picture" );
   </script>
-  <script src="js/picturefill.min.js" async></script>
+  <script src="js/picturefill.min.js" async=""></script>
 </head>
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrapper">
@@ -107,7 +110,7 @@
             </div>
             <div class="country-filter__wrapper">
               <ul class="country-filter__region-list country-filter__region-list--close region-list">
-                <li><label class="region-list__item region-list__item--checked"><input class="visually-hidden" type="radio" name="region" value="europe" checked>Европа</label></li>
+                <li><label class="region-list__item region-list__item--checked"><input class="visually-hidden" type="radio" name="region" value="europe" checked="">Европа</label></li>
                 <li><label class="region-list__item"><input class="visually-hidden" type="radio" name="region" value="asia">Азия</label></li>
                 <li><label class="region-list__item"><input class="visually-hidden" type="radio" name="region" value="america">Америка</label></li>
                 <li><label class="region-list__item"><input class="visually-hidden" type="radio" name="region" value="islands">Острова</label></li>
@@ -118,7 +121,7 @@
             <div class="country-filter__position">
               <ul class="country-filter__letter letters">
                 <li>
-                  <label class="letters__item letters__item--checked"><input class="visually-hidden" type="radio" name="letter" value="а" checked>А</label>
+                  <label class="letters__item letters__item--checked"><input class="visually-hidden" type="radio" name="letter" value="а" checked="">А</label>
                   <ul class="country-filter__country country-list country-list--active">
                     <li><label class="country-list__item"><input class="visually-hidden" type="checkbox" name="afganistan">Афганистан</label></li>
                     <li><label class="country-list__item"><input class="visually-hidden" type="checkbox" name="albany">Албания</label></li>
@@ -558,7 +561,7 @@
                   <div class="catalog-companion-card__right">
                     <h4 class="catalog-companion-card__title--small">левел:</h4>
                     <div class="catalog-companion-card__progress-block">
-                      <svg version="1.1" width="100px" height="100px" class="catalog-companion-card__progress progress" viewBox="0 0 100 100"><linearGradient><stop offset="0" class="color-one"/><stop offset="1" class="color-two"/></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="10"></circle></svg>
+                      <svg version="1.1" width="100px" height="100px" class="catalog-companion-card__progress progress" viewBox="0 0 100 100"><linearGradient><stop offset="0" class="color-one"></stop><stop offset="1" class="color-two"></stop></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="10"></circle></svg>
                       <div class="catalog-companion-card__level-block level-block">
                         <b class="catalog-companion-card__level-value level-block__value">99</b>
                         <span class="catalog-companion-card__level-title  level-block__title">level</span>
@@ -612,7 +615,7 @@
                   <div class="catalog-companion-card__right">
                     <h4 class="catalog-companion-card__title--small">левел:</h4>
                     <div class="catalog-companion-card__progress-block">
-                      <svg version="1.1" width="100px" height="100px" class="catalog-companion-card__progress progress" viewBox="0 0 100 100"><linearGradient><stop offset="0" class="color-one"/><stop offset="1" class="color-two"/></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="50"></circle></svg>
+                      <svg version="1.1" width="100px" height="100px" class="catalog-companion-card__progress progress" viewBox="0 0 100 100"><linearGradient><stop offset="0" class="color-one"></stop><stop offset="1" class="color-two"></stop></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="50"></circle></svg>
                       <div class="catalog-companion-card__level-block level-block">
                         <b class="catalog-companion-card__level-value level-block__value">80</b>
                         <span class="catalog-companion-card__level-title  level-block__title">level</span>
@@ -669,7 +672,7 @@
                   <div class="catalog-companion-card__right">
                     <h4 class="catalog-companion-card__title--small">левел:</h4>
                     <div class="catalog-companion-card__progress-block">
-                      <svg version="1.1" width="100px" height="100px" class="catalog-companion-card__progress progress" viewBox="0 0 100 100"><linearGradient><stop offset="0" class="color-one"/><stop offset="1" class="color-two"/></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="200"></circle></svg>
+                      <svg version="1.1" width="100px" height="100px" class="catalog-companion-card__progress progress" viewBox="0 0 100 100"><linearGradient><stop offset="0" class="color-one"></stop><stop offset="1" class="color-two"></stop></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="200"></circle></svg>
                       <div class="catalog-companion-card__level-block level-block">
                         <b class="catalog-companion-card__level-value level-block__value">25</b>
                         <span class="catalog-companion-card__level-title  level-block__title">level</span>
@@ -723,7 +726,7 @@
                   <div class="catalog-companion-card__right">
                     <h4 class="catalog-companion-card__title--small">левел:</h4>
                     <div class="catalog-companion-card__progress-block">
-                      <svg version="1.1" width="100px" height="100px" class="catalog-companion-card__progress progress" viewBox="0 0 100 100"><linearGradient><stop offset="0" class="color-one"/><stop offset="1" class="color-two"/></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="130"></circle></svg>
+                      <svg version="1.1" width="100px" height="100px" class="catalog-companion-card__progress progress" viewBox="0 0 100 100"><linearGradient><stop offset="0" class="color-one"></stop><stop offset="1" class="color-two"></stop></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="130"></circle></svg>
                       <div class="catalog-companion-card__level-block level-block">
                         <b class="catalog-companion-card__level-value level-block__value">50</b>
                         <span class="catalog-companion-card__level-title  level-block__title">level</span>
