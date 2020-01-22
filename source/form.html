@@ -10,9 +10,12 @@
   <script>
     document.createElement( "picture" );
   </script>
-  <script src="js/picturefill.min.js" async></script>
+  <script src="js/picturefill.min.js" async=""></script>
 </head>
 <body>
+<div style="display:none">
+  <include src="build/img/sprite.svg"></include>
+</div>
 <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrapper">
@@ -92,7 +95,7 @@
       <div class="form-page__wrapper form-page__wrapper--desktop">
         <div class="form-page__foto-level">
           <div class="form-page__progress-block">
-            <svg version="1.1" width="100px" height="100px" class="form-page__progress progress" viewBox="0 0 100 100"><linearGradient id="progress-fill"><stop offset="0" class="color-one"/><stop offset="1" class="color-two"/></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="50"></circle></svg>
+            <svg version="1.1" width="100px" height="100px" class="form-page__progress progress" viewBox="0 0 100 100"><linearGradient id="progress-fill"><stop offset="0" class="color-one"></stop><stop offset="1" class="color-two"></stop></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="50"></circle></svg>
             <div class="form-page__level-block level-block">
               <b class="form-page__level-value level-block__value">80</b>
               <span class="form-page__level-title level-block__title">level</span>
@@ -361,7 +364,7 @@
             <div class="add-plan__dropdown">
               <div class="add-plan__modal-left">
                 <ul class="add-plan__letter letters">
-                  <li><label class="letters__item letters__item--checked-form"><input class="visually-hidden" type="radio" name="letter" value="а" checked>А</label></li>
+                  <li><label class="letters__item letters__item--checked-form"><input class="visually-hidden" type="radio" name="letter" value="а" checked="">А</label></li>
                   <li><label class="letters__item"><input class="visually-hidden" type="radio" name="letter" value="б">Б</label></li>
                   <li><label class="letters__item"><input class="visually-hidden" type="radio" name="letter" value="в">В</label></li>
                   <li><label class="letters__item"><input class="visually-hidden" type="radio" name="letter" value="г">Г</label></li>

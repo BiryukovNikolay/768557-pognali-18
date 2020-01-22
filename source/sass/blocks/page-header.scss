@@ -7,7 +7,7 @@
   z-index: 3;
 
   &--hidden {
-    position: initial;
+    position: static;
     background-color: #161c35;
     min-height: 46px;
     padding: 0;
@@ -187,6 +187,7 @@
     width: fit-content;
 
     &--hidden {
+      width: auto;
       padding-top: 7px;
     }
   }

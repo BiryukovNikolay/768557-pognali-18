@@ -10,7 +10,7 @@
   <script>
     document.createElement( "picture" );
   </script>
-  <script src="js/picturefill.min.js" async></script>
+  <script src="js/picturefill.min.js" async=""></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ac24f5d8-41a7-4386-a82d-18fbbdaa43e2&lang=ru_RU" type="text/javascript"></script>
   <script type="text/javascript">
         ymaps.ready(init);
@@ -26,11 +26,13 @@
                 iconImageSize: [30, 42],
                 iconImageOffset: [-3, -42]
               });
-
         }
-    </script>
+  </script>
 </head>
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <div class="page-header__wrapper">
       <div class="page-header__logo-wrapper">
@@ -129,7 +131,7 @@
     <section class="about">
       <div class="about__background">
         <div class="about__wrapper">
-          <div class="about__left-block" >
+          <div class="about__left-block">
             <h2 class="about-title title-small">О сервисе</h2>
             <p class="about__description">Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.</p>
             <b class="about__slogan">А если найдете кого-то близкого по духу - скорее зовите в совместный трип!</b>
@@ -182,7 +184,7 @@
                 <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg 1x, img/czech-desktop@2x.jpg 2x">
                 <img class="directions__image" src="img/czech-mobile@1x.jpg" srcset="img/czech-mobile@2x.jpg 2x" width="270" height="110" alt="Пример фото из страны">
               </picture>
-              <svg class="directions__flag-icon" width="35" height="24"><use xlink:href="img/sprite.svg#czech"></use></svg>
+              <svg class="directions__flag-icon" width="35" height="24"><use xlink:href="#czech"></use></svg>
               <div class="directions__item-wrapper">
                 <div class="directions__card-wrapper">
                   <h3 class="directions__title"><a href="#">Чехия</a></h3>
@@ -207,7 +209,7 @@
           <ul class="companions__list">
             <li class="companions__item companion-card">
               <div class="companion-card__progress-block">
-                <svg version="1.1" width="100px" height="100px" class="companion-card__progress progress" viewBox="0 0 100 100"><linearGradient><stop offset="0" class="color-one"/><stop offset="1" class="color-two"/></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="15"></circle></svg>
+                <svg version="1.1" width="100px" height="100px" class="companion-card__progress progress" viewBox="0 0 100 100"><linearGradient><stop offset="0" class="color-one"></stop><stop offset="1" class="color-two"></stop></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="15"></circle></svg>
                 <div class="companion-card__level-block level-block">
                   <b class="companion-card__level-value level-block__value">99</b>
                   <span class="companion-card__level-title level-block__title">level</span>
@@ -219,7 +221,7 @@
                   <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="img/firsova-desktop@1x.jpg 1x, img/firsova-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg 1x, img/firsova-tablet@2x.jpg 2x">
-                  <img class="companion-card__avatar" src="img/firsova-tablet@1x.jpg1x" srcset="img/firsova-tablet@2x.jpg 2x" alt="Таня Фирсова" width="270" height="270">
+                  <img class="companion-card__avatar" src="img/firsova-tablet@1x.jpg" srcset="img/firsova-tablet@2x.jpg 2x" alt="Таня Фирсова" width="270" height="270">
                 </picture>
               </div>
               <div class="companion-card__wrapper">
@@ -240,7 +242,7 @@
             </li>
             <li class="companions__item companion-card">
               <div class="companion-card__progress-block">
-                <svg version="1.1" width="100px" height="100px" class="companion-card__progress progress" viewBox="0 0 100 100"><linearGradient><stop offset="0" class="color-one"/><stop offset="1" class="color-two"/></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="50"></circle></svg>
+                <svg version="1.1" width="100px" height="100px" class="companion-card__progress progress" viewBox="0 0 100 100"><linearGradient><stop offset="0" class="color-one"></stop><stop offset="1" class="color-two"></stop></linearGradient><circle r="40" cx="50" cy="50" fill="transparent" stroke-width="10" stroke="transparent"></circle><circle r="40" cx="50" cy="50" class="progress__circle" stroke-width="10" stroke-dashoffset="50"></circle></svg>
                 <div class="companion-card__level-block level-block">
                   <b class="companion-card__level-value level-block__value">80</b>
                   <span class="companion-card__level-title level-block__title">level</span>
@@ -248,11 +250,11 @@
               </div>
               <div class="companion-card__avatar-wrapper">
                 <picture>
-                  <source type="image/webp"  media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
-                  <source type="image/webp"  media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
                   <source media="(min-width: 1440px)" srcset="img/demin-desktop@1x.jpg 1x, img/demin-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg 1x, img/demin-tablet@2x.jpg 2x">
-                  <img class="companion-card__avatar" src="img/demin-tablet@1x.jpg1x" srcset="img/demin-tablet@2x.jpg 2x" alt="Петя Демин" width="270" height="270">
+                  <img class="companion-card__avatar" src="img/demin-tablet@1x.jpg" srcset="img/demin-tablet@2x.jpg 2x" alt="Петя Демин" width="270" height="270">
                 </picture>
               </div>
               <div class="companion-card__wrapper">
