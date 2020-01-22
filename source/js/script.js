@@ -166,12 +166,31 @@ if (choiceCountry) {
   })
 }
 
-var transportIcon = document.querySelectorAll(".transport-list__icon");
-
-for (var i = 0; i < transportIcon.length; i++) {
-
-  transportIcon[i].addEventListener("click", function(evt) {
+var transportList = document.querySelector(".form-page__transport-list");
+if (transportList) {
+  var plane = document.querySelector(".transport-list__icon--plane");
+  var train = document.querySelector(".transport-list__icon--train");
+  var cycle = document.querySelector(".transport-list__icon--cycle");
+  var running = document.querySelector(".transport-list__icon--running");
+  
+  plane.addEventListener("click", function(evt) {
     evt.preventDefault();
-    transportIcon.classList.toggle("transport-list__icon--active");
+    plane.classList.toggle("transport-list__icon--active");
   })
+
+  train.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    train.classList.toggle("transport-list__icon--active");
+  })
+
+  cycle.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    cycle.classList.toggle("transport-list__icon--active");
+  })
+
+  running.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    running.classList.toggle("transport-list__icon--active");
+  })
+
 }

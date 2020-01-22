@@ -113,6 +113,7 @@
 }
 
 .form-page__subtitle {
+  position: relative;
   display: table;
   font-size: 16px;
   line-height: 18px;
@@ -122,17 +123,32 @@
   text-align: center;
   padding: 0 14px;
   background-color: $main-background;
-  margin: -8px auto 0 auto;
+  margin: -9px auto;
 }
 
 .form-page__border-block {
-  border: #cbced9 1px solid;
   border-radius: 10px;
   font-size: 16px;
   line-height: 22px;
   color: $soft-text;
   margin-bottom: 25px;
+  border: #cbced9 1px solid;
 
+  &--tags {
+    border: #cbced9 1px solid;
+    margin-bottom: 17px;
+    border: none;
+  }
+}
+
+.form-page__tags {
+  padding: 24px 15px 21px 25px;
+  width: 100%;
+  height: 90px;
+  background-color: inherit;
+  border: #cbced9 1px solid;
+  border-radius: 10px;
+    
   &:hover {
     border: #aeb4cb 1px solid;
   }
@@ -142,13 +158,9 @@
   }
 }
 
-.form-page__tags {
-  padding: 12px 15px 21px 25px;
-}
-
 .form-page__transport {
   min-height: 51px;
-  padding: 4px 25px 0;
+  padding: 13px 25px 15px;
 }
 
 .form-page__transport-list {
