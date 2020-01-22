@@ -403,7 +403,11 @@
   }
 
   .companions-filter__interval {
-    &:after {
+    margin-top: 12px;
+    margin-bottom: 13px;
+    width: 100%;
+
+    &::after {
       top: 14px;
     }
   }
@@ -416,11 +420,5 @@
   .companions-filter__range-controls {
     width: 100%;
     order: 1;
-  }
-
-  .companions-filter__interval {
-    margin-top: 12px;
-    margin-bottom: 13px;
-    width: 100%;
   }
 }

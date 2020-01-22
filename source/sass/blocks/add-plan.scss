@@ -116,6 +116,7 @@
   padding-top: 4px;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 43px;
   height: 43px;
   background-color: #ffffff;
@@ -288,6 +289,16 @@
 
     svg {
       opacity: 0.5;
+    }
+  }
+
+  &:focus {
+    background-color: #1d2e5b;
+    color: #ffffff;
+
+    & + .add-plan__hidden-menu {
+      background-color: #1d2e5b;
+      box-shadow: none;
     }
   }
 }
@@ -816,6 +827,8 @@
   }
 
   .add-plan__countries--btn {
+    display: flex;
+    align-items: center;
     margin-right: auto;
     padding-right: 25px;
     width: 369px;

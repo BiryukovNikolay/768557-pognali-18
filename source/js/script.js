@@ -172,7 +172,7 @@ if (transportList) {
   var train = document.querySelector(".transport-list__icon--train");
   var cycle = document.querySelector(".transport-list__icon--cycle");
   var running = document.querySelector(".transport-list__icon--running");
-  
+
   plane.addEventListener("click", function(evt) {
     evt.preventDefault();
     plane.classList.toggle("transport-list__icon--active");

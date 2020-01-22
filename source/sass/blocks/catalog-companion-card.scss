@@ -280,16 +280,29 @@
   }
 
   .catalog-companion-card__title {
-    width: max-content;
+    width: 150%;
     font-size: 30px;
     line-height: 30px;
 
     &::before {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
       width: 7px;
       height: 7px;
-      top: 9px;
-      left: initial;
-      right: -30px;
+      background-color: #f97676;
+      top: 8px;
+      margin-left: 22px;
+      border-radius: 10px;
+    }
+
+    &--on-line {
+      &::after {
+        background-color: #81e31e;
+      }
     }
   }
 
@@ -481,15 +494,23 @@
     font-weight: bold;
 
     &::before {
+      display: block;
+      width: 7px;
+      height: 7px;
       left: -28px;
+    }
+
+    &::after {
+      display: none;
     }
   }
 
   .catalog-companion-card__tags {
-    padding-left: 0; 
+    position: relative;
+    padding-left: 0;
     margin-top: 92px;
     top: 2px;
-    right: 320px;
+    right: 33%;
   }
 
   .catalog-companion-card__image {

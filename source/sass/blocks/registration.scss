@@ -48,15 +48,15 @@
     background-color: #edeff6;
   }
 
-  &:focus {
-    color: #ffffff;
-    border: #ffffff 4px solid;
-    background-color: initial;
-  }
-
   &--error {
     background-color: #ffefef;
     color: #ff0000;
+  }
+
+  &:focus {
+    color: #ffffff;
+    border: #ffffff 4px solid;
+    background-color: #192144;
   }
 }
 
