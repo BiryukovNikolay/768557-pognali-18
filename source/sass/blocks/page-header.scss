@@ -8,7 +8,7 @@
 
   &--hidden {
     position: static;
-    background-color: #182044;
+    background-color: #161c35;
     min-height: 46px;
     padding: 0;
   }
@@ -75,6 +75,7 @@
     padding: 45px 0 74px 0;
 
     &--hidden {
+      background-color: #182044;
       min-height: 46px;
       padding: 23px 0 10px 0;
     }
@@ -176,6 +177,7 @@
 
     &--hidden {
       display: flex;
+      background-color: #161c36;
       flex-direction: row;
       align-items: flex-start;
       width: 1320px;
