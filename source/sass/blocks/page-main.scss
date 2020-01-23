@@ -18,10 +18,10 @@
 @media (min-width: $tablet-width) {
   .page-main__wrapper {
     height: 890px;
-    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 71.8% 303px, url("../img/globe-back-tablet@1x.jpg") no-repeat -356px 282px #161c36;
+    background: url("../img/traveller-illustration-tablet@1x.png") no-repeat 71.8% 303px, url("../img/globe-back-tablet@1x.jpg") no-repeat -356px 282px #182044;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../img/traveller-illustration-tablet@2x.png") no-repeat 71.8% 303px, url("../img/globe-back-tablet@2x.jpg") no-repeat -356px 282px cover #161c36;
+      background: url("../img/traveller-illustration-tablet@2x.png") no-repeat 71.8% 303px, url("../img/globe-back-tablet@2x.jpg") no-repeat -356px 282px cover #182044;
     }
   }
 

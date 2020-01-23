@@ -66,8 +66,12 @@
 
 @media (min-width: $tablet-width) {
   .catalog-result {
-    margin-top: 38px;
+    margin-top: 40px;
     width: $tablet-wrapper;
+  }
+
+  .catalog-result__companion-card-list {
+    margin-bottom: 46px;
   }
 
   .catalog-result__pages {
@@ -109,7 +113,8 @@
   }
 
   .catalog-result__more-button {
-    margin-bottom: 50px;
+    margin-right: 10px;
+    margin-bottom: 48px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -118,6 +123,7 @@
     width: 27px;
     height: 27px;
     margin-right: 25px;
+    margin-bottom: 2px;
   }
 
   .catalog-result__btn {
