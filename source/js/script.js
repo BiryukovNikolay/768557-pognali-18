@@ -22,19 +22,13 @@ var logoBlue = document.querySelector(".page-header__logo-image-blue");
 var businessBtn = document.querySelector(".add-profile__business");
 var businessModal = document.querySelector(".business-modal");
 var businessClose = document.querySelector(".business-modal__button");
-var window = window.innerWidth;
-document.addEventListener("resize", function() {
-        if (window => 1440){
-          console.log("hello")
-        }
-    });
 
   burgerX.classList.toggle("page-header__toggle--hidden");
   pageHeader.classList.toggle("page-header--hidden");
   pageHeadWrap.classList.toggle("page-header__wrapper--hidden");
   logo.classList.toggle("page-header__logo-wrapper--hidden");
   mainNav.classList.toggle("main-nav__wrapper--hidden");
-  siteList.classList.toggle("visually-hidden");
+  siteList.classList.toggle("main-nav__list--hidden");
   userList.classList.toggle("user-list--hidden");
   phone.classList.toggle("user-list__phone--hidden");
   linke.classList.toggle("user-list__link--hidden");
@@ -75,7 +69,7 @@ burgerX.addEventListener("click", function(evt) {
   pageHeadWrap.classList.toggle("page-header__wrapper--hidden");
   logo.classList.toggle("page-header__logo-wrapper--hidden");
   mainNav.classList.toggle("main-nav__wrapper--hidden");
-  siteList.classList.toggle("visually-hidden");
+  siteList.classList.toggle("main-nav__list--hidden");
   userList.classList.toggle("user-list--hidden");
   phone.classList.toggle("user-list__phone--hidden");
   linke.classList.toggle("user-list__link--hidden");
@@ -110,7 +104,6 @@ var catalogWrapper = document.querySelector(".catalog-page__wrapper");
 
 if (filterOpen) {
 filterOpen.addEventListener("click", function(evt) {
-  console.log("ee");
   evt.preventDefault();
   catalogWrapper.classList.remove("catalog-page__wrapper--close");
   buttonClose.classList.remove("country-filter__button--close");
@@ -125,7 +118,6 @@ filterOpen.addEventListener("click", function(evt) {
 
 if (buttonClose) {
 buttonClose.addEventListener("click", function(evt) {
-  console.log("eeEEE");
   evt.preventDefault();
   catalogWrapper.classList.add("catalog-page__wrapper--close");
   buttonClose.classList.add("country-filter__button--close");
@@ -140,7 +132,6 @@ buttonClose.addEventListener("click", function(evt) {
 
 if (filterClose) {
 filterClose.addEventListener("click", function(evt) {
-  console.log("eeEEE");
   evt.preventDefault();
   catalogWrapper.classList.add("catalog-page__wrapper--close");
   buttonClose.classList.add("country-filter__button--close");
@@ -156,29 +147,50 @@ filterClose.addEventListener("click", function(evt) {
 var choiceCountry = document.querySelector(".add-plan__country-choice-start");
 var formDropdown = document.querySelector(".add-plan__dropdown");
 
-var countriesField = choiceCountry.querySelector(".add-plan__countries");
-var hiddenMenu = choiceCountry.querySelector(".add-plan__hidden-menu");
-var hiddenMenuIcon = choiceCountry.querySelector(".add-plan__hidden-menu-icon");
-var formClose = choiceCountry.querySelector(".add-plan__close");
-var formCloseIcon = choiceCountry.querySelector(".add-plan__close-icon");
-var transportIcon = document.querySelectorAll(".transport-list__icon");
+if (choiceCountry) {
+  var countriesField = choiceCountry.querySelector(".add-plan__countries");
+  var hiddenMenu = choiceCountry.querySelector(".add-plan__hidden-menu");
+  var hiddenMenuIcon = choiceCountry.querySelector(".add-plan__hidden-menu-icon");
+  var formClose = choiceCountry.querySelector(".add-plan__close");
+  var formCloseIcon = choiceCountry.querySelector(".add-plan__close-icon");
 
-
-for (var i = 0; i < transportIcon.length; i++) {
-
-  transportIcon[i].addEventListener("click", function(evt) {
+  choiceCountry.addEventListener("click", function(evt) {
     evt.preventDefault();
-    transportIcon.classList.toggle("transport-list__icon--active");
+    formClose.classList.toggle("add-plan__close--open");
+    formDropdown.classList.toggle("add-plan__dropdown--open");
+    formCloseIcon.classList.toggle("add-plan__close-icon--open");
+    hiddenMenuIcon.classList.toggle("add-plan__hidden-menu-icon--open");
+    hiddenMenu.classList.toggle("add-plan__hidden-menu--open");
+    countriesField.classList.toggle("add-plan__countries--open");
+    choiceCountry.classList.toggle("add-plan__country-choice-start--open");
   })
 }
 
-choiceCountry.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  formClose.classList.toggle("add-plan__close--open");
-  formDropdown.classList.toggle("add-plan__dropdown--open");
-  formCloseIcon.classList.toggle("add-plan__close-icon--open");
-  hiddenMenuIcon.classList.toggle("add-plan__hidden-menu-icon--open");
-  hiddenMenu.classList.toggle("add-plan__hidden-menu--open");
-  countriesField.classList.toggle("add-plan__countries--open");
-  choiceCountry.classList.toggle("add-plan__country-choice-start--open");
-})
+var transportList = document.querySelector(".form-page__transport-list");
+if (transportList) {
+  var plane = document.querySelector(".transport-list__icon--plane");
+  var train = document.querySelector(".transport-list__icon--train");
+  var cycle = document.querySelector(".transport-list__icon--cycle");
+  var running = document.querySelector(".transport-list__icon--running");
+
+  plane.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    plane.classList.toggle("transport-list__icon--active");
+  })
+
+  train.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    train.classList.toggle("transport-list__icon--active");
+  })
+
+  cycle.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    cycle.classList.toggle("transport-list__icon--active");
+  })
+
+  running.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    running.classList.toggle("transport-list__icon--active");
+  })
+
+}

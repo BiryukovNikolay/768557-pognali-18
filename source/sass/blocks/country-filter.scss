@@ -7,11 +7,18 @@
 }
 
 .country-filter__toggle {
+  border: none;
+  background-color: #e2e5f2;
   display: none;
 }
 
 .country-filter__toggle-title {
   display: none;
+}
+
+.country-filter__close {
+  border: none;
+  background-color: inherit;
 }
 
 .country-filter__close-dots {
@@ -27,6 +34,7 @@
   padding: 0;
 
   &--close {
+    width: 80%;
     margin-top: 24px;
   }
 }
@@ -93,10 +101,12 @@
 }
 
 .country-filter__button--close {
+  background-color: #e2e5f2;
   display: none;
 }
 
 .country-filter__toggle--close {
+  background-color: #e2e5f2;
   margin-top: 9px;
   margin-left: 19px;
   margin-right: -4px;
@@ -159,13 +169,10 @@
 
   .country-filter__desktop-wrapper {
     display: flex;
+    justify-content: space-between;
     align-items: baseline;
     padding: 0 33px;
     padding-top: 4px;
-  }
-
-  .country-filter__region-list {
-    min-height: 135px;
   }
 
   .country-filter__close-x {
@@ -228,17 +235,18 @@
   }
 
   .country-filter__close-title {
+    font-weight: bold;
     display: block;
   }
 
   //скрытое меню фильтра
   .country-filter__toggle--close {
     display: flex;
-    width: 181px;
-    margin-bottom: -83px;
+    width: 200px;
     margin-right: 0;
+    margin-left: 0;
     padding: 0;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     text-transform: uppercase;
     font-size: 20px;
@@ -256,11 +264,17 @@
     }
   }
 
-  .country-filter__region-list--close {
-    display: flex;
+  .country-filter__region-list {
+    width: 84%;
+
+    &--close {
+      display: flex;
+      width: 87%;
+    }
   }
 
   .country-filter__toggle-title {
+    margin-right: 21px;
     display: flex;
   }
 

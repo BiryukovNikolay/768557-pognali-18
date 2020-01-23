@@ -255,11 +255,23 @@
     &::before {
       background-size: 27px 20px;
     }
+
+    &:hover {
+      &::before {
+        background-size: 27px 20px;
+      }
+    }
   }
 
   .user-list__link--phone {
     &::before {
       background-size: 30px 30px;
+    }
+
+    &:hover {
+      &::before {
+        background-size: 30px 30px;
+      }
     }
   }
 }
@@ -273,6 +285,10 @@
 
     &--catalog {
       display: block;
+    }
+
+    &--hidden {
+      width: fit-content;
     }
   }
 
@@ -292,6 +308,10 @@
   .user-list__mail,
   .user-list__phone {
     padding-left: 0;
+
+    &--hidden {
+      display: block;
+    }
   }
 
   .user-list__link {
@@ -304,6 +324,10 @@
     &::before {
       width: 50px;
       height: 50px;
+    }
+
+    &--hidden {
+      margin-left: 0;
     }
   }
 

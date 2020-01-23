@@ -332,6 +332,12 @@
       &::before {
         background-size: 36px 26px;
       }
+
+      &:hover {
+        &::before {
+          background-size: 36px 26px;
+        }
+      }
     }
 
     &--phone {
@@ -339,6 +345,12 @@
 
       &::before {
         background-size: 36px 36px;
+      }
+
+      &:hover {
+        &::before {
+          background-size: 36px 36px;
+        }
       }
     }
 

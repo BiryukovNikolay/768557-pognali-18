@@ -7,8 +7,8 @@
   z-index: 3;
 
   &--hidden {
-    position: initial;
-    background-color: #161c35;
+    position: static;
+    background-color: #182044;
     min-height: 46px;
     padding: 0;
   }
@@ -185,24 +185,21 @@
 
   .page-header__logo-wrapper {
     width: fit-content;
+
+    &--hidden {
+      width: auto;
+      padding-top: 7px;
+    }
   }
 
   .page-header__logo-image-white {
-    width: 200px;
-    height: 52px;
+    display: none;
   }
 
   .page-header__logo-image-blue {
     width: 200px;
     height: 52px;
-  }
-
-  .page-header__logo-image-white--hidden {
-    display: none;
-  }
-
-  .page-header__logo-image-blue--hidden {
-    display: none;
+    display: block;
   }
 
   .page-header__toggle {

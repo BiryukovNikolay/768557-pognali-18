@@ -120,10 +120,10 @@
     margin: 0 auto;
     background: url("../img/rates@1x.png") 544px 408px no-repeat;
     background-size: 99px 99px;
-    z-index: 1;
+    z-index: 2;
 
     @media (min-resolution: $retina-dppx) {
-      background: url("../img/rates@2x.png") no-repeat 88% 56px $main-background;
+      background: url("../img/rates@2x.png") no-repeat 540px 408px;
       background-size: 99px 99px;
     }
   }

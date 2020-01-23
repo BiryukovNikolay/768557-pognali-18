@@ -48,15 +48,15 @@
     background-color: #edeff6;
   }
 
-  &:focus {
-    color: #ffffff;
-    border: #ffffff 4px solid;
-    background-color: initial;
-  }
-
   &--error {
     background-color: #ffefef;
     color: #ff0000;
+  }
+
+  &:focus {
+    color: #ffffff;
+    border: #ffffff 4px solid;
+    background-color: #192144;
   }
 }
 
@@ -104,7 +104,7 @@
   }
 
   .registration__description {
-    width: 104%;
+    width: 100%;
     margin-top: 57px;
     margin-bottom: 63px;
     font-size: 28px;

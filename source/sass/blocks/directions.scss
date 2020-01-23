@@ -126,7 +126,7 @@
   }
 
   .directions__description {
-    width: 58%;
+    width: 56%;
     font-size: 28px;
     line-height: 33px;
     padding-bottom: 76px;
@@ -201,6 +201,7 @@
   }
 
   .directions__button {
+    box-shadow: none;
     padding-top: 29px;
     border-radius: 20px;
   }

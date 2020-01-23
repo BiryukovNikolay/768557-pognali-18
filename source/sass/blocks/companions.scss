@@ -123,7 +123,12 @@
 
 @media (min-width: $desktop-width) {
   .companions {
-    min-height: 750px;
+    background: url("../img/rogovaya-back-desktop@1x.png") no-repeat 191px 436px, url("../img/smolov-back-desktop@1x.png") no-repeat 548px 182px #192144;
+    min-height: 650px;
+
+    @media (min-resolution: $retina-dppx) {
+      background: url("../img/rogovaya-back-desktop@1x.png") no-repeat 191px 436px/285px 285px, url("../img/smolov-back-desktop@1x.png") no-repeat 548px 182px/143px 143px #192144;
+    }
   }
 
   .companions__wrapper {
