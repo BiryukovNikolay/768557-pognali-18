@@ -7,8 +7,10 @@
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   font-family: "BloggerSans", "Lucida Console", "Monaco", sans-serif;
+  font-weight: 300;
 }
 
 *,

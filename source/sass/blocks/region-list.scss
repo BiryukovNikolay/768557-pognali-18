@@ -26,14 +26,12 @@
 
 @media (min-width: $tablet-width) {
   .region-list {
-    width: 87%;
     margin-bottom: 0;
     justify-content: space-between;
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
     display: flex;
-    align-items: center;
   }
 }
 

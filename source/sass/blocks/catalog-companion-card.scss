@@ -35,6 +35,7 @@
   display: block;
   margin-top: 13px;
   margin-right: 10px;
+  text-align: center;
   font-size: 24px;
   line-height: 21px;
 }
@@ -59,6 +60,10 @@
   justify-content: flex-start;
   padding: 0 20px 0 18px;
   border-bottom: $main-background 1px solid;
+}
+
+.catalog-companion-card__tittle-link {
+  text-decoration: none;
 }
 
 .catalog-companion-card__title {
@@ -257,7 +262,7 @@
   .catalog-companion-card {
     margin-bottom: 40px;
     position: relative;
-    padding: 35px 25px 10px 35px;
+    padding: 35px 25px 12px 35px;
   }
 
   .catalog-companion-card__header {
@@ -266,7 +271,7 @@
   }
 
   .catalog-companion-card__tittle-wrapper {
-    width: fit-content;
+    width: 188px;
   }
 
   .catalog-companion-card__head-wrapper {
@@ -275,15 +280,29 @@
   }
 
   .catalog-companion-card__title {
+    width: 150%;
     font-size: 30px;
     line-height: 30px;
 
     &::before {
+      display: none;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
       width: 7px;
       height: 7px;
-      top: 9px;
-      left: initial;
-      right: -30px;
+      background-color: #f97676;
+      top: 8px;
+      margin-left: 22px;
+      border-radius: 10px;
+    }
+
+    &--on-line {
+      &::after {
+        background-color: #81e31e;
+      }
     }
   }
 
@@ -319,12 +338,13 @@
   }
 
   .catalog-companion-card__tags {
+    position: relative;
     font-size: 20px;
     line-height: 24px;
-    width: 233px;
     margin-top: 46px;
-    right: 205px;
-    position: absolute;
+    padding-left: 0;
+    right: 186px;
+    width: 217px;
   }
 
   .catalog-companion-card__wishes-block {
@@ -332,7 +352,7 @@
     padding: 0;
     border: none;
     border-top: $main-background 1px solid;
-    margin-top: 80px;
+    margin-top: 30px;
   }
 
   .catalog-companion-card__wishes {
@@ -341,6 +361,7 @@
   }
 
   .catalog-companion-card__flag {
+    margin-top: 4px;
     width: 35px;
     height: 24px;
   }
@@ -406,7 +427,7 @@
 
   .catalog-companion-card__level-value {
     margin-top: 18px;
-    margin-right: -12px;
+    margin-right: -9px;
   }
 
   .catalog-companion-card__right {
@@ -418,16 +439,17 @@
   }
 
   .catalog-companion-card__button {
-    position: absolute;
+    position: relative;
+    font-size: 20px;
     width: 148px;
     height: 50px;
-    top: 176px;
-    left: 236px;
+    left: 201px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-companion-card {
+    overflow: hidden;
     position: relative;
     margin-bottom: 30px;
     min-height: 285px;
@@ -472,14 +494,23 @@
     font-weight: bold;
 
     &::before {
-      right: 334px;
+      display: block;
+      width: 7px;
+      height: 7px;
+      left: -28px;
+    }
+
+    &::after {
+      display: none;
     }
   }
 
   .catalog-companion-card__tags {
+    position: relative;
+    padding-left: 0;
     margin-top: 92px;
     top: 2px;
-    right: 380px;
+    right: 33%;
   }
 
   .catalog-companion-card__image {
@@ -499,7 +530,7 @@
   }
 
   .catalog-companion-card__left {
-    margin-bottom: 10px;
+    margin-bottom: 4px;
   }
 
   .catalog-companion-card__wishes-block {
@@ -537,7 +568,7 @@
     justify-content: flex-end;
     margin: 0;
     margin-top: auto;
-    margin-bottom: 45px;
+    margin-bottom: 0;
     margin-right: 104px;
   }
 
@@ -548,7 +579,7 @@
 
   .catalog-companion-card__button {
     left: 321px;
-    top: 189px;
+    bottom: 46px;
     font-size: 20px;
     line-height: 24px;
   }

@@ -133,6 +133,7 @@
 }
 
 .companion-card__tags {
+  width: 100%;
   margin-top: 14px;
   margin-bottom: 11px;
   text-align: center;
@@ -190,10 +191,16 @@
   .companion-card__avatar {
     border-radius: 20px 20px 0 0;
     width: 285px;
-    height: 284px;
+    height: 287px;
+  }
+
+  .companion-card__progress-block {
+    top: 24px;
+    left: 22px;
   }
 
   .companion-card__tags {
+    width: 232px;
     margin-top: 24px;
     margin-bottom: 15px;
     font-size: 19px;
