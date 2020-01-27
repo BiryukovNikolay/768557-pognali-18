@@ -76,19 +76,19 @@
 
   .catalog-page__wrapper {
     padding-top: 41px;
-    padding-bottom: 48px;
+    padding-bottom: 1px;
     width: $tablet-wrapper;
     margin: 0 auto;
     margin-bottom: 7px;
   }
 
   .catalog-page__main-wrapper {
-    padding-top: 41px;
+    padding-top: 38px;
   }
 
   .catalog-page__background {
-    padding-top: 116px;
-    padding-bottom: 64px;
+    padding-top: 218px;
+    padding-bottom: 63px;
     border-radius: 0 0 60px 60px;
   }
 
@@ -145,6 +145,7 @@
 
   .catalog-page__background {
     margin-top: -19px;
+    padding-top: 117px;
     margin-bottom: 0;
   }
 

@@ -108,12 +108,12 @@ filterOpen.addEventListener("click", function(evt) {
   catalogWrapper.classList.remove("catalog-page__wrapper--close");
   buttonClose.classList.remove("country-filter__button--close");
   titleBlock.classList.remove("country-filter__title-block--close");
-  filterIcon.classList.remove("country-filter__icon--close");
   filterTitle.classList.remove("country-filter__title--close");
   filterWrapper.classList.remove("country-filter__body-wrapper--close");
   countryFilter.classList.remove("country-filter__region-list--close");
   filterClose.classList.remove("country-filter__close--close");
   filterOpen.classList.remove("country-filter__toggle--close");
+  filterIcon.classList.remove("country-filter__icon--close");
 })}
 
 if (buttonClose) {
@@ -122,12 +122,12 @@ buttonClose.addEventListener("click", function(evt) {
   catalogWrapper.classList.add("catalog-page__wrapper--close");
   buttonClose.classList.add("country-filter__button--close");
   titleBlock.classList.add("country-filter__title-block--close");
-  filterIcon.classList.add("country-filter__icon--close");
   filterTitle.classList.add("country-filter__title--close");
   filterWrapper.classList.add("country-filter__body-wrapper--close");
   countryFilter.classList.add("country-filter__region-list--close");
   filterClose.classList.add("country-filter__close--close");
   filterOpen.classList.add("country-filter__toggle--close");
+  filterIcon.classList.add("country-filter__icon--close");
 })}
 
 if (filterClose) {
@@ -136,12 +136,12 @@ filterClose.addEventListener("click", function(evt) {
   catalogWrapper.classList.add("catalog-page__wrapper--close");
   buttonClose.classList.add("country-filter__button--close");
   titleBlock.classList.add("country-filter__title-block--close");
-  filterIcon.classList.add("country-filter__icon--close");
   filterTitle.classList.add("country-filter__title--close");
   filterWrapper.classList.add("country-filter__body-wrapper--close");
   countryFilter.classList.add("country-filter__region-list--close");
   filterClose.classList.add("country-filter__close--close");
   filterOpen.classList.add("country-filter__toggle--close");
+  filterIcon.classList.add("country-filter__icon--close");
 })}
 
 var choiceCountry = document.querySelector(".add-plan__country-choice-start");

@@ -96,11 +96,6 @@
   box-shadow: 1px -18px 24px 27px #edeff6;
 }
 
-.directions__new-line {
-  display: none;
-}
-
-
 @media (min-width: $tablet-width) {
   .directions__wrapper {
     position: relative;
@@ -217,8 +212,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .direction {
-    padding-bottom: 0;
+  .directions {
+    padding-bottom: 33px;
   }
 
   .directions__wrapper {
@@ -248,7 +243,7 @@
   }
 
   .directions__description {
-    width: 76%;
+    width: 72%;
     font-size: 28px;
     line-height: 33px;
   }

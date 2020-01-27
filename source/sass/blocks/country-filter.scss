@@ -18,7 +18,7 @@
 
 .country-filter__close {
   border: none;
-  background-color: inherit;
+  background-color: #e2e5f2;
 }
 
 .country-filter__close-dots {
@@ -43,10 +43,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 70px;
+  margin-top: 13px;
+  margin-bottom: 13px;
 
   &--close {
-    min-height: 60px;
+    margin-top: 0;
+    margin-bottom: 1px;
   }
 }
 
@@ -133,6 +135,8 @@
 
   .country-filter__title-block {
     justify-content: flex-end;
+    margin-top: 22px;
+    margin-bottom: 53px;
   }
 
   .country-filter__title {
@@ -213,9 +217,11 @@
     font-size: 20px;
     width: 618px;
     margin: 0 auto;
-    min-height: 100px;
     justify-content: center;
+    align-items: center;
     margin-bottom: 46px;
+    padding-bottom: 33px;
+    padding-top: 36px;
     fill: #1d2e5b;
 
     &:hover {
@@ -232,6 +238,7 @@
     width: 19px;
     height: 19px;
     margin-right: 21px;
+    margin-bottom: 4px;
   }
 
   .country-filter__close-title {
@@ -281,7 +288,7 @@
   .country-filter__title-block--close {
     display: flex;
     justify-content: flex-end;
-    margin-bottom: -80px;
+    margin-top: 14px;
   }
 
   .country-filter__icon--close {
@@ -308,6 +315,8 @@
   }
 
   .country-filter__title-block {
+    margin-top: 0px;
+    margin-bottom: 37px;
     position: relative;
     display: flex;
     width: 35%;
@@ -315,6 +324,7 @@
 
   .country-filter__icon {
     display: block;
+    margin-right: 25px;
   }
 
   .country-filter__desktop-wrapper {
@@ -334,7 +344,7 @@
     margin-top: 22px;
     font-size: 20px;
     line-height: 24px;
-    padding: 0 0 0 30px;
+    padding: 0;
   }
 
   .country-filter__button {
@@ -380,7 +390,7 @@
 
   .country-filter__title--close {
     display: flex;
-    padding-left: 10px;
+    padding-left: 0;
     margin: 0;
   }
 
@@ -396,5 +406,7 @@
 
   .country-filter__title-block--close {
     align-items: baseline;
+    margin-top: 13px;
+    margin-bottom: 52px;
   }
 }

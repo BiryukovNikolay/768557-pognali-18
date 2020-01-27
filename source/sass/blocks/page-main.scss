@@ -25,6 +25,12 @@
     }
   }
 
+  .page-main__back {
+    margin-top: -1px;
+    padding-top: 101px;
+    background-color: #182044;
+  }
+
   .page-main__wrapper-header {
     background: none;
     display: flex;
@@ -38,6 +44,10 @@
   .page-main {
     display: flex;
     flex-direction: column;
+  }
+
+  .page-main__back {
+    padding-top: 0px;
   }
 
   .page-main__wrapper {

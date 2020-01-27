@@ -75,7 +75,8 @@
     padding: 45px 0 74px 0;
 
     &--hidden {
-      background-color: #182044;
+      background-color: transparent;
+      position: absolute;
       min-height: 46px;
       padding: 23px 0 10px 0;
     }
