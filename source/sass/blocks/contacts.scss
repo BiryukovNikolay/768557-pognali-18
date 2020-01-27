@@ -13,16 +13,18 @@
 .contacts__wrapper {
   width: 270px;
   margin: 0 auto;
-  padding: 16px 0 27px 0;
+  padding: 29px 0 26px 0;
 }
 
 .contacts__phone-mail-wrapper {
+  margin-top: 14px;
   display: flex;
   flex-direction: column;
   padding-left: 50px;
 }
 
 .contacts__title {
+  margin: 0;
   line-height: 20px;
   color: #ffffff;
   text-align: center;
@@ -122,11 +124,10 @@
   &--address {
     text-transform: uppercase;
     color: #192144;
-    margin: 0 50px;
     font-size: 16px;
     line-height: 22px;
-    margin-bottom: 17px;
     padding-top: 18px;
+    margin: -13px 50px 17px;
 
     &::before {
       background: url("../img/contacts-location.svg") center no-repeat #121936;
@@ -158,6 +159,7 @@
   text-decoration: none;
   font-size: 18px;
   padding-bottom: 15px;
+  margin-bottom: 1px;
 
   &:hover {
     background-color: #192144;
@@ -174,7 +176,7 @@
 .contacts-map {
   z-index: 0;
   position: relative;
-  min-height: 320px;
+  min-height: 324px;
   background: url("../img/map-mobile@1x.jpg") no-repeat center -14px $main-background;
 
   @media (min-resolution: $retina-dppx) {
@@ -189,7 +191,7 @@
   }
 
   .contacts__address {
-    padding-top: 93px;
+    padding-top: 107px;
   }
 
   .contacts__wrapper {
@@ -231,7 +233,7 @@
     &--address {
       font-size: 28px;
       line-height: 28px;
-      margin-bottom: 45px;
+      margin-bottom: 44px;
 
       &::before {
         background-size: 21px 31px;
@@ -241,6 +243,7 @@
 
   .contacts__title {
     width: 100%;
+    letter-spacing: 0.3px;
     font-size: 27px;
     margin-top: 52px;
     margin-bottom: 43px;
@@ -248,6 +251,10 @@
     line-height: 33px;
     text-align: center;
     color: #ffffff;
+  }
+
+  .contacts__new-line {
+    display: none;
   }
 
   .contacts__button {
@@ -298,6 +305,7 @@
   }
 
   .contacts__title {
+    letter-spacing: 0.4px;
     margin-top: 25px;
     margin-bottom: 47px;
     text-align: center;
@@ -310,11 +318,11 @@
   .contacts__phone-mail-wrapper {
     flex-direction: row;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 28px;
     line-height: 28px;
     padding-left: 0;
-    width: 79%;
+    width: 65%;
     margin: 0 auto;
   }
 
@@ -341,7 +349,7 @@
     }
 
     &--phone {
-      margin-left: 34px;
+      margin-left: 51px;
 
       &::before {
         background-size: 36px 36px;

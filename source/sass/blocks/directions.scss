@@ -12,7 +12,7 @@
 }
 
 .directions__wrapper-header {
-  padding: 92px 50px 33px 25px;
+  padding: 92px 50px 30px 25px;
 }
 
 .directions__title {
@@ -21,6 +21,7 @@
 }
 
 .directions__description {
+  line-height: 21px;
   margin-top: 22px;
   color: $soft-text;
 }
@@ -46,7 +47,7 @@
   margin-top: -16px;
   background-color: #ffffff;
   border-radius: 10px;
-  padding: 28px 24px 22px 24px;
+  padding: 28px 24px 20px 24px;
 }
 
 .directions__slogan {
@@ -95,6 +96,10 @@
   box-shadow: 1px -18px 24px 27px #edeff6;
 }
 
+.directions__new-line {
+  display: none;
+}
+
 
 @media (min-width: $tablet-width) {
   .directions__wrapper {
@@ -131,6 +136,10 @@
     line-height: 33px;
     padding-bottom: 76px;
     margin-top: 59px;
+  }
+
+  .directions__new-line {
+    display: block;
   }
 
   .directions__list {

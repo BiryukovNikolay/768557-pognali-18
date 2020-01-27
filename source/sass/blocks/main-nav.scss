@@ -26,6 +26,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav__list {
+    position: relative;
     margin-top: -15px;
     text-align: left;
     margin-bottom: 114px;

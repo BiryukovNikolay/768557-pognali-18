@@ -23,7 +23,12 @@
 }
 
 .about__description {
+  width: 213px;
   font-weight: 300;
+}
+
+.about__new-line {
+  display: none;
 }
 
 .about__slogan {
@@ -54,7 +59,7 @@
   }
 
   .about__background {
-    min-height: 925px;
+    min-height: 924px;
     background: url("../img/about-tablet@1x.png") 99% 288px no-repeat;
 
     @media (min-resolution: $retina-dppx) {
@@ -71,10 +76,15 @@
   }
 
   .about__description {
+    width: 302px;
     margin-bottom: 31px;
     font-size: 28px;
     line-height: 33px;
     font-weight: 300;
+  }
+
+  .about__new-line {
+    display: block;
   }
 
   .about__slogan {
@@ -130,7 +140,7 @@
 
   .about__left-block {
     width: 55%;
-    padding: 96px 0 163px 70px;
+    padding: 96px 0 161px 70px;
   }
 
   .about-title {
@@ -138,10 +148,15 @@
   }
 
   .about__description {
+    width: 641px;
     display: block;
     margin-bottom: 36px;
     font-size: 28px;
     line-height: 33px;
+  }
+
+  .about__new-line {
+    display: none;
   }
 
   .about__slogan {

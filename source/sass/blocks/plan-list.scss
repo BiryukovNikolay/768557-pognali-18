@@ -10,6 +10,10 @@
   padding-bottom: 40px;
 }
 
+.plan-list__new-line {
+  display: none;
+}
+
 .plan-list__item {
   margin-top: -20px;
   min-height: 100px;
@@ -40,7 +44,7 @@
 }
 
 .plan-list__description {
-  width: 150px;
+  width: 140px;
 }
 
 .plan-list__number {
@@ -88,6 +92,10 @@
     &:last-child {
       border-radius: 0 0 20px 20px;
     }
+  }
+
+  .plan-list__new-line {
+    display: block;
   }
 
   .plan-list__number {

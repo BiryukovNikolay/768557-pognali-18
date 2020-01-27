@@ -31,12 +31,17 @@
   margin: 0 auto;
 }
 
-.companions-description {
+.companions__description {
+  padding-right: 10px;
   line-height: 21px;
   margin-bottom: 26px;
 }
 
-.companions-slogan {
+.companions__new-line {
+  display: none;
+}
+
+.companions__slogan {
   line-height: 20px;
 }
 
@@ -86,7 +91,7 @@
     padding: 155px 20px 42px 33px;
   }
 
-  .companions-description {
+  .companions__description {
     margin-top: 55px;
     margin-bottom: 40px;
     width: 70%;
@@ -94,7 +99,11 @@
     line-height: 33px;
   }
 
-  .companions-slogan {
+  .companions__new-line {
+    display: block;
+  }
+
+  .companions__slogan {
     display: block;
     width: 258px;
     font-size: 21px;
@@ -161,14 +170,14 @@
     padding-right: 0;
   }
 
-  .companions-description {
+  .companions__description {
     font-size: 28px;
     line-height: 33px;
     text-align: left;
     width: 443px;
   }
 
-  .companions-slogan {
+  .companions__slogan {
     font-size: 21px;
     line-height: 25px;
     width: 258px;

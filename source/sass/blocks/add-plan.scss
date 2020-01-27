@@ -72,7 +72,7 @@
   font-size: 15px;
   line-height: 22px;
   margin-bottom: 18px;
-  padding-right: 10px;
+  letter-spacing: 0.4px;
 }
 
 .add-plan__label {
@@ -81,7 +81,7 @@
   font-size: 16px;
   line-height: 16px;
   color: #1d2e5b;
-  letter-spacing: 1.6px;
+  letter-spacing: 1.2px;
   text-transform: uppercase;
   margin-bottom: 18px;
 }
@@ -118,7 +118,7 @@
   justify-content: center;
   align-items: center;
   width: 43px;
-  height: 43px;
+  height: 41px;
   background-color: #ffffff;
   margin: 0;
   border: none;
@@ -163,8 +163,8 @@
   font-size: 15px;
   line-height: 15px;
   color: $soft-text;
-  margin-top: 29px;
   margin-bottom: 25px;
+  margin-top: 28px;
 
   &::before {
     content: "";
@@ -196,6 +196,10 @@
       background-size: 9px 9px;
     }
   }
+}
+
+.add-plan__new-line {
+  display: none;
 }
 
 
@@ -275,7 +279,7 @@
   border: #cbced9 1px solid;
   border-right: none;
   border-radius: 5px 0 0 5px;
-  padding: 12px 0 11px 10px;
+  padding: 11px 0 11px 10px;
   margin-bottom: 22px;
 
   &:hover {
@@ -464,13 +468,13 @@
 
 .add-plan__action-plan {
   position: relative;
-  margin-top: 12px;
-  margin-bottom: 20px;
+  margin-top: 14px;
+  margin-bottom: 18px;
   width: 100%;
   border: #cbced9 1px solid;
   border-radius: 4px;
   min-height: 219px;
-  padding: 9px 15px;
+  padding: 9px 13px;
   font-size: 16px;
   line-height: 22px;
   color: $soft-text;
@@ -579,6 +583,10 @@
     padding-bottom: 76px;
   }
 
+  .add-plan__strange {
+    display: none;
+  }
+
   .add-plan__nav-dots {
     margin-bottom: 5px;
     width: 73px;
@@ -600,6 +608,7 @@
     height: 81px;
     font-size: 24px;
     line-height: 24px;
+    letter-spacing: 0;
     text-transform: none;
     padding: 31px 0 26px 34px;
     border-radius: 20px;
@@ -633,14 +642,19 @@
   .add-plan__description {
     font-size: 20px;
     line-height: 24px;
-    padding-right: 35px;
+    letter-spacing: 0;
+    padding-right: 10px;
     margin-bottom: 38px;
+  }
+
+  .add-plan__new-line {
+    display: block;
   }
 
   .add-plan__tablet-wrapper {
     display: flex;
     flex-direction: column;
-    margin-bottom: 39px;
+    margin-bottom: 37px;
   }
 
   .add-plan__input-section {
@@ -950,7 +964,7 @@
   }
 
   .add-plan__title-wrapper {
-    margin-bottom: 27px;
+    margin-bottom: 28px;
   }
 
   .add-plan__nav-dots {
@@ -958,7 +972,7 @@
   }
 
   .add-plan__step-wrapper {
-    margin-bottom: 16px;
+    margin-bottom: 14px;
     align-items: baseline;
     display: flex;
     justify-content: space-between;
@@ -1007,7 +1021,7 @@
   }
 
   .add-plan__step {
-    padding: 91px 160px;
+    padding: 92px 160px;
     margin-bottom: 46px;
     border-radius: 60px;
   }
@@ -1029,22 +1043,22 @@
   }
 
   .add-plan__description {
-    width: 100%;
+    width: 92%;
   }
 
   .add-plan__calendar {
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
 
   .add-plan__tablet-wrapper {
-    padding-top: 23px;
+    padding-top: 21px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline;
     border-top: #d4d9eb 1px solid;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 
   .add-plan__input-section {
@@ -1056,7 +1070,8 @@
   }
 
   .add-plan__choice {
-    padding: 68px 0 37px 0;
+    padding: 63px 0 37px 0;
+    margin-top: -2px;
 
     &::before {
       right: 22.7%;
@@ -1082,6 +1097,8 @@
   }
 
   .add-plan__action-plan {
+    height: 140px;
+    letter-spacing: -0.5px;
     margin-top: 27px;
     margin-bottom: 40px;
     width: 730px;

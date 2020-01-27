@@ -77,6 +77,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .my-plans {
+    padding: 43px 0 21px;
+    margin-top: -29px;
+  }
+
   .my-plans__list {
     padding: 16px 0 33px 0;
   }
@@ -121,6 +126,7 @@
   }
 
   .my-plans__item-body {
+    padding-right: 12px;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -129,9 +135,8 @@
   .my-plans__subtitle {
     font-size: 19px;
     line-height: 18px;
-    letter-spacing: 2px;
-    margin: 0;
-    margin-right: 48px;
+    letter-spacing: 2.6px;
+    margin: 0 44px 0 0;
   }
 
   .my-plans__button {

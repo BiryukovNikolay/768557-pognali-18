@@ -7,7 +7,7 @@
 .reviews__item {
   width: 320px;
   margin: 0 auto;
-  padding: 35px 116px 33px 50px;
+  padding: 35px 114px 33px 50px;
   text-align: left;
   color: #ffffff;
   font-size: 16px;
@@ -45,6 +45,10 @@
   .reviews__author {
     font-size: 21px;
     line-height: 25px;
+  }
+
+  .reviews__author-name {
+    display: block;
   }
 }
 
