@@ -177,6 +177,14 @@
   font-weight: normal;
   margin-top: -9px;
   margin-bottom: 16px;
+
+  &::after {
+    display: none;
+  }
+
+  &::before {
+    display: none;
+  }
 }
 
 .catalog-companion-card__country-title {
@@ -307,7 +315,9 @@
   }
 
   .catalog-companion-card__title--small {
+    font-size: 15px;
     margin-left: 47px;
+    width: 80%;
   }
 
   .catalog-companion-card__like {
@@ -315,13 +325,13 @@
     height: 50px;
     top: 175px;
     left: 403px;
+  }
 
-    &--heart-active {
-      width: 20px;
-      height: 17px;
-    }
+  .catalog-companion-card__like-heart {
+    width: 20px;
+    height: 17px;
 
-    &--heart {
+    &--active {
       width: 20px;
       height: 17px;
     }
